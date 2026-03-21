@@ -244,6 +244,12 @@
                         0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A
                     </span>
                 </div>
+                <div class="detail-row">
+                    <span>Multi-Signature Governance Wallet</span>
+                    <span class="mono">
+                        0x752eE5486021007e821C5D9a776fb619BDC615ae
+                    </span>
+                </div>
                 <a href="#" class="btn-outline full-width">Verify on BscScan</a>
             </div>
         </section>
@@ -431,6 +437,17 @@
                             </td>
                         </tr>
 
+                        <tr>
+                            <td>Multi-Signature Governance Wallet</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>Treasury approvals, liquidity authorization, ecosystem fund security</td>
+                            <td>
+                                <span id="w6">0x752eE5486021007e821C5D9a776fb619BDC615ae</span>
+                                <button onclick="copyWallet('w6')">📋</button>
+                            </td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -553,7 +570,6 @@
             <div class="verification-section">
                 <div class="section-header-verif">
                     <h2 class="color-gold">Blockchain Verification</h2>
-                    <div class="verif-badge">Section 7</div>
                 </div>
                 <div class="verif-points">
                     <div class="verif-point">
@@ -576,7 +592,6 @@
             <div class="summary-section">
                 <div class="section-header-summary">
                     <h3 class="section-gold">Structural Summary</h3>
-                    <div class="summary-badge">Section 8</div>
                 </div>
 
                 <div class="summary-stats-grid">
@@ -629,15 +644,14 @@
         </section> -->
     </main>
 
-    <?= include('footer.html') ?>
 
-    <!-- <script>
+    <script>
         function copyWallet(id) {
             let text = document.getElementById(id).innerText;
             navigator.clipboard.writeText(text);
             alert("Wallet copied!");
         }
-    </script> -->
+    </script>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
