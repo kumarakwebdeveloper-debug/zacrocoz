@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ZacrocoZ Transparency Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/trans-dashboard.css">
+
+</head>
+<style>
+    h2{
+        font-size: 32px !important;
+    }
+</style>
+
+<body>
+    <?= include('header.html') ?>
+    <div class="bg-gradient"></div>
+
+    <section class="sub-page-banner relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp animated">
+                    <div class="page-banner text-center">
+                        <h1 class="sub-banner-title">Transparency Dashboard</h1>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Transparency Dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <!-- HERO -->
+        <section class="hero container">
+            <div class="hero-left">
+                <!-- <span class="pill">Transparency Dashboard</span> -->
+                <h2 class="color-gold mt-2 fs">ZacrocoZ (ZRZ) Transparency & Tokenomics Dashboard</h2>
+                <h4 class="my-3 color-gold">Deliberate Design. <span>Defined Decentralization.</span></h4>
+                <p class="hero-sub">
+                    ZRZ tokenomics engineered for stability, accountability, and long‑term ecosystem growth.
+                </p>
+                <div class="hero-actions">
+                    <a href="#metrics" class="btn-primary">Open Live Dashboard</a>
+                    <a href="#contract" class="btn-secondary">View Tokenomics</a>
+                </div>
+                <!-- <div class="hero-badges">
+                    <div class="badge">BNB Smart Chain (BEP‑20)</div>
+                    <div class="badge">No Mint • No Tax • No Proxy</div>
+                </div> -->
+            </div>
+            <div class="hero-right">
+                <div class="hero-card">
+                    <h3>Live Market Snapshot</h3>
+                    <div class="metric-row">
+                        <span>ZRZ Live Price</span>
+                        <span class="metric-value">$0.00245</span>
+                    </div>
+                    <div class="metric-row">
+                        <span>Market Cap</span>
+                        <span class="metric-value">$2,450,000</span>
+                    </div>
+                    <div class="metric-row">
+                        <span>Total Liquidity</span>
+                        <span class="metric-value">$520,000</span>
+                    </div>
+                    <div class="metric-row">
+                        <span>24H Volume</span>
+                        <span class="metric-value">$145,000</span>
+                    </div>
+                    <div class="metric-row">
+                        <span>Total Holders</span>
+                        <span class="metric-value">1,845</span>
+                    </div>
+                    <div class="metric-row">
+                        <span>Total Transactions</span>
+                        <span class="metric-value">12,350</span>
+                    </div>
+                    <div class="hero-links">
+                        <a href="#" class="link-chip">View Contract · BscScan</a>
+                        <a href="#" class="link-chip">View Liquidity · PancakeSwap</a>
+                        <a href="#" class="link-chip">Add ZRZ to MetaMask</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVE METRICS GRID -->
+        <section id="metrics" class="section botline ptb-100 pb-5">
+            <div class="section-header">
+                <h2>Live Market Metrics</h2>
+                <!-- <p>Real‑time on‑chain data from DEX liquidity pools and verified contracts.</p> -->
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-label">ZRZ Live Price</span>
+                    <span class="metric-main">$0.00245</span>
+                    <span class="metric-caption">From DEX liquidity pools</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Market Capitalization</span>
+                    <span class="metric-main">$2,450,000</span>
+                    <span class="metric-caption">Circulating supply × price</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Total Liquidity</span>
+                    <span class="metric-main">$520,000</span>
+                    <span class="metric-caption">Across supported DEXs</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">24H Trading Volume</span>
+                    <span class="metric-main">$145,000</span>
+                    <span class="metric-caption">Last 24 hours</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Total Holders</span>
+                    <span class="metric-main">1,845</span>
+                    <span class="metric-caption">Unique addresses</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-label">Total Transactions</span>
+                    <span class="metric-main">12,350</span>
+                    <span class="metric-caption">On‑chain transfers</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTRACT OVERVIEW -->
+        <section id="contract" class="section section-split">
+            <div class="section-col">
+                <h2 class="color-gold">Contract Overview</h2>
+                <p class="my-3">Immutable, verifiable, and audit‑ready smart contract designed for institutional‑grade transparency.</p>
+                <div class="gold core-values">
+                    <ul class="checklist">
+                        <li>Permanently fixed supply, no minting or inflation.</li>
+                        <li>No transaction tax, blacklist, or upgradeable proxy.</li>
+                        <li>Entire supply minted at deployment and fully allocated.</li>
+                        <li>Optional public burn for voluntary supply reduction.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-col card">
+                <div class="detail-row">
+                    <span>Token Name</span>
+                    <span>ZacrocoZ (ZRZ)</span>
+                </div>
+                <div class="detail-row">
+                    <span>Blockchain</span>
+                    <span>BNB Smart Chain · BEP‑20</span>
+                </div>
+                <div class="detail-row">
+                    <span>Total Supply</span>
+                    <span>110,000,000 ZRZ</span>
+                </div>
+                <div class="detail-row">
+                    <span>Decimals</span>
+                    <span>18</span>
+                </div>
+                <div class="detail-row">
+                    <span>Contract Address</span>
+                    <span class="mono">
+                        0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A
+                    </span>
+                </div>
+                <a href="#" class="btn-outline full-width">Verify on BscScan</a>
+            </div>
+        </section>
+
+        <!-- SUPPLY STRUCTURE -->
+        <section id="supply" class="section" style="margin-top:60px;">
+            <div class="section-header section-col">
+                <h2 class="color-gold">Supply Structure</h2>
+                <!-- <p>Fixed and predictable supply architecture engineered for structural integrity.</p> -->
+            </div>
+            <div class="section-split">
+                <!-- <div class="section-col card">
+                    <div class="detail-row">
+                        <span>Maximum Supply</span>
+                        <span>110,000,000 ZRZ</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Supply Type</span>
+                        <span>Permanently capped</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Minting</span>
+                        <span>No mint function</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Burns</span>
+                        <span>Optional public burn only</span>
+                    </div>
+                </div> -->
+                <div class="gold core-values section-col mt-0">
+                    <ul class="">
+                        <li><strong>Maximum Supply:</strong> 110,000,000 ZRZ</li>
+                        <li><strong>Permanently Capped</strong> No minting; optional public burn only reduces supply</li>
+                        <li><strong>Predictable & Transparent:</strong> Ensures structural integrity, removing uncertainty of elastic supply</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOKEN ALLOCATION -->
+        <!-- <section id="allocation" class="section">
+            <div class="section-header">
+                <h2>Token Allocation & Liquidity</h2>
+                <p>Purpose‑driven distribution aligned with ecosystem growth and market stability.</p>
+            </div>
+
+            <div class="allocation-grid">
+                <div class="alloc-card">
+                    <h3>Liquidity</h3>
+                    <p class="alloc-percent">40.91%</p>
+                    <p>45,000,000 ZRZ dedicated to deep, long‑term LP infrastructure.</p>
+                </div>
+                <div class="alloc-card">
+                    <h3>Development</h3>
+                    <p class="alloc-percent">18.18%</p>
+                    <p>Core dev, audits, infrastructure, and governance operations.</p>
+                </div>
+                <div class="alloc-card">
+                    <h3>Ecosystem</h3>
+                    <p class="alloc-percent">13.63%</p>
+                    <p>Community incentives, partnerships, and platform growth.</p>
+                </div>
+                <div class="alloc-card">
+                    <h3>Marketing</h3>
+                    <p class="alloc-percent">13.63%</p>
+                    <p>Exchange listings, campaigns, and global visibility.</p>
+                </div>
+                <div class="alloc-card">
+                    <h3>Strategic Reserve</h3>
+                    <p class="alloc-percent">9.09%</p>
+                    <p>Emergency support and future ecosystem scaling.</p>
+                </div>
+                <div class="alloc-card">
+                    <h3>Staking Rewards</h3>
+                    <p class="alloc-percent">4.55%</p>
+                    <p>Staking and governance participation incentives.</p>
+                </div>
+            </div>
+
+            <div class="lp-phases card">
+                <h3>Liquidity Deployment Phases</h3>
+                <div class="phase-row">
+                    <span>Phase 1</span>
+                    <span>20M ZRZ · Initial LP · 3‑year lock</span>
+                </div>
+                <div class="phase-row">
+                    <span>Phase 2</span>
+                    <span>10M ZRZ · Early growth · 3‑year lock</span>
+                </div>
+                <div class="phase-row">
+                    <span>Phase 3</span>
+                    <span>10M ZRZ · Platform activation · 3‑year lock</span>
+                </div>
+                <div class="phase-row">
+                    <span>Phase 4</span>
+                    <span>5M ZRZ · Global expansion · 3‑year lock</span>
+                </div>
+                <p class="lp-note">
+                    Progressive release prevents market shocks and treats liquidity as long‑term infrastructure, not speculative fuel.
+                </p>
+            </div>
+        </section> -->
+        <div class="reveal mt-md-5"  style="margin-top:60px;">
+            <h2 class="color-gold mb-3">Token Allocation & Wallets</h2>
+
+            <div class="table-wrapper">
+                <table class="token-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Tokens</th>
+                            <th>%</th>
+                            <th>Purpose</th>
+                            <th>Wallet</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Liquidity Allocation</td>
+                            <td>45,000,000</td>
+                            <td>40.91%</td>
+                            <td>Market stability, LP depth</td>
+                            <td>
+                                <span id="w1">0x23E9E929eEd2Df8D191FBA4ff899E1d58cb2C380</span>
+                                <button onclick="copyWallet('w1')">📋</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Development</td>
+                            <td>20,000,000</td>
+                            <td>18.18%</td>
+                            <td>Core dev, audits, infrastructure, governance</td>
+                            <td>
+                                <span id="w2">0x61F5274033475775700bA67073Da00de33f257e0</span>
+                                <button onclick="copyWallet('w2')">📋</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Ecosystem</td>
+                            <td>15,000,000</td>
+                            <td>13.63%</td>
+                            <td>Community incentives, partnerships, platform growth</td>
+                            <td>
+                                <span id="w3">0x255095639Dde3393390c14d8c3bE67315E06aC37</span>
+                                <button onclick="copyWallet('w3')">📋</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Marketing</td>
+                            <td>15,000,000</td>
+                            <td>13.63%</td>
+                            <td>Exchange listings, campaigns, visibility</td>
+                            <td>
+                                <span id="w4">0x4a2BA54328972C1a5b8B7B19723bd18434F48621</span>
+                                <button onclick="copyWallet('w4')">📋</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Strategic Reserve</td>
+                            <td>10,000,000</td>
+                            <td>9.09%</td>
+                            <td>Emergency support, future scaling</td>
+                            <td>
+                                <span id="w5">0x3fFD564cCc45413296caDE8D2FD61FA71c59194f</span>
+                                <button onclick="copyWallet('w5')">📋</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Staking & Rewards</td>
+                            <td>5,000,000</td>
+                            <td>4.55%</td>
+                            <td>Staking rewards, governance incentives</td>
+                            <td>
+                                <span id="w6">0xdB847EFE1557747CE909269bb035e0e5AcF476Ec</span>
+                                <button onclick="copyWallet('w6')">📋</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- LIQUIDITY PHASES + PHILOSOPHY -->
+            <div class="phases-philosophy botline pb-5"  style="margin-top:60px;">
+                <div class="phases-section">
+                    <h3 class="section-gold mb-2">Liquidity Deployment Phases</h3>
+                    <div class="phase-list">
+                        <div class="phase-item">
+                            <span class="phase-number">01</span>
+                            <div class="phase-content">
+                                <span class="phase-amount">20M ZRZ</span>
+                                <span class="phase-desc">Initial LP, 3-year lock</span>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-number">02</span>
+                            <div class="phase-content">
+                                <span class="phase-amount">10M ZRZ</span>
+                                <span class="phase-desc">Early growth, 3-year lock</span>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-number">03</span>
+                            <div class="phase-content">
+                                <span class="phase-amount">10M ZRZ</span>
+                                <span class="phase-desc">Platform activation, 3-year lock</span>
+                            </div>
+                        </div>
+                        <div class="phase-item">
+                            <span class="phase-number">04</span>
+                            <div class="phase-content">
+                                <span class="phase-amount">5M ZRZ</span>
+                                <span class="phase-desc">Global expansion, 3-year lock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="philosophy-section">
+                    <h3 class="section-gold">Transparency Philosophy</h3>
+                    <div class="philosophy-grid">
+                        <div class="philo-point">
+                            <span class="philo-icon">🔗</span>
+                            <span>Every wallet fully public and verifiable on-chain</span>
+                        </div>
+                        <div class="philo-point">
+                            <span class="philo-icon">📊</span>
+                            <span>Transfers are fully traceable</span>
+                        </div>
+                        <div class="philo-point">
+                            <span class="philo-icon">🚫</span>
+                            <span>No hidden reserves</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LIQUIDITY INFRASTRUCTURE SECTION -->
+        <div class="liquidity-infra mt-5 mb-5"  style="margin-top:60px;">
+            <div class="infra-header">
+                <h2 class="color-gold">Liquidity Infrastructure</h2>
+            </div>
+
+            <div class="infra-points">
+                <div class="infra-point">
+                    <span class="point-icon">🏗️</span>
+                    <span>45,000,000 ZRZ Dedicated to liquidity</span>
+                </div>
+                <div class="infra-point">
+                    <span class="point-icon">🔒</span>
+                    <span>Structured phase deployment with individual 3-year locks</span>
+                </div>
+                <div class="infra-point">
+                    <span class="point-icon">📈</span>
+                    <span>Progressive release prevents market shocks & strengthens investor confidence</span>
+                </div>
+                <div class="infra-point">
+                    <span class="point-icon">🏗️</span>
+                    <span>Liquidity treated as infrastructure, not speculative fuel</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- GOVERNANCE & SECURITY -->
+        <section id="governance" class="section section-split botline pb-5"  style="margin-top:60px;">
+            <div class="section-col">
+                <h2 class="color-gold mb-3">Governance & Security</h2>
+                <div class="gold core-values">
+                    <h5><strong>Governance Model:</strong></h5>
+                    <ul class="">
+                        <li>Hybrid, DAO‑ready governance with transparent treasury and on‑chain enforcement.</li>
+                        <li>Proposal submission by token holders and core team.</li>
+                        <li>Weighted voting via staked ZRZ for responsible decisions.</li>
+                        <li>Treasury releases aligned with governance approvals.</li>
+                        <li>Future: AI‑assisted insights and time‑weighted voting.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-col card">
+                <h5><strong>Security & Trust</strong></h5>
+                <div class="gold core-values">
+                    <ul class="">
+                        <li>Smart contract audit pending final submission.</li>
+                        <li>0% buy/sell tax, no hidden tokenomics.</li>
+                        <li>Phase‑based LP locks with public verification.</li>
+                        <li>Fully public wallet transparency</li>
+                        <li>Controlled token release tied to growth milestones.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOCKCHAIN VERIFICATION + STRUCTURAL SUMMARY -->
+        <div class="verification-summary" style="margin-top:60px;">
+            <!-- SECTION 7: BLOCKCHAIN VERIFICATION -->
+            <div class="verification-section">
+                <div class="section-header-verif">
+                    <h2 class="color-gold">Blockchain Verification</h2>
+                    <div class="verif-badge">Section 7</div>
+                </div>
+                <div class="verif-points">
+                    <div class="verif-point">
+                        <span class="point-icon">⛓️</span>
+                        <span>All ecosystem activity fully on-chain</span>
+                    </div>
+                    <div class="verif-point">
+                        <span class="point-icon">✅</span>
+                        <span>Independent verification of contract, wallets, token supply, liquidity deployment, transfers</span>
+                    </div>
+                    <div class="verif-point">
+                        <span class="point-icon">🛡️</span>
+                        <span>Investor trust built via transparency, not promises</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 8: STRUCTURAL SUMMARY -->
+            <div class="summary-section">
+                <div class="section-header-summary">
+                    <h3 class="section-gold">Structural Summary</h3>
+                    <div class="summary-badge">Section 8</div>
+                </div>
+
+                <div class="summary-stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Fixed Supply</span>
+                        <span class="stat-value">110,000,000 ZRZ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Liquidity Allocation</span>
+                        <span class="stat-value">40.91%</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Staking Allocation</span>
+                        <span class="stat-value">4.55%</span>
+                    </div>
+                </div>
+
+                <div class="summary-features">
+                    <div class="feature-tag">
+                        <span class="feature-icon">🚫</span>
+                        <span>No Mint | No Tax | No Upgradeable Contract</span>
+                    </div>
+                    <div class="feature-tag">
+                        <span class="feature-icon">👁️</span>
+                        <span>Full Public Wallet Transparency</span>
+                    </div>
+                    <div class="feature-tag">
+                        <span class="feature-icon">⚖️</span>
+                        <span>Governance-Ready Architecture</span>
+                    </div>
+                </div>
+
+                <div class="summary-tagline">
+                    ZRZ tokenomics are engineered for stability, accountability, and long-term growth
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FINAL STRIP -->
+        <!-- <section class="section final-strip">
+            <h2>Engineered for Trust</h2>
+            <p>
+                ZRZ builds investor confidence through radical on‑chain transparency, not promises.
+            </p>
+            <div class="hero-actions">
+                <a href="#metrics" class="btn-primary">Explore Dashboard</a>
+                <a href="#" class="btn-secondary">Download Whitepaper</a>
+            </div>
+        </section> -->
+    </main>
+
+    <?= include('footer.html') ?>
+
+    <!-- <script>
+        function copyWallet(id) {
+            let text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text);
+            alert("Wallet copied!");
+        }
+    </script> -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang-translate.js"></script>
+    <script src="js/particle.min.js"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

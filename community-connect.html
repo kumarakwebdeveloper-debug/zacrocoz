@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>ZacrocoZ</title>
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/governance-modestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+
+    <style>
+        .inner-pages-content table {
+            border: 1px solid #c7ccd1;
+        }
+
+        .inner-pages-content table td,
+        .inner-pages-content table th {
+            color: #c7ccd1;
+        }
+
+        .inner-pages-content table td a {
+            color: #f00;
+        }
+
+        .phases-grid.cc {
+            grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+        }
+
+        .phase-card .phase-summary {
+            font-size: 14px;
+            line-height: 1.6;
+            font-style: normal;
+            padding: 10px 20px;
+            margin-top: 1.5rem;
+        }
+
+        .governance-modern::before {
+            background: none;
+        }
+        .community-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .relative {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* keep content above */
+        section.relative * {
+            position: relative;
+            z-index: 2;
+        }
+        #particles-js{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+
+
+    <header class="header header-home">
+    <div class="container">
+        <div class="row flex-align">
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-9 col-md-9">
+                <div class="menu-toggle">
+                    <span></span>
+                </div>
+
+                <div class="menu-search">
+                    <a href="javascript:void(0)" class="search">
+                        <img src="images/search.png" alt="search">
+                    </a>
+                </div>
+
+                <div class="main-menu">
+
+                    <!-- NAV MENU -->
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="transparency-dashboard.html">Transparency Dashboard</a></li>
+
+                            <li>
+                                <a href="javascript:void(0)">Explore</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="security.html">Security</a></li>
+                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
+                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
+                                    <li><a href="governance-model.html">Governance Model</a></li>
+                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="community-connect.html">Community & Connect</a></li>
+                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
+                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
+                    <div class="lang-box">
+                        <select class="lang-box" onchange="setLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="zh-CN">中文 (Chinese)</option>
+                            <option value="es">Español</option>
+                            <option value="pt">Português</option>
+                            <option value="ru">Русский</option>
+                            <option value="tr">Türkçe</option>
+                            <option value="ko">한국어</option>
+                            <option value="ja">日本語</option>
+                            <option value="el">Ελληνικά</option>
+                            <option value="hi">हिंदी</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIDDEN GOOGLE TRANSLATE -->
+    <div id="google_translate_element" style="display:none;"></div>
+
+</header>
+
+
+    <!-- Start Of Main Div -->
+    <div class="main">
+
+        <!-- Subpage Banner Start -->
+        <section class="sub-page-banner relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow fadeInUp animated">
+                        <div class="page-banner text-center">
+                            <h1 class="sub-banner-title">Community & Connect – ZacrocoZ</h1>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>Community & Connect – ZacrocoZ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subpage Banner End -->
+        <div class="inner-pages-content">
+
+            <section class="container-fluid botline primary-color py-5 ptb-100 relative">
+                
+                <div class="row align-items-center">
+                    <div class="col-md-8 hero-content">
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Join the ZacrocoZ Ecosystem</h2>
+                        <div class="core-values mt-3">
+                            <p><span class="ethno">ZacrocoZ</span> thrives on structured participation, transparency, and long-term blockchain utility. We welcome:</p>
+                            <ul>
+                                <li><strong>Developers</strong> building tools and integrations</li>
+                                <li><strong>Contributors</strong> supporting ecosystem growth</li>
+                                <li><strong>Learners</strong> seeking blockchain knowledge</li>
+                                <li><strong>Community members</strong> engaging responsibly</li>
+                            </ul>
+                            <p class="mt-3">Participation is <strong>verified, meaningful, and aligned</strong> with ZRZ governance, utility, and ecosystem principles.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hero-image wow fadeInUp">
+                        <img src="images/join-us-1.png"
+                            alt="Join us">
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid primary-color pt-5 relative">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-8">
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Official Channels & Verification</h2>
+                        <p>Always use verified ZacrocoZ channels to avoid scams:</p>
+                        <table class="table table-bordered mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Channel</th>
+                                    <th scope="col">URL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>🌐 Official Website:</strong></td>
+                                    <td><a href="https://zacrocoz.com/" target="_blank">zacrocoz.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>📢 Telegram:</strong></td>
+                                    <td>coming soon</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>📱 WhatsApp Channel:</strong></td>
+                                    <td><a href="https://whatsapp.com/channel/0029VbC48g284OmEXVctxE2n" target="_blank">Whatsapp Channel</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🐦 X (Twitter): </strong></td>
+                                    <td><a href="https://x.com/ZacrocoZ" target="_blank">Twitter Link</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🌐 Official Website:</strong>Liquidity Allocation</td>
+                                    <td><a href="https://zacrocoz.com/" target="_blank">zacrocoz.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>💻 GitHub / Code Repository</strong></td>
+                                    <td><a href="https://github.com/" target="_blank">Github</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>📝 Medium / Blog</strong></td>
+                                    <td><a href="https://medium.com/" target="_blank">Medim/Blog</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🎮 Discord: </strong></td>
+                                    <td><a href="https://discord.com/channels/1476088208952397986/1476088209535668320" target="_blank">Discord</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🔗 Reddit:</strong></td>
+                                    <td><a href="https://www.reddit.com/" target="_blank">Reddit</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🔗 Official ZRZ Token (BNB Chain):</strong></td>
+                                    <td>0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="core-values">
+                            <p class="color-gold wow fadeInUp delay-2">⚠ <strong>Always verify before any transaction.</strong> Avoid unofficial or third-party sources.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="governance-modern primary-color relative">
+                <div id="particles-js">
+                    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;"></canvas>
+                </div>
+                <div class="governace-container">
+                    <div class="phases-grid cc">
+                        <!-- PHASE 1 -->
+                        <div class="phase-card wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="phase-number">01</div>
+                            <h4 class="color-gold">Community Participation & Contribution</h4>
+                            <p><span class="ethno">ZacrocoZ</span> grows through active and responsible participation:</p>
+                            <div class="gold core-values">
+                                <ul class="ps-0">
+                                    <li>Engage in governance proposals and voting once activated</li>
+                                    <li>Support ecosystem initiatives, collaborations, and integrations</li>
+                                    <li>Participate in educational programs and knowledge sharing</li>
+                                    <li>Provide structured feedback for platform improvements</li>
+                                </ul>
+                                <p class="phase-summary">Participation is rewarded on-chain through ZRZ-based incentives, fostering long-term ecosystem growth.</p>
+                            </div>
+                        </div>
+
+                        <!-- PHASE 2 -->
+                        <div class="phase-card wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="phase-number">02</div>
+                            <h4 class="color-gold">Security & Safety Guidelines</h4>
+                            <p>For secure interactions:</p>
+                            <div class="gold core-values">
+                                <ul>
+                                    <li>Never trust private messages or DMs claiming to represent <span class="ethno">ZacrocoZ</span></li>
+                                    <li>ZRZ is a utility token, not a guarantee of profits</li>
+                                    <li>Only interact with <strong>official wallets, addresses, and smart contracts</strong></li>
+                                    <li>Verify all transactions and ecosystem updates via official channels</li>
+                                    <li><strong>Security awareness and trust are core principles</strong> of <span class="ethno">ZacrocoZ</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- PHASE 3 -->
+                        <div class="phase-card wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="phase-number">03</div>
+                            <h3 class="color-gold">Future Updates & Communication</h3>
+                            <p>All official updates regarding:</p>
+                            <div class="gold core-values">
+                                <ul>
+                                    <li>Liquidity deployment</li>
+                                    <li>Token allocation progress</li>
+                                    <li>Platform launches and tool expansions</li>
+                                    <li>Governance activation and treasury reports</li>
+                                    <li>Strategic partnerships</li>
+                                </ul>
+                            </div>
+                            <p class="phase-summary">will be publicly communicated via official channels. No private operations, hidden schemes, or sudden changes.</p>
+                        </div>
+
+                        <div class="phase-card wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="phase-number">04</div>
+                            <h3 class="color-gold">Our Commitment to the Community</h3>
+                            <p><span class="ethno">ZacrocoZ</span> ensures:</p>
+                            <div class="gold core-values">
+                                <ul>
+                                    <li>Long-term ecosystem sustainability</li>
+                                    <li>Responsible liquidity management</li>
+                                    <li>Transparent token allocation and vesting</li>
+                                    <li>Community-driven governance</li>
+                                    <li>Continuous platform and tool innovation</li>
+                                </ul>
+                            </div>
+                            <p class="phase-summary">Trust is built through <strong>clarity, accountability, and transparency — not empty promises.</strong></p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="container-fluid primary-color pb-5 relative">
+                <!-- <canvas class="community-bg"></canvas> -->
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 hero-image wow fadeInUp delay-1">
+                        <img src="images/closing-4.webp" alt="Strategic Highlights">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Closing Statement</h2>
+                        <p class="mt-2"><span class="ethno">ZacrocoZ</span> represents a modern, human-centered blockchain ecosystem:</p>
+                        <div class="core-values mt-1">
+                            <ul>
+                                <li>Structured and transparent</li>
+                                <li>Utility-focused and community-powered</li>
+                                <li>Governed by long-term sustainability principles</li>
+
+                            </ul>
+                        </div>
+                        <div class="core-values mt-1">
+                            <p class="wow fadeInUp delay-2">If you value responsible <strong>growth, real utility, and verified participation,</strong> <span class="ethno">ZacrocoZ</span> welcomes
+                                you to <strong>join, contribute, and grow</strong> with the ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Footer Section Start -->
+    <?php include('footer.html'); ?>
+    <!-- Footer Section End -->
+
+
+    </div>
+    <!-- End Of Main Div -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang-translate.js"></script>
+    <script src="js/particle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script type="text/javascript" src="js/particle.min.js" id=""></script>
+    <script type="text/javascript" src="js/particle.js" id=""></script>
+    <script>
+        document.querySelectorAll(".community-bg").forEach(canvas => {
+
+            const ctx = canvas.getContext("2d");
+            let particles = [];
+            const PARTICLE_COUNT = 50;
+
+            function resizeCanvas() {
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            }
+            resizeCanvas();
+            window.addEventListener("resize", resizeCanvas);
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+
+                    this.vx = (Math.random() - 0.5) * 0.3;
+                    this.vy = (Math.random() - 0.5) * 0.3;
+
+                    this.radius = Math.random() * 2 + 1;
+                }
+
+                move() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+
+                    ctx.fillStyle = "#facc15";
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = "#facc15";
+                    ctx.fill();
+                    ctx.shadowBlur = 0;
+                }
+            }
+
+            function init() {
+                particles = [];
+                for (let i = 0; i < PARTICLE_COUNT; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function connect() {
+                for (let a = 0; a < particles.length; a++) {
+                    for (let b = a; b < particles.length; b++) {
+
+                        let dx = particles[a].x - particles[b].x;
+                        let dy = particles[a].y - particles[b].y;
+                        let dist = dx * dx + dy * dy;
+
+                        if (dist < 12000) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[a].x, particles[a].y);
+                            ctx.lineTo(particles[b].x, particles[b].y);
+
+                            ctx.strokeStyle = "rgba(250, 204, 21, 0.15)";
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                particles.forEach(p => {
+                    p.move();
+                    p.draw();
+                });
+
+                connect();
+                requestAnimationFrame(animate);
+            }
+
+            init();
+            animate();
+        });
+    </script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        const cards = gsap.utils.toArray(".c-card");
+        const lastCardIndex = cards.length - 1;
+
+        const firstCardST = ScrollTrigger.create({
+            trigger: cards[1],
+            start: "center center"
+        });
+
+        const lastCardST = ScrollTrigger.create({
+            trigger: cards[cards.length - 1],
+            start: "center center"
+        });
+
+        cards.forEach((card, index) => {
+            const scale = index === lastCardIndex ? 1 : 0.5;
+            const scaleDown = gsap.to(card, {
+                scale: scale,
+            });
+
+            ScrollTrigger.create({
+                trigger: card,
+                start: "top top",
+                end: () => lastCardST.start,
+                pin: true,
+                pinSpacing: false,
+                scrub: 0.5,
+                ease: "none",
+                animation: scaleDown,
+                toggleActions: "restart none none reverse"
+            });
+        });
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </body>
+
+</html>

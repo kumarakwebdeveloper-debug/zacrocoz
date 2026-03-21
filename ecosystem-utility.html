@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>ZacrocoZ</title>
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/new-style.css">
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Preloader Start -->
+    <!-- <div id="preloader" class="preloader">
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <div class="spinner-box">
+            <div class="spinner"></div>
+        </div>
+        <img src="images/preloader.png" alt="preloader" class="pre-icon">
+    </div> -->
+    <!-- Preloader End -->
+    <style>
+        .zrz-stands.apart {
+            background: url('images/bg-1.webp');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: top right;
+            position: relative;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #d4af37cf;
+        }
+
+        .zrz-stands.nbg {
+            background: #0f172a !important;
+        }
+
+        .card ul li {
+            padding-bottom: 10px;
+        }
+
+        .w-70 {
+            width: 80%;
+        }
+
+        .sub-page-banner.relative {
+            background-image: url('images/ecosystem-bg.jpeg') !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* margin-top: 100px; */
+
+        }
+
+        .sub-page-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(10 37 64 / 59%);
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #c7ccd1;
+        }
+    </style>
+
+
+    <header class="header header-home">
+    <div class="container">
+        <div class="row flex-align">
+            <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-9 col-md-9">
+                <div class="menu-toggle">
+                    <span></span>
+                </div>
+
+                <div class="menu-search">
+                    <a href="javascript:void(0)" class="search">
+                        <img src="images/search.png" alt="search">
+                    </a>
+                </div>
+
+                <div class="main-menu">
+
+                    <!-- NAV MENU -->
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="transparency-dashboard.html">Transparency Dashboard</a></li>
+
+                            <li>
+                                <a href="javascript:void(0)">Explore</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="security.html">Security</a></li>
+                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
+                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
+                                    <li><a href="governance-model.html">Governance Model</a></li>
+                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="community-connect.html">Community & Connect</a></li>
+                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
+                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
+                    <div class="lang-box">
+                        <select class="lang-box" onchange="setLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="zh-CN">中文 (Chinese)</option>
+                            <option value="es">Español</option>
+                            <option value="pt">Português</option>
+                            <option value="ru">Русский</option>
+                            <option value="tr">Türkçe</option>
+                            <option value="ko">한국어</option>
+                            <option value="ja">日本語</option>
+                            <option value="el">Ελληνικά</option>
+                            <option value="hi">हिंदी</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HIDDEN GOOGLE TRANSLATE -->
+    <div id="google_translate_element" style="display:none;"></div>
+
+</header>
+
+
+    <!-- Start Of Main Div -->
+    <div class="main">
+
+        <!-- Subpage Banner Start -->
+        <section class="sub-page-banner relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wow fadeInUp animated">
+                        <div class="page-banner text-center">
+                            <h1 class="sub-banner-title">Ecosystem & Utility</h1>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>Ecosystem & Utility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Subpage Banner End -->
+        <div class="inner-pages-content">
+            <section class="container-fluid primary-color ptb-100 relative">
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 hero-image wow fadeInUp delay-1">
+                        <img src="images/token-utility-framework.jpg" alt="ZRZ Token Utility Framework" class="w-70">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInRight">ZRZ Token Utility Framework</h2>
+                        <p class="color-gold wow fadeInRight"><strong>Powering the <span class="ethno">ZacrocoZ</span> ecosystem: Governance. Rewards. Access. Growth.</strong></p>
+                        <p>ZRZ is more than a token — it is the functional engine of the ecosystem. Every token has a clear, deliberate purpose, creating sustainable value, measurable trust, and long-term participation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <style>
+                /* ===== LIST CONTAINER ===== */
+                .zrz-stands .card ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+
+                /* ===== LIST ITEM AS BLOCK ===== */
+                .zrz-stands .card ul li {
+                    position: relative;
+                    padding: 16px 18px;
+                    margin-bottom: 14px;
+
+                    border-radius: 12px;
+
+                    background: linear-gradient(145deg,
+                            rgba(255, 255, 255, 0.04),
+                            rgba(255, 255, 255, 0.01));
+
+                    border: 1px solid rgba(255, 255, 255, 0.06);
+
+                    color: #d1d5db;
+                    line-height: 1.6;
+
+                    transition: all 0.3s ease;
+                }
+
+                /* ===== LEFT ACCENT BAR ===== */
+                .zrz-stands .card ul li::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 90%;
+
+                    width: 3px;
+                    height: 100%;
+
+                    border-radius: 12px 0 0 12px;
+
+                    background: linear-gradient(to bottom,
+                            #facc15,
+                            #0ea5e9);
+
+                    opacity: 0.8;
+                }
+
+                /* ===== STRONG TITLE ===== */
+                .zrz-stands .card ul li strong {
+                    display: block;
+                    color: #d4af37;
+                    font-size: 16px;
+                    margin-bottom: 4px;
+                }
+
+                /* ===== DESCRIPTION TEXT ===== */
+                .zrz-stands .card ul li {
+                    font-size: 14px;
+                }
+
+                /* ===== HOVER EFFECT ===== */
+                .zrz-stands .card ul li:hover {
+                    transform: translateY(-4px);
+                    background: linear-gradient(145deg,
+                            rgba(250, 204, 21, 0.08),
+                            rgba(14, 165, 233, 0.05));
+
+                    border-color: rgba(250, 204, 21, 0.3);
+
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+                }
+
+                /* ===== OPTIONAL: SOFT INNER GLOW ===== */
+                .zrz-stands .card ul li:hover::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 12px;
+
+                    background: radial-gradient(circle at 20% 20%,
+                            rgba(250, 204, 21, 0.15),
+                            transparent 60%);
+
+                    opacity: 0.6;
+                }
+
+
+
+                .card {
+                    background: #0f172a;
+                    backdrop-filter: blur(20px);
+                    border: 1px solid rgb(183 153 53);
+                    min-width: 60vw;
+                }
+
+                .wgr.nbg .card {
+                    min-width: 50%;
+                    /* max-width: 50%; */
+                }
+
+                .zrz-stands.wgr .card ul li::before {
+                    top: 0%;
+                }
+
+                /* ===== CANVAS BACKGROUND ===== */
+                #crypto-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    z-index: 0;
+                    opacity: 0.25;
+                    /* important: keep subtle */
+                }
+
+                /* keep content above */
+                .zrz-stands .row,
+                .zrz-stands .card {
+                    position: relative;
+                    z-index: 2;
+                }
+                .core-values p{
+                    color: #c7ccd1;
+                }
+            </style>
+
+            <section class="container-fluid zrz-stands nbg primary-color ptb-100 relative">
+                <canvas id="crypto-bg"></canvas>
+                <div class="row align-items-center">
+                    <div class="scroll-hint">
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="about-detail core-values bp">
+                        <section>
+                            <div class="card">
+                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Platform Access & Services</h2>
+                                <p>ZRZ holders gain <strong>full ecosystem participation,</strong> including:</p>
+                                <ul class="gold core-values">
+                                    <li><strong class="color-gold">Exclusive Tools & Dashboards</strong> Access AI-powered analytics, predictive governance dashboards, and real-time staking insights</li>
+                                    <li><strong class="color-gold">Marketplace & Partner Integrations</strong> Utilize ZRZ across platform services, partner applications, and DeFi modules</li>
+                                    <li><strong class="color-gold">Priority Participation</strong> Early access to innovations, events, ecosystem initiatives, and protocol updates</li>
+                                </ul>
+                                <div class="core-values">
+                                    <p class="color-gold">ZRZ ensures <strong>active participants are empowered and rewarded</strong> with meaningful platform privileges</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card rotating-card">
+                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Governance & Voting</h2>
+                                <p>ZRZ enables <strong>structured, community-led decision-making:</strong></p>
+                                <ul>
+                                    <li><strong class="color-gold">Proposal Submission</strong> Token holders can submit platform improvement and ecosystem growth proposals</li>
+                                    <li><strong class="color-gold">Voting Power</strong> Weighted by staked ZRZ, ensuring engaged participants shape the ecosystem</li>
+                                    <li><strong class="color-gold">Transparent Execution</strong> All governance actions recorded on-chain for full accountability</li>
+                                    <li><strong class="color-gold">AI-Enhanced Insights</strong> Governance decisions are informed by predictive analytics, ensuring fair, data-driven outcomes</li>
+                                </ul>
+                                <div class="core-values">
+                                    <p class="color-gold">Governance is <strong>responsible, measurable, and aligned with long-term ecosystem health</strong></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card">
+                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Staking & Rewards</h2>
+                                <p>ZRZ supports <strong>flexible, intelligent participation:</strong></p>
+                                <ul>
+                                    <li><strong class="color-gold">Adaptive Staking Plans</strong> Short- and long-term options tailored for diverse commitment levels</li>
+                                    <li><strong class="color-gold">AI-Optimized Rewards</strong> Staking incentives dynamically adjusted to maximize liquidity, engagement, and sustainability</li>
+                                    <li><strong class="color-gold">Early Adopter Incentives</strong> Enhanced rewards to recognize early trust and contribution</li>
+                                </ul>
+                                <div class="core-values">
+                                    <p class="color-gold">Staking is <strong>strategic, aligned with ecosystem growth, and reinforces long-term participation</strong></p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="card rotating-card">
+                                <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Ecosystem Participation & Utility</h2>
+                                <ul>
+                                    <li><strong class="color-gold">Liquidity Provision</strong> Stake ZRZ to support liquidity pools, earning fees and structured rewards</li>
+                                    <li><strong class="color-gold">Treasury Interaction</strong> Participate in treasury programs, governance allocations, and funding initiatives</li>
+                                    <li><strong class="color-gold">Cross-Platform Integration</strong> Use ZRZ for partner services, AI-driven products, and platform expansions</li>
+                                </ul>
+                                <div class="core-values mt-3">
+                                    <p class="color-gold">Every token interaction contributes to <strong>network depth, structural stability, and community empowerment</strong></p>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card">
+                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Long-Term Value & Growth Potential</h2>
+                                <ul>
+                                    <li><strong class="color-gold">Limited Supply</strong> Permanent cap ensures <strong>scarcity and structural value retention</strong></li>
+                                    <li><strong class="color-gold">AI-Driven Tokenomics</strong> Continuous monitoring of supply, staking, and rewards prevents imbalance and volatility</li>
+                                    <li><strong class="color-gold">Hybrid Governance</strong> Community-led + AI-assisted guidance supports predictable, sustainable ecosystem growth</li>
+                                    <li><strong class="color-gold">Future-Proof Utility</strong> Ready for DeFi integrations, NFT collaborations, cross-chain expansion, and next-generation AI services</li>
+                                </ul>
+                                <div class="core-values">
+                                    <p class="color-gold">ZRZ is <strong>engineered to grow with the ecosystem, not against it</strong></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container-fluid zrz-stands wgr nbg primary-color ptb-100 relative">
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-md-6">
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">ZRZ: The Token That Works, Grows, and Rewards</h2>
+                        <p>With ZRZ, <strong>every participant is part of a self-reinforcing, transparent ecosystem:</strong></p>
+                        <div class="card">
+                            <ul>
+                                <li><strong>Use ZRZ</strong> for platform access, staking, and liquidity support</li>
+                                <li><strong>Shape the ecosystem</strong> through governance participation</li>
+                                <li><strong>Earn rewards</strong> via active engagement and contribution</li>
+                                <li><strong>Trust the infrastructure</strong> — AI-assisted, transparent, and audit-ready</li>
+                            </ul>
+                            <div class="core-values">
+                                <p class="color-gold wow fadeInUp delay-5 animated" style="visibility: visible;"><strong>ZRZ is not just a token — it is the backbone of a human-centric, AI-enhanced blockchain economy, combining utility, governance, and long-term structural growth</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/zrz-works-grows-reards.jpg" alt="The Token That Works, Grows, and Rewards" style="position: relative;z-index: 9;" class="img-fluid w-100">
+                    </div>
+                </div>
+            </section>
+
+
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script>
+                const canvas = document.getElementById("crypto-bg");
+                const ctx = canvas.getContext("2d");
+
+                let w, h;
+
+                function resize() {
+                    w = canvas.width = canvas.offsetWidth;
+                    h = canvas.height = canvas.offsetHeight;
+                }
+                resize();
+                window.addEventListener("resize", resize);
+
+                /* ===== CREATE MULTIPLE FALLING SQUARE BOXES ===== */
+                const boxes = [];
+
+                for (let i = 0; i < 100; i++) { // More for rain-like density
+                    boxes.push({
+                        x: Math.random() * w,
+                        y: -Math.random() * h, // Start above top (off-screen)
+                        size: 15 + Math.random() * 25, // Smaller for rain feel
+                        speedY: 1 + Math.random() * 2, // Downward speed
+                        swaySpeed: 0.02 + Math.random() * 0.03, // Horizontal sway
+                        swayOffset: Math.random() * Math.PI * 2,
+                        color: Math.random() > 0.7 ? "#f59e0b" : (Math.random() > 0.5 ? "#22c55e" : "#ef4444")
+                    });
+                }
+
+                /* ===== ANIMATION ===== */
+                function animate() {
+                    ctx.clearRect(0, 0, w, h);
+
+                    boxes.forEach(box => {
+                        ctx.fillStyle = box.color;
+                        ctx.globalAlpha = 0.5 + Math.random() * 0.2;
+                        ctx.shadowBlur = 8;
+                        ctx.shadowColor = box.color;
+
+                        // Sway horizontally + fall down
+                        box.x += Math.sin(Date.now() * box.swaySpeed + box.swayOffset) * 0.5;
+                        box.y += box.speedY;
+                        box.x = (box.x + w) % w; // Wrap around edges for infinite feel
+
+                        // Draw square (centered vertically)
+                        ctx.fillRect(box.x - box.size / 2, box.y - box.size / 2, box.size, box.size);
+
+                        // Respawn at top when off bottom
+                        if (box.y > h + box.size) {
+                            box.y = -box.size;
+                            box.x = Math.random() * w;
+                        }
+                    });
+
+                    requestAnimationFrame(animate);
+                }
+
+                animate();
+            </script>
+
+
+
+
+        </div>
+
+
+        <!-- Footer Section Start -->
+        <?php include('footer.html'); ?>
+        <!-- Footer Section End -->
+
+
+    </div>
+    <!-- End Of Main Div -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang-translate.js"></script>
+    <script src="js/particle.min.js"></script>
+
+    <script>
+        (function() {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML = "window.__CF$cv$params={r:'9d4068db5a859cf4',t:'MTc3MjExOTA0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function() {};
+                    document.onreadystatechange = function(b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
+    </script>
+    <script defer="" src="../../../../../beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
+        integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
+        data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </body>
+
+</html>
