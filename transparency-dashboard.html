@@ -128,7 +128,7 @@
 
     </header>
 
-    <div id="copy-alert" class="copy-alert">Wallet Copied!</div>
+    <!-- <div id="copy-alert" class="copy-alert">Wallet Copied!</div> -->
 
     <div class="bg-gradient"></div>
 
@@ -836,14 +836,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Initialize ALL tooltips including spans
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
             tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             });
         });
 
-        // SPAN COPY WITH TOOLTIP
         function copyWalletSpan(event, span, walletId) {
             event.preventDefault();
             event.stopPropagation();
@@ -852,7 +850,6 @@
             copyWithTooltip(walletText, span);
         }
 
-        // BUTTON COPY WITH TOOLTIP
         function copyWallet(event, button, walletId) {
             event.preventDefault();
             event.stopPropagation();
@@ -861,9 +858,7 @@
             copyWithTooltip(walletText, button);
         }
 
-        // UNIVERSAL COPY + TOOLTIP FUNCTION
         function copyWithTooltip(text, element) {
-            // Modern Clipboard API
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(text).then(function () {
                     showCopiedTooltip(element);
@@ -899,20 +894,16 @@
             const tooltip = bootstrap.Tooltip.getInstance(element);
             const originalTitle = element.getAttribute('data-original-title') || element.getAttribute('title');
 
-            // Save original
             if (!element.getAttribute('data-original-title')) {
                 element.setAttribute('data-original-title', originalTitle);
             }
 
-            // Show "Text Copied"
             element.title = '✅ Text Copied!';
             tooltip.show();
 
-            // Visual feedback
             element.style.background = 'rgba(81, 207, 102, 0.3)';
             element.style.transform = 'scale(1.03)';
 
-            // Reset after 2.5 seconds
             setTimeout(function () {
                 element.title = element.getAttribute('data-original-title');
                 element.style.background = '';
