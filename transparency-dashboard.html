@@ -15,8 +15,30 @@
 
 </head>
 <style>
-    h2 {
+     h2 {
         font-size: 32px !important;
+    }
+
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        opacity: 0.05;
+        z-index: -1;
+    }
+
+    .sub-page-banner {
+        background: #0f172a;
+    }
+
+    .sub-page-banner::after{
+        background-image: none;
+    }
+    #metrics,#contract,#supply,.reveal,.liquidity-infra,#governance,.verification-summary{
+        position: relative;
+        z-index: 999;
     }
 </style>
 
@@ -99,7 +121,7 @@
     </header>
     <div class="bg-gradient"></div>
 
-    <section class="sub-page-banner relative">
+    <section class="sub-page-banner botline relative">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 wow fadeInUp animated">
@@ -114,9 +136,12 @@
     <main>
         <!-- HERO -->
         <section class="hero container">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/bg-video.mp4" type="video/mp4">
+            </video>
             <div class="hero-left">
                 <!-- <span class="pill">Transparency Dashboard</span> -->
-                <h2 class="color-gold mt-2 fs">ZacrocoZ (ZRZ) Transparency & Tokenomics Dashboard</h2>
+                <h2 class="color-gold mt-2 fs"><span class="ethno">ZacrocoZ (ZRZ)</span> Transparency & Tokenomics Dashboard</h2>
                 <h4 class="my-3 color-gold">Deliberate Design. <span>Defined Decentralization.</span></h4>
                 <p class="hero-sub">
                     ZRZ tokenomics engineered for stability, accountability, and long‑term ecosystem growth.
@@ -261,24 +286,6 @@
                 <!-- <p>Fixed and predictable supply architecture engineered for structural integrity.</p> -->
             </div>
             <div class="section-split">
-                <!-- <div class="section-col card">
-                    <div class="detail-row">
-                        <span>Maximum Supply</span>
-                        <span>110,000,000 ZRZ</span>
-                    </div>
-                    <div class="detail-row">
-                        <span>Supply Type</span>
-                        <span>Permanently capped</span>
-                    </div>
-                    <div class="detail-row">
-                        <span>Minting</span>
-                        <span>No mint function</span>
-                    </div>
-                    <div class="detail-row">
-                        <span>Burns</span>
-                        <span>Optional public burn only</span>
-                    </div>
-                </div> -->
                 <div class="gold core-values section-col mt-0">
                     <ul class="">
                         <li><strong>Maximum Supply:</strong> 110,000,000 ZRZ</li>
@@ -290,70 +297,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- TOKEN ALLOCATION -->
-        <!-- <section id="allocation" class="section">
-            <div class="section-header">
-                <h2>Token Allocation & Liquidity</h2>
-                <p>Purpose‑driven distribution aligned with ecosystem growth and market stability.</p>
-            </div>
-
-            <div class="allocation-grid">
-                <div class="alloc-card">
-                    <h3>Liquidity</h3>
-                    <p class="alloc-percent">40.91%</p>
-                    <p>45,000,000 ZRZ dedicated to deep, long‑term LP infrastructure.</p>
-                </div>
-                <div class="alloc-card">
-                    <h3>Development</h3>
-                    <p class="alloc-percent">18.18%</p>
-                    <p>Core dev, audits, infrastructure, and governance operations.</p>
-                </div>
-                <div class="alloc-card">
-                    <h3>Ecosystem</h3>
-                    <p class="alloc-percent">13.63%</p>
-                    <p>Community incentives, partnerships, and platform growth.</p>
-                </div>
-                <div class="alloc-card">
-                    <h3>Marketing</h3>
-                    <p class="alloc-percent">13.63%</p>
-                    <p>Exchange listings, campaigns, and global visibility.</p>
-                </div>
-                <div class="alloc-card">
-                    <h3>Strategic Reserve</h3>
-                    <p class="alloc-percent">9.09%</p>
-                    <p>Emergency support and future ecosystem scaling.</p>
-                </div>
-                <div class="alloc-card">
-                    <h3>Staking Rewards</h3>
-                    <p class="alloc-percent">4.55%</p>
-                    <p>Staking and governance participation incentives.</p>
-                </div>
-            </div>
-
-            <div class="lp-phases card">
-                <h3>Liquidity Deployment Phases</h3>
-                <div class="phase-row">
-                    <span>Phase 1</span>
-                    <span>20M ZRZ · Initial LP · 3‑year lock</span>
-                </div>
-                <div class="phase-row">
-                    <span>Phase 2</span>
-                    <span>10M ZRZ · Early growth · 3‑year lock</span>
-                </div>
-                <div class="phase-row">
-                    <span>Phase 3</span>
-                    <span>10M ZRZ · Platform activation · 3‑year lock</span>
-                </div>
-                <div class="phase-row">
-                    <span>Phase 4</span>
-                    <span>5M ZRZ · Global expansion · 3‑year lock</span>
-                </div>
-                <p class="lp-note">
-                    Progressive release prevents market shocks and treats liquidity as long‑term infrastructure, not speculative fuel.
-                </p>
-            </div>
-        </section> -->
         <div class="reveal mt-md-5" style="margin-top:60px;">
             <h2 class="color-gold mb-3">Token Allocation & Wallets</h2>
 
