@@ -126,7 +126,7 @@
 .home-banner .home-banner-content::before {
   content: "ZacrocoZ";
   position: absolute;
-  bottom: -25%;
+  bottom: -60%;
   left: 13%;
   transform: translate(0%, -50%);
   font-size: 4.25em;
@@ -353,7 +353,8 @@
 .pillar {
   position: relative;
   padding: 22px 30px 22px 80px;
-  background: rgba(255, 255, 255, 0.04);
+  /* background: rgba(255, 255, 255, 0.04); */
+  background: transparent;
   border: 1px solid rgba(212, 175, 55, 0.15);
   border-radius: 16px;
   transition: all 0.4s ease;
@@ -361,9 +362,9 @@
 }
 
 .pillar:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-color: rgba(212, 175, 55, 0.4);
-  transform: translateX(12px);
+  transform: translateX(6px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
@@ -571,8 +572,8 @@
 }
 
 .core-values.pbla li:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4);
+  /* transform: translateY(-3px) scale(1.05); */
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
 
 .core-values.pbla li:hover::before {
@@ -641,12 +642,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  /* background: linear-gradient(180deg, rgba(212, 175, 55, 0.06) 0%, rgba(15, 23, 42, 0.9) 100%); */
   border-radius: 12px;
   padding: 0.25rem;
-  /* box-shadow:
-                    0 15px 35px rgba(0, 0, 0, 0.5),
-                    inset 0 1px 0 rgba(212, 175, 55, 0.1); */
 }
 
 .gold.core-values li {
@@ -666,4 +663,13 @@
 
 .gold.core-values.c-card__excerpt.home li::before {
   content: "" !important;
+}
+
+.gold.core-values.c-card__excerpt.home li{
+  padding: 0.5rem 1rem;
+}
+
+.gold.core-values.c-card__excerpt.home li:hover{
+  /* background-color: #ccc;
+  color: #0c2147; */
 }
