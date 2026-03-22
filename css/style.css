@@ -4835,7 +4835,7 @@ h5 {
     Footer Style
 -----------------------------------------*/
 .footer {
-  background: radial-gradient(circle, #01184a -6%, #011631 40%);
+  background: #0f172a;
 }
 
 .footer::after {
