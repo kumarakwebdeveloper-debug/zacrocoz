@@ -415,15 +415,19 @@ main {
   overflow: hidden;
 }
 
+.metric-card:hover{
+  background-color: #1f2f49;
+}
+
 .metric-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
+  /* background: radial-gradient(
     circle at 0 0,
     var(--header-gold-soft),
     transparent
-  );
+  ); */
   opacity: 0.9;
   pointer-events: none;
 }
