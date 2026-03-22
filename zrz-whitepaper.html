@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZacrocoZ - ZRZ Whitepaper</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -19,6 +20,16 @@
 
 
 </head>
+
+<style>
+    ul {
+        padding-left: 0 !important;
+    }
+
+    .gold.core-values {
+        margin-top: 20px;
+    }
+</style>
 
 <body>
 
@@ -35,7 +46,7 @@
 
     <!-- Premium Sidebar -->
     <div class="sidebar">
-        <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+        <a href="index.php" class="nav-link active"><i class="fas fa-home"></i> Home</a>
         <a href="#overview" class="nav-link"><i class="fas fa-eye"></i> Overview</a>
         <a href="#vision" class="nav-link"><i class="fas fa-bullseye"></i> Vision</a>
         <a href="#principles" class="nav-link"><i class="fas fa-cogs"></i> Principles</a>
@@ -52,7 +63,7 @@
         <section class="hero pt-5 botline ptb-100">
             <div class="hero-content" style="margin-top: 80px;">
                 <h2 class="color-gold"><span class="ethno">ZacrocoZ (ZRZ)</span></h2>
-                <p class="hero-subtitle">Deliberate Design • Defined Decentralization • AI-Enhanced Blockchain</p>
+                <p class="hero-subtitle">◈ Deliberate Design ◈ Defined Decentralization ◈ AI-Enhanced Blockchain</p>
                 <div class="cta-buttons">
                     <a href="#tokenomics" class="btn btn-primary">
                         <i class="fas fa-coins"></i> View Tokenomics
@@ -73,12 +84,16 @@
                     <div class="overview-icon">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h3>ZacrocoZ (ZRZ)</h3>
-                    <p>The project integrates <strong>blockchain infrastructure</strong> with <strong>AI-assisted decision frameworks</strong>, enabling data-driven governance, optimized liquidity strategies, and measurable ecosystem development.</p>
-                    <p>The project integrates blockchain infrastructure with <strong>AI-assisted decision frameworks</strong>,
+                    <h3><span class="ethno">ZacrocoZ (ZRZ)</span></h3>
+                    <p>The project integrates <strong>blockchain infrastructure</strong> with <strong>AI-assisted
+                            decision frameworks</strong>, enabling data-driven governance, optimized liquidity
+                        strategies, and measurable ecosystem development.</p>
+                    <p>The project integrates blockchain infrastructure with <strong>AI-assisted decision
+                            frameworks</strong>,
                         enabling data-driven governance, optimized liquidity strategies, and measurable ecosystem
                         development.</p>
-                    <p>ZRZ functions as the <strong>core utility token</strong> powering participation, governance, staking rewards, and platform-based services across the ZacrocoZ ecosystem.</p>
+                    <p>ZRZ functions as the <strong>core utility token</strong> powering participation, governance,
+                        staking rewards, and platform-based services across the ZacrocoZ ecosystem.</p>
                 </div>
 
                 <div class="overview-stats">
@@ -104,7 +119,18 @@
 
                     <div class="contract-container">
                         <div class="contract-address">
-                            0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A
+                            <span id="w1" class="wallet-address" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Click to copy" onclick="copyWalletSpan(event, this, 'w1')">
+                                0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A
+                            </span>
+                            <button class="copy-btn my-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Copy address" onclick="copyWallet(event, this, 'w1')">
+                                📋
+                            </button>
+                            <a href="https://bscscan.com/address/0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A"
+                                target="_blank" class="bscscan-link" title="View on BscScan">
+                                🔗
+                            </a>
                         </div>
                         <div class="contract-label">Contract Address</div>
                     </div>
@@ -117,14 +143,15 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h4>Transparent Participation</h4>
-                    <p>ZRZ is designed to support <strong>transparent participation, accountable governance, and structured economic growth</strong> within a decentralized framework.</p>
+                    <p>ZRZ is designed to support <strong>transparent participation, accountable governance, and
+                            structured economic growth</strong> within a decentralized framework.</p>
                 </div>
             </div>
         </section>
 
 
         <!-- Vision & Mission -->
-        <section id="vision" class="section">
+        <section id="vision" class="section pt-5">
             <h2>Vision & Mission</h2>
             <div class="grid">
                 <div class="card mb-md-4">
@@ -142,13 +169,15 @@
                     </div>
                     <h3>Mission</h3>
                     <div class="mt-2 gold core-values">
-                        <ul>
+                        <ul class="ps-0">
                             <li>Establish a <strong>transparent and accountable blockchain ecosystem</strong></li>
                             <li>Deliver <strong>real functional utility for ZRZ token holders</strong></li>
                             <li>Enable <strong>AI-enhanced governance and data-driven decision making</strong></li>
-                            <li>Build a <strong>scalable digital economy capable of enduring multiple market cycles</strong></li>
+                            <li>Build a <strong>scalable digital economy capable of enduring multiple market
+                                    cycles</strong></li>
                         </ul>
-                        <p class="mt-3"><span class="ethno">ZacrocoZ</span> prioritizes <strong>long-term sustainability over short-term speculation,</strong> ensuring
+                        <p class="mt-3"><span class="ethno">ZacrocoZ</span> prioritizes <strong>long-term sustainability
+                                over short-term speculation,</strong> ensuring
                             structural integrity across all ecosystem components</p>
                     </div>
                 </div>
@@ -156,7 +185,7 @@
         </section>
 
         <!-- Core Principles -->
-        <section id="principles" class="section">
+        <section id="principles" class="section pt-5">
             <h2>Core Principles</h2>
             <div class="grid">
                 <div class="card">
@@ -172,7 +201,8 @@
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <h3>Defined Decentralization</h3>
-                    <p>Decentralization within <span class="ethno">ZacrocoZ</span> is <strong>organized and progressive,</strong> ensuring governance evolves
+                    <p>Decentralization within <span class="ethno">ZacrocoZ</span> is <strong>organized and
+                            progressive,</strong> ensuring governance evolves
                         responsibly as the ecosystem grows.</p>
                 </div>
                 <div class="card">
@@ -188,14 +218,15 @@
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3>AI-Integrated Decision Making</h3>
-                    <p>AI-driven analytical models assist governance participants by providing <strong>predictive insights for
+                    <p>AI-driven analytical models assist governance participants by providing <strong>predictive
+                            insights for
                             treasury management, liquidity distribution, and participation incentives.</strong></p>
                 </div>
             </div>
         </section>
 
         <!-- Infrastructure -->
-        <section id="infrastructure" class="section">
+        <section id="infrastructure" class="section pt-5">
             <h2>Infrastructure & AI Economy</h2>
             <div class="two-col">
                 <div class="card">
@@ -203,7 +234,8 @@
                         <i class="fas fa-server"></i>
                     </div>
                     <h4>Infrastructure Layer</h4>
-                    <p>The <span class="ethno">ZacrocoZ</span> ecosystem is designed with a <strong>modular, scalable infrastructure architecture.</strong></p>
+                    <p>The <span class="ethno">ZacrocoZ</span> ecosystem is designed with a <strong>modular, scalable
+                            infrastructure architecture.</strong></p>
                     <div class="gold core-values">
                         <ul>
                             <li>Secure BEP-20 token infrastructure</li>
@@ -232,7 +264,8 @@
             <div class="row mt-2">
                 <div class="col-md-12">
                     <div class="gold core-values">
-                        <p>These tools help balance <strong>community decisions with economic sustainability</strong>, ensuring the
+                        <p>These tools help balance <strong>community decisions with economic sustainability</strong>,
+                            ensuring the
                             ecosystem evolves through informed governance rather than speculation.</p>
                     </div>
                 </div>
@@ -242,7 +275,8 @@
         <!-- Token Utility -->
         <section id="utility" class="section pt-0">
             <h2>Token Utility</h2>
-            <p class="text-center mb-3">ZRZ is designed as a <strong>functional utility token</strong> supporting multiple ecosystem operations.</p>
+            <p class="text-center mb-3 min-txt mb-3">ZRZ is designed as a <strong>functional utility token</strong>
+                supporting multiple ecosystem operations.</p>
             <div class="grid">
                 <div class="card">
                     <div class="card-icon">
@@ -289,18 +323,20 @@
                             <li>decentralized platform services</li>
                         </ul>
                     </div>
-                    <p class="mt-3">The objective is to support a <strong>growing ecosystem of decentralized tools and services</strong>
+                    <p class="mt-3">The objective is to support a <strong>growing ecosystem of decentralized tools and
+                            services</strong>
                         powered by ZRZ.</p>
                 </div>
             </div>
         </section>
 
         <!-- Tokenomics -->
-        <section id="tokenomics" class="section">
+        <section id="tokenomics" class="section pt-5">
             <h2>Tokenomics & Allocation</h2>
 
             <div class="tokenomics-intro">
-                <p>ZRZ follows a structured allocation model designed for <strong>transparency</strong>, <strong>liquidity strength</strong>, and <strong>sustainable ecosystem development</strong>.</p>
+                <p>ZRZ follows a structured allocation model designed for <strong>transparency</strong>,
+                    <strong>liquidity strength</strong>, and <strong>sustainable ecosystem development</strong>.</p>
                 <div class="total-supply">
                     <i class="fas fa-lock"></i>
                     <span>The total supply is permanently capped at <strong>110,000,000 ZRZ</strong></span>
@@ -377,7 +413,8 @@
             </div>
 
             <div class="tokenomics-footer">
-                <p>ZRZ tokenomics are designed to prioritize <strong>liquidity depth</strong>, <strong>treasury transparency</strong>, and <strong>sustainable growth</strong>.</p>
+                <p>ZRZ tokenomics are designed to prioritize <strong>liquidity depth</strong>, <strong>treasury
+                        transparency</strong>, and <strong>sustainable growth</strong>.</p>
             </div>
         </section>
 
@@ -386,7 +423,8 @@
             <h2>Liquidity Deployment Phases</h2>
 
             <div class="liquidity-intro">
-                <p>Liquidity is deployed <strong>gradually</strong> to ensure <strong>market stability</strong> and <strong>capital efficiency</strong>.</p>
+                <p>Liquidity is deployed <strong>gradually</strong> to ensure <strong>market stability</strong> and
+                    <strong>capital efficiency</strong>.</p>
             </div>
 
             <div class="liquidity-timeline">
@@ -434,19 +472,22 @@
             <div class="liquidity-footer">
                 <div class="transparency-badge">
                     <i class="fas fa-eye"></i>
-                    <span>All operational wallets are publicly visible on BNB Smart Chain, ensuring <strong>full transparency</strong>.</span>
+                    <span>All operational wallets are publicly visible on BNB Smart Chain, ensuring <strong>full
+                            transparency</strong>.</span>
                 </div>
             </div>
         </section>
 
 
         <!-- Governance -->
-        <section id="governance" class="section pb-0">
+        <section id="governance" class="section pb-0 pt-5">
             <h2>Governance Model</h2>
 
             <div class="governance-header">
-                <p class="governance-subtitle mb-2">ZacrocoZ introduces a <strong>Hybrid DAO-Ready Governance Structure.</strong></p>
-                <p class="governance-subtitle mb-1">Governance authority evolves progressively as the ecosystem matures.</p>
+                <p class="governance-subtitle mb-2">ZacrocoZ introduces a <strong>Hybrid DAO-Ready Governance
+                        Structure.</strong></p>
+                <p class="governance-subtitle mb-1">Governance authority evolves progressively as the ecosystem matures.
+                </p>
             </div>
 
             <div class="governance-features">
@@ -467,7 +508,8 @@
                         </div>
                         <div class="feature-content">
                             <h3>Token Voting</h3>
-                            <p>Voting power is determined by <strong>staked ZRZ tokens,</strong> encouraging long-term alignmen</p>
+                            <p>Voting power is determined by <strong>staked ZRZ tokens,</strong> encouraging long-term
+                                alignmen</p>
                         </div>
                     </div>
                     <div class="gov-feature">
@@ -497,7 +539,8 @@
                         </div>
                         <div class="feature-content">
                             <h3>Treasury Governance</h3>
-                            <p>Treasury allocations and ecosystem funding may be governed through structured proposals and
+                            <p>Treasury allocations and ecosystem funding may be governed through structured proposals
+                                and
                                 voting.</p>
                         </div>
                     </div>
@@ -513,65 +556,53 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="governance-key-metrics">
-                <div class="metric">
-                    <div class="metric-value">100%</div>
-                    <span>On-Chain Execution</span>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">ZRZ Weighted</div>
-                    <span>Voting Power</span>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">Real Time</div>
-                    <span>Transparency</span>
-                </div>
-            </div> -->
         </section>
 
 
         <!-- Security -->
         <section id="security" class="section pt-0">
             <h2>Security & Trust</h2>
-            <p class="text-center">Security and transparency are fundamental to the <span class="ethno">ZacrocoZ</span> ecosystem</p>
+            <p class="text-center min-txt">Security and transparency are fundamental to the <span
+                    class="ethno">ZacrocoZ</span> ecosystem</p>
             <ul class="security">
                 <li>
                     <div class="security-icon">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h4 class="color-gold">Smart Contract Audit</h4>
+                    <h3 class="color-gold">Smart Contract Audit</h3>
                     <p>Independent smart contract audit planned prior to major ecosystem expansion</p>
                 </li>
                 <li>
                     <div class="security-icon">
                         <i class="fas fa-percent"></i>
                     </div>
-                    <h4 class="color-gold">Zero Transaction Tax</h4>
+                    <h3 class="color-gold">Zero Transaction Tax</h3>
                     <p>ZRZ transactions carry 0% buy or sell tax, ensuring transparent token transfers</p>
                 </li>
                 <li>
                     <div class="security-icon">
                         <i class="fas fa-lock"></i>
                     </div>
-                    <h4 class="color-gold">Liquidity Lock Structure</h4>
-                    <p></p>All liquidity deployments follow 3-year lock schedules, preventing sudden liquidity withdrawals.
+                    <h3 class="color-gold">Liquidity Lock Structure</h3>
+                    <p></p>All liquidity deployments follow 3-year lock schedules, preventing sudden liquidity
+                    withdrawals.
                 </li>
                 <li>
                     <div class="security-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h4 class="color-gold">Public Wallet Transparency</h4>
+                    <h3 class="color-gold">Public Wallet Transparency</h3>
                     <p>All operational wallets are visible on-chain and independently verifiable.</p>
                 </li>
             </ul>
         </section>
 
-        <section id="community" class="section">
+        <section id="community" class="section pt-5">
             <h2>Community & Social Ecosystem</h2>
 
             <div class="community-intro">
-                <p>Community participation forms the <strong>foundation</strong> of the ZacrocoZ ecosystem.</p>
+                <p class="min-txt">Community participation forms the <strong>foundation</strong> of the ZacrocoZ
+                    ecosystem.</p>
             </div>
 
             <div class="social-table-container">
@@ -692,7 +723,8 @@
             </div>
 
             <div class="community-footer">
-                <p>Community members contribute to ecosystem growth through participation, governance involvement, and development support</p>
+                <p>Community members contribute to ecosystem growth through participation, governance involvement, and
+                    development support</p>
             </div>
         </section>
 
@@ -701,7 +733,8 @@
             <h2>Treasury & Operational Management</h2>
 
             <div class="governance-header mb-2">
-                <p class="governance-subtitle mb-2">Treasury operations are structured to ensure <strong>responsible financial management and
+                <p class="governance-subtitle mb-2 min-txt">Treasury operations are structured to ensure
+                    <strong>responsible financial management and
                         ecosystem longevity.</strong></p>
             </div>
 
@@ -723,20 +756,6 @@
                 </div>
             </div>
 
-            <!-- <div class="governance-key-metrics">
-                <div class="metric">
-                    <div class="metric-value">100%</div>
-                    <span>On-Chain Execution</span>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">ZRZ Weighted</div>
-                    <span>Voting Power</span>
-                </div>
-                <div class="metric">
-                    <div class="metric-value">Real Time</div>
-                    <span>Transparency</span>
-                </div>
-            </div> -->
         </section>
 
         <!-- Roadmap -->
@@ -751,12 +770,14 @@
                     </div>
                     <div class="phase-content">
                         <h3>Phase 1 – Foundation</h3>
-                        <ul>
-                            <li>✅ Smart contract deployment</li>
-                            <li>✅ Independent contract audit</li>
-                            <li>🔄 Community launch and ecosystem onboarding</li>
-                            <li>🔒 Initial liquidity deployment — <strong>18.18%</strong> with 3-year lock</li>
-                        </ul>
+                        <div class="gold core-values">
+                            <ul>
+                                <li>Smart contract deployment</li>
+                                <li>Independent contract audit</li>
+                                <li>Community launch and ecosystem onboarding</li>
+                                <li>Initial liquidity deployment — <strong>18.18%</strong> with 3-year lock</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -767,12 +788,14 @@
                     </div>
                     <div class="phase-content">
                         <h3>Phase 2 – Early Growth</h3>
-                        <ul>
-                            <li>🔄 Additional liquidity deployment — <strong>9.09%</strong></li>
-                            <li>🔄 Staking reward activation</li>
-                            <li>🔄 Governance preparation framework</li>
-                            <li>🔄 Community incentive programs</li>
-                        </ul>
+                        <div class="gold core-values">
+                            <ul>
+                                <li>Additional liquidity deployment — <strong>9.09%</strong></li>
+                                <li>Staking reward activation</li>
+                                <li>Governance preparation framework</li>
+                                <li>Community incentive programs</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -783,12 +806,14 @@
                     </div>
                     <div class="phase-content">
                         <h3>Phase 3 – Platform Activation</h3>
-                        <ul>
-                            <li>🔄 AI-assisted governance dashboards</li>
-                            <li>🔄 Platform tool releases</li>
-                            <li>🔄 Liquidity expansion — <strong>9.09%</strong></li>
-                            <li>🔄 Strategic ecosystem partnerships</li>
-                        </ul>
+                        <div class="gold core-values">
+                            <ul>
+                                <li>AI-assisted governance dashboards</li>
+                                <li>Platform tool releases</li>
+                                <li>Liquidity expansion — <strong>9.09%</strong></li>
+                                <li>Strategic ecosystem partnerships</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -799,11 +824,13 @@
                     </div>
                     <div class="phase-content">
                         <h3>Phase 4 – Global Expansion</h3>
-                        <ul>
-                            <li>🔄 Final liquidity deployment — <strong>4.55%</strong></li>
-                            <li>🔄 Governance council formation</li>
-                            <li>🔄 Cross-chain infrastructure preparation</li>
-                        </ul>
+                        <div class="gold core-values">
+                            <ul>
+                                <li>Final liquidity deployment — <strong>4.55%</strong></li>
+                                <li>Governance council formation</li>
+                                <li>Cross-chain infrastructure preparation</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -814,24 +841,24 @@
                     </div>
                     <div class="phase-content">
                         <h3>Phase 5 – Long-Term Sustainability</h3>
-                        <ul>
-                            <li>🔄 Advanced staking models</li>
-                            <li>🔄 AI-assisted treasury optimization</li>
-                            <li>🔄 Cross-chain ecosystem expansion</li>
-                            <li>🔄 Continuous platform innovation</li>
-                        </ul>
+                        <div class="gold core-values">
+                            <ul>
+                                <li>Advanced staking models</li>
+                                <li>AI-assisted treasury optimization</li>
+                                <li>Cross-chain ecosystem expansion</li>
+                                <li>Continuous platform innovation</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
         <section id="manifesto" class="section pt-0">
             <h2>Manifesto Highlights</h2>
 
             <div class="manifesto-container">
                 <div class="manifesto-intro">
-                    <p>ZacrocoZ operates under several core philosophical principles:</p>
+                    <p class="min-txt">ZacrocoZ operates under several core philosophical principles:</p>
                 </div>
 
                 <div class="manifesto-list">
@@ -887,13 +914,12 @@
                 </div>
             </div>
         </section>
-        <section id="closing" class="section closing-hero">
+        <section id="closing" class="section closing-hero pt-0">
             <div class="closing-content">
-                
-
                 <h2>Closing Statement</h2>
-                <p class="closing-lead">
-                    ZacrocoZ (ZRZ) represents a <strong>structured approach</strong> to decentralized ecosystems,
+                <p class="closing-lead min-txt">
+                    <span class="ethno">ZacrocoZ (ZRZ)</span> represents a <strong>structured approach</strong> to
+                    decentralized ecosystems,
                     combining transparent token economics, AI-assisted governance insights,
                     and community-driven participation.
                 </p>
@@ -910,10 +936,12 @@
                 </div>
 
                 <div class="closing-mantra">
-                    <p>ZRZ is designed not as a speculative token, but as a <strong>long-term digital ecosystem</strong>
+                    <p class="min-txt">ZRZ is designed not as a speculative token, but as a <strong>long-term digital
+                            ecosystem</strong>
                         built for stability, participation, and measurable growth.</p>
                     <div>
-                        <p> <strong>ZRZ — Deliberate by Design. Defined in Decentralization.</strong></p>
+                        <p class="min-txt"> <strong>ZRZ — Deliberate by Design. Defined in Decentralization.</strong>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -921,77 +949,84 @@
 
 
     </div>
-     <!-- Footer Section Start -->
-        <footer class="footer relative">
-            <div class="container">
-                <div class="footer-content pt-100 pb-70">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-logo wow fadeInUp">
-                                <a href="index.html"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
-                                <ul class="footer-social">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
 
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-1">
-                                <h3 class="footer-title">Explore</h3>
-                                <ul class="footer-link">
-                                    <li><a href="#">Explore work</a></li>
-                                </ul>
-                            </div>
-                        </div>
+        function copyWalletSpan(event, span, walletId) {
+            event.preventDefault();
+            event.stopPropagation();
 
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-2">
-                                <h3 class="footer-title">Navigation</h3>
-                                <ul class="footer-link">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Explore</a></li>
-                                </ul>
-                            </div>
-                        </div>
+            const walletText = document.getElementById(walletId).innerText.trim();
+            copyWithTooltip(walletText, span);
+        }
 
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-3">
-                                <h3 class="footer-title">Latest Updates</h3>
-                                <form class="form-group">
-                                    <input class="form-control" type="text" placeholder="Your Email Address"
-                                        required="">
-                                    <button class="btn-small" type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        function copyWallet(event, button, walletId) {
+            event.preventDefault();
+            event.stopPropagation();
 
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-7">
-                            <div class="copyright-text">
-                                <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
-                            </div>
-                        </div>
+            const walletText = document.getElementById(walletId).innerText.trim();
+            copyWithTooltip(walletText, button);
+        }
 
-                        <div class="col-md-12 col-lg-5">
-                            <div class="copyright-link">
-                                <ul>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer Section End -->
+        function copyWithTooltip(text, element) {
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function () {
+                    showCopiedTooltip(element);
+                }).catch(function () {
+                    fallbackCopyTooltip(text, element);
+                });
+                return;
+            }
 
+            fallbackCopyTooltip(text, element);
+        }
+
+        function fallbackCopyTooltip(text, element) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            textArea.style.left = "-999999px";
+            textArea.style.top = "-999999px";
+            textArea.style.opacity = "0";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            const successful = document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            if (successful) {
+                showCopiedTooltip(element);
+            }
+        }
+
+        function showCopiedTooltip(element) {
+            const tooltip = bootstrap.Tooltip.getInstance(element);
+            const originalTitle = element.getAttribute('data-original-title') || element.getAttribute('title');
+
+            if (!element.getAttribute('data-original-title')) {
+                element.setAttribute('data-original-title', originalTitle);
+            }
+
+            element.title = '✅ Text Copied!';
+            tooltip.show();
+
+            element.style.background = 'rgba(81, 207, 102, 0.3)';
+            element.style.transform = 'scale(1.03)';
+
+            setTimeout(function () {
+                element.title = element.getAttribute('data-original-title');
+                element.style.background = '';
+                element.style.transform = '';
+                tooltip.hide();
+            }, 2500);
+        }
+    </script>
     <!-- Enhanced Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
@@ -1079,7 +1114,7 @@
 
         // Smooth Scrolling & Active Nav
         document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 const target = document.querySelector(targetId);
@@ -1131,5 +1166,6 @@
     <script src="js/particle.min.js"></script>
 
 </body>
+
 
 </html>
