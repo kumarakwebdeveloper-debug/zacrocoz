@@ -342,6 +342,13 @@ main {
   font-size:14px;
 }
 
+.overview-stats:hover,
+.card:hover {
+  border-color: #d4af3747 !important;
+  box-shadow: none !important;
+  background-color: #0f172a;
+}
+
 .hero-links {
   display: flex;
   flex-wrap: wrap;
