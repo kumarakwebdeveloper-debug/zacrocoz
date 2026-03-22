@@ -12,10 +12,11 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/trans-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <style>
-     h2 {
+    h2 {
         font-size: 32px !important;
     }
 
@@ -33,10 +34,17 @@
         background: #0f172a;
     }
 
-    .sub-page-banner::after{
+    .sub-page-banner::after {
         background-image: none;
     }
-    #metrics,#contract,#supply,.reveal,.liquidity-infra,#governance,.verification-summary{
+
+    #metrics,
+    #contract,
+    #supply,
+    .reveal,
+    .liquidity-infra,
+    #governance,
+    .verification-summary {
         position: relative;
         z-index: 999;
     }
@@ -119,6 +127,9 @@
         <div id="google_translate_element" style="display:none;"></div>
 
     </header>
+
+    <div id="copy-alert" class="copy-alert">Wallet Copied!</div>
+
     <div class="bg-gradient"></div>
 
     <section class="sub-page-banner botline relative">
@@ -127,7 +138,7 @@
                 <div class="col-md-12 wow fadeInUp animated">
                     <div class="page-banner text-center">
                         <h1 class="sub-banner-title">Transparency Dashboard</h1>
-                        
+
                     </div>
                 </div>
             </div>
@@ -141,7 +152,8 @@
             </video>
             <div class="hero-left">
                 <!-- <span class="pill">Transparency Dashboard</span> -->
-                <h2 class="color-gold mt-2 fs"><span class="ethno">ZacrocoZ (ZRZ)</span> Transparency & Tokenomics Dashboard</h2>
+                <h2 class="color-gold mt-2 fs"><span class="ethno">ZacrocoZ (ZRZ)</span> Transparency & Tokenomics
+                    Dashboard</h2>
                 <h4 class="my-3 color-gold">Deliberate Design. <span>Defined Decentralization.</span></h4>
                 <p class="hero-sub">
                     ZRZ tokenomics engineered for stability, accountability, and long‑term ecosystem growth.
@@ -320,8 +332,10 @@
                             <td>40.91%</td>
                             <td>Market stability, LP depth</td>
                             <td>
-                                <span id="w1" onclick="copyWallet('w1')">0x23E9E929eEd2Df8D191FBA4ff899E1d58cb2C380</span>
+                                <span id="w1" onclick="copyWallet('w1')"
+                                    title="Copy to Clipboard ?">0x23E9E929eEd2Df8D191FBA4ff899E1d58cb2C380</span>
                                 <button onclick="copyWallet('w1')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -331,8 +345,10 @@
                             <td>18.18%</td>
                             <td>Core dev, audits, infrastructure, governance</td>
                             <td>
-                                <span id="w2" onclick="copyWallet('w2')">0x61F5274033475775700bA67073Da00de33f257e0</span>
+                                <span id="w2" onclick="copyWallet('w2')"
+                                    title="Copy to Clipboard ?">0x61F5274033475775700bA67073Da00de33f257e0</span>
                                 <button onclick="copyWallet('w2')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -342,8 +358,10 @@
                             <td>13.63%</td>
                             <td>Community incentives, partnerships, platform growth</td>
                             <td>
-                                <span id="w3" onclick="copyWallet('w3')">0x255095639Dde3393390c14d8c3bE67315E06aC37</span>
+                                <span id="w3" onclick="copyWallet('w3')"
+                                    title="Copy to Clipboard ?">0x255095639Dde3393390c14d8c3bE67315E06aC37</span>
                                 <button onclick="copyWallet('w3')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -353,8 +371,10 @@
                             <td>13.63%</td>
                             <td>Exchange listings, campaigns, visibility</td>
                             <td>
-                                <span id="w4" onclick="copyWallet('w4')">0x4a2BA54328972C1a5b8B7B19723bd18434F48621</span>
+                                <span id="w4" onclick="copyWallet('w4')"
+                                    title="Copy to Clipboard ?">0x4a2BA54328972C1a5b8B7B19723bd18434F48621</span>
                                 <button onclick="copyWallet('w4')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -364,8 +384,10 @@
                             <td>9.09%</td>
                             <td>Emergency support, future scaling</td>
                             <td>
-                                <span id="w5" onclick="copyWallet('w5')">0x3fFD564cCc45413296caDE8D2FD61FA71c59194f</span>
+                                <span id="w5" onclick="copyWallet('w5')"
+                                    title="Copy to Clipboard ?">0x3fFD564cCc45413296caDE8D2FD61FA71c59194f</span>
                                 <button onclick="copyWallet('w5')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -375,8 +397,10 @@
                             <td>4.55%</td>
                             <td>Staking rewards, governance incentives</td>
                             <td>
-                                <span id="w6" onclick="copyWallet('w6')">0xdB847EFE1557747CE909269bb035e0e5AcF476Ec</span>
+                                <span id="w6" onclick="copyWallet('w6')"
+                                    title="Copy to Clipboard ?">0xdB847EFE1557747CE909269bb035e0e5AcF476Ec</span>
                                 <button onclick="copyWallet('w6')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -386,8 +410,10 @@
                             <td>---</td>
                             <td>Treasury approvals, liquidity authorization, ecosystem fund security</td>
                             <td>
-                                <span id="w6" onclick="copyWallet('w6')">0x752eE5486021007e821C5D9a776fb619BDC615ae</span>
-                                <button onclick="copyWallet('w6')">📋</button>
+                                <span id="w7" onclick="copyWallet('w7')"
+                                    title="Copy to Clipboard ?">0x752eE5486021007e821C5D9a776fb619BDC615ae</span>
+                                <button onclick="copyWallet('w7')">📋</button>
+                                <a href="https://bscscan.com/" class="ms-2"><i class="fa fa-link" aria-hidden="true"></i></a>
                             </td>
                         </tr>
 
@@ -512,8 +538,10 @@
                 </div>
 
                 <div class="summary-tagline">
-                    <p>Critical treasury and liquidity operations are secured through a multi-signature wallet requiring multiple approvals.</p>
-                    <p>This eliminates single-point control risk and ensures institutional-grade operational security.</p>
+                    <p>Critical treasury and liquidity operations are secured through a multi-signature wallet requiring
+                        multiple approvals.</p>
+                    <p>This eliminates single-point control risk and ensures institutional-grade operational security.
+                    </p>
                 </div>
             </div>
         </section>
@@ -583,98 +611,90 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- FINAL STRIP -->
-        <!-- <section class="section final-strip">
-            <h2>Engineered for Trust</h2>
-            <p>
-                ZRZ builds investor confidence through radical on‑chain transparency, not promises.
-            </p>
-            <div class="hero-actions">
-                <a href="#metrics" class="btn-primary">Explore Dashboard</a>
-                <a href="#" class="btn-secondary">Download Whitepaper</a>
-            </div>
-        </section> -->
     </main>
 
-     <!-- Footer Section Start -->
-        <footer class="footer relative">
-            <div class="container">
-                <div class="footer-content pt-100 pb-70">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-logo wow fadeInUp">
-                                <a href="index.php"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
-                                <ul class="footer-social">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-1">
-                                <h3 class="footer-title">Explore</h3>
-                                <ul class="footer-link">
-                                    <li><a href="#">Explore work</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-2">
-                                <h3 class="footer-title">Navigation</h3>
-                                <ul class="footer-link">
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="#">Explore</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-3">
-                                <h3 class="footer-title">Latest Updates</h3>
-                                <form class="form-group">
-                                    <input class="form-control" type="text" placeholder="Your Email Address"
-                                        required="">
-                                    <button class="btn-small" type="submit">Subscribe</button>
-                                </form>
-                            </div>
+    <!-- Footer Section Start -->
+    <footer class="footer relative">
+        <div class="container">
+            <div class="footer-content pt-100 pb-70">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-logo wow fadeInUp">
+                            <a href="index.php"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-7">
-                            <div class="copyright-text">
-                                <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
-                            </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-box wow fadeInUp delay-1">
+                            <h3 class="footer-title">Explore</h3>
+                            <ul class="footer-link">
+                                <li><a href="#">Explore work</a></li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <div class="col-md-12 col-lg-5">
-                            <div class="copyright-link">
-                                <ul>
-                                    <li><a href="privacy-policy.php">Privacy Policy</a></li>
-                                    <li><a href="terms-conditions.php">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-box wow fadeInUp delay-2">
+                            <h3 class="footer-title">Navigation</h3>
+                            <ul class="footer-link">
+                                <li><a href="index.php">Home</a></li>
+                                <li><a href="#">Explore</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="footer-box wow fadeInUp delay-3">
+                            <h3 class="footer-title">Latest Updates</h3>
+                            <form class="form-group">
+                                <input class="form-control" type="text" placeholder="Your Email Address" required="">
+                                <button class="btn-small" type="submit">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Footer Section End -->
+
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 col-lg-7">
+                        <div class="copyright-text">
+                            <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-5">
+                        <div class="copyright-link">
+                            <ul>
+                                <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                                <li><a href="terms-conditions.php">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
 
     <script>
         function copyWallet(id) {
             let text = document.getElementById(id).innerText;
             navigator.clipboard.writeText(text);
-            alert("Wallet copied!");
+
+            let alertBox = document.getElementById("copy-alert");
+            alertBox.classList.add("show");
+
+            setTimeout(() => {
+                alertBox.classList.remove("show");
+            }, 2000);
         }
     </script>
 
