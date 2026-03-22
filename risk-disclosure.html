@@ -75,24 +75,33 @@
         }
 
         .sub-page-banner.relative {
-            background-image: url('images/risk-disclosure.avif') !important;
+            /* background-image: url('images/risk-disclosure.avif') !important; */
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             /* margin-top: 100px; */
 
         }
-        .sub-page-banner::before{
+
+        .sub-page-banner::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgb(10 37 64 / 59%);
+            /* background-color: rgb(10 37 64 / 59%); */
         }
+
         .order_sm-2 {
             margin-top: 20px;
+        }
+
+        .hero {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 
@@ -109,103 +118,92 @@
 
 
     <header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
+        <div class="container">
+            <div class="row flex-align">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
+                        </a>
+                    </div>
                 </div>
 
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
-                </div>
-
-                <div class="main-menu">
-
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">White Paper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                            <li>
-                                <a href="javascript:void(0)">Explore</a>
-                                <ul class="dropdown-content">
-                                    <li><a href="security.html">Security</a></li>
-                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><a href="governance-model.html">Governance Model</a></li>
-                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="community-connect.html">Community & Connect</a></li>
-                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="btn btn-outline-white btn-sm py-2 px-2">Buy ZRZ</a></li>
-                        </ul>
+                <div class="col-xl-9 col-lg-9 col-md-9">
+                    <div class="menu-toggle">
+                        <span></span>
                     </div>
 
-                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-box">
-                        <select class="lang-box" onchange="setLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="zh-CN">中文 (Chinese)</option>
-                            <option value="es">Español</option>
-                            <option value="pt">Português</option>
-                            <option value="ru">Русский</option>
-                            <option value="tr">Türkçe</option>
-                            <option value="ko">한국어</option>
-                            <option value="ja">日本語</option>
-                            <option value="el">Ελληνικά</option>
-                            <option value="hi">हिंदी</option>
-                        </select>
+                    <div class="menu-search">
+                        <a href="javascript:void(0)" class="search">
+                            <img src="images/search.png" alt="search">
+                        </a>
                     </div>
 
+                    <div class="main-menu">
+
+                        <!-- NAV MENU -->
+                        <div class="nav-menu">
+                            <ul>
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="zrz-whitepaper.html">White Paper</a></li>
+                                <li><a href="transparency-dashboard.html">Transparency</a></li>
+
+                                <li>
+                                    <a href="javascript:void(0)">Explore</a>
+                                    <ul class="dropdown-content">
+                                        <li><a href="security.html">Security</a></li>
+                                        <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
+                                        <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
+                                        <li><a href="governance-model.html">Governance Model</a></li>
+                                        <li><a href="roadmap-future-growth.html">Roadmap</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="community-connect.html">Community & Connect</a></li>
+                                        <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
+                                        <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+                                        <li><a href="utility-clarification.html">Utility Clarification</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#" class="btn btn-outline-white btn-sm py-2 px-2">Buy ZRZ</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 🌐 CUSTOM LANGUAGE SELECT -->
+                        <div class="lang-box">
+                            <select class="lang-box" onchange="setLanguage(this.value)">
+                                <option value="en">English</option>
+                                <option value="zh-CN">中文 (Chinese)</option>
+                                <option value="es">Español</option>
+                                <option value="pt">Português</option>
+                                <option value="ru">Русский</option>
+                                <option value="tr">Türkçe</option>
+                                <option value="ko">한국어</option>
+                                <option value="ja">日本語</option>
+                                <option value="el">Ελληνικά</option>
+                                <option value="hi">हिंदी</option>
+                            </select>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
+        <!-- HIDDEN GOOGLE TRANSLATE -->
+        <div id="google_translate_element" style="display:none;"></div>
 
-</header>
+    </header>
 
 
     <!-- Start Of Main Div -->
     <div class="main">
 
         <!-- Subpage Banner Start -->
-        <section class="sub-page-banner relative">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 wow fadeInLeft animated">
-                        <div class="page-banner text-center">
-                            <h1 class="sub-banner-title">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span></h1>
-                            <!-- <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li>Risk Disclosure</li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="hero text-center botline border-bottom border-gold">
+            <h1 class="sub-banner-title mb-0">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span></h1>
+
         </section>
         <!-- Subpage Banner End -->
 
@@ -213,23 +211,26 @@
         <!-- About Section Start -->
         <section class="about-us ptb-100 botline primary-color">
             <div class="container-fluid">
-                <div class="row flex-align">
-                    <div class="col-md-9 col-lg-6 col-xl-6 order_sm-2">
+                <div class="row flex-align justify-content-center">
+                    <div class="col-md-8 order_sm-2">
                         <div class="about-detail wow fadeInUp">
                             <div class="heading-part">
-                                <h2 class="mb-2 color-gold">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span></h2>
-                                <p>Participation in blockchain ecosystems, including the <span class="ethno">ZacrocoZ</span> platform and ZRZ token,
-                                    involves <strong>inherent and significant risks</strong>. By engaging with ZRZ, users acknowledge and accept
+                                <h2 class="mb-2 color-gold">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span>
+                                </h2>
+                                <p>Participation in blockchain ecosystems, including the <span
+                                        class="ethno">ZacrocoZ</span> platform and ZRZ token,
+                                    involves <strong>inherent and significant risks</strong>. By engaging with ZRZ,
+                                    users acknowledge and accept
                                     the following:</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-6 col-xl-6 order_sm-1">
+                    <!-- <div class="col-md-6 col-lg-6 col-xl-6 order_sm-1">
                         <div class="about-img wow fadeInRight">
                             <img src="images/risk-disclosure-2.avif" alt="Risk Disclosure">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -241,9 +242,13 @@
                         <div class="about-detail mv wow fadeInUp">
                             <div class="heading-part">
                                 <h3 class="mb-2 color-gold">Market Volatility Risk</h3>
-                                <p>Cryptocurrencies are inherently volatile. The value of ZRZ may experience <strong>substantial price
-                                        fluctuations</strong> due to market sentiment, liquidity, adoption rates, macroeconomic factors, or
-                                    ecosystem activity. Users should be prepared for both upward and downward price movements.</p>
+                                <p>Cryptocurrencies are inherently volatile. The value of ZRZ may experience
+                                    <strong>substantial price
+                                        fluctuations</strong> due to market sentiment, liquidity, adoption rates,
+                                    macroeconomic factors, or
+                                    ecosystem activity. Users should be prepared for both upward and downward price
+                                    movements.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -253,9 +258,12 @@
                                 <h3 class="mb-2 color-gold">Regulatory & Legal Risk</h3>
                             </div>
                             <div class="gold core-values mt-3">
-                                <p>Digital asset regulations vary by jurisdiction and may <strong>evolve unpredictably.</strong> <span class="ethno">ZacrocoZ</span> does not
-                                    guarantee regulatory approval or compliance in any specific country. Participants are
-                                    responsible for ensuring they meet all local legal requirements before interacting with ZRZ.</p>
+                                <p>Digital asset regulations vary by jurisdiction and may <strong>evolve
+                                        unpredictably.</strong> <span class="ethno">ZacrocoZ</span> does not
+                                    guarantee regulatory approval or compliance in any specific country. Participants
+                                    are
+                                    responsible for ensuring they meet all local legal requirements before interacting
+                                    with ZRZ.</p>
                             </div>
                         </div>
                     </div>
@@ -263,7 +271,8 @@
                         <div class="about-detail mv wow fadeInUp">
                             <div class="heading-part">
                                 <h3 class="mb-2 color-gold">Technology & Security Risk</h3>
-                                <p class="mt-1">Engaging with blockchain networks carries technical risks, including but not limited to:</p>
+                                <p class="mt-1">Engaging with blockchain networks carries technical risks, including but
+                                    not limited to:</p>
                             </div>
                             <div class="gold core-values mt-3">
                                 <ul>
@@ -272,7 +281,8 @@
                                     <li>Software bugs or protocol errors</li>
                                     <li>Cybersecurity threats, phishing, and hacking attempts</li>
                                 </ul>
-                                <p class="mt-1">Users must exercise caution, maintain secure wallet practices, and understand the underlying
+                                <p class="mt-1">Users must exercise caution, maintain secure wallet practices, and
+                                    understand the underlying
                                     technology.</p>
                             </div>
                         </div>
@@ -282,8 +292,10 @@
                             <div class="heading-part">
                                 <h3 class="mb-2 color-gold">Liquidity & Market Access Risk</h3>
                                 </p>
-                                <p class="mt-1">Although ZRZ implements <strong>phase-based liquidity locking,</strong> market liquidity depends on the
-                                    presence of participants. Early sales, low trading volumes, or market disruptions may limit the
+                                <p class="mt-1">Although ZRZ implements <strong>phase-based liquidity locking,</strong>
+                                    market liquidity depends on the
+                                    presence of participants. Early sales, low trading volumes, or market disruptions
+                                    may limit the
                                     ability to buy or sell tokens at desired prices.</p>
                             </div>
                         </div>
@@ -292,15 +304,19 @@
                         <div class="about-detail mv wow fadeInUp">
                             <div class="heading-part">
                                 <h3 class="mb-2 color-gold">No Guaranteed Returns</h3>
-                                <p>ZRZ is a <strong>utility token,</strong> not an investment, security, or financial instrument.</p>
+                                <p>ZRZ is a <strong>utility token,</strong> not an investment, security, or financial
+                                    instrument.</p>
                             </div>
                             <div class="gold core-values mt-2">
                                 <ul>
-                                    <li>There is <strong class="color-gold">no promise of profit, yield, or price appreciation</strong></li>
-                                    <li>Participation in staking, governance, or ecosystem programs does not constitute a
+                                    <li>There is <strong class="color-gold">no promise of profit, yield, or price
+                                            appreciation</strong></li>
+                                    <li>Participation in staking, governance, or ecosystem programs does not constitute
+                                        a
                                         guarantee of returns</li>
                                 </ul>
-                                <p class="mt-2">Users should engage <strong>only with funds they can afford to risk.</strong></p>
+                                <p class="mt-2">Users should engage <strong>only with funds they can afford to
+                                        risk.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -308,8 +324,10 @@
                         <div class="about-detail mv wow fadeInUp">
                             <div class="heading-part">
                                 <h3 class="mb-2 color-gold">Independent Responsibility</h3>
-                                <p>All decisions regarding ZRZ participation, including trading, staking, or contribution to the
-                                    ecosystem, are the <strong>sole responsibility of the user.</strong> Users are strongly encouraged to:</p>
+                                <p>All decisions regarding ZRZ participation, including trading, staking, or
+                                    contribution to the
+                                    ecosystem, are the <strong>sole responsibility of the user.</strong> Users are
+                                    strongly encouraged to:</p>
                             </div>
                             <div class="gold core-values mt-2">
                                 <ul>
@@ -324,14 +342,18 @@
                         <div class="about-detail mv wow fadeInUp">
                             <div class="heading-part">
                                 <h3 class="mb-2 color-gold">Key Principles</h3>
-                                <p><span class="ethno">ZacrocoZ</span> operates on <strong>decentralized blockchain principles.</strong></p>
+                                <p><span class="ethno">ZacrocoZ</span> operates on <strong>decentralized blockchain
+                                        principles.</strong></p>
                             </div>
                             <div class="gold core-values mt-2">
                                 <ul>
-                                    <li>ZRZ emphasizes <strong>transparency and structural integrity,</strong> but cannot eliminate market,
+                                    <li>ZRZ emphasizes <strong>transparency and structural integrity,</strong> but
+                                        cannot eliminate market,
                                         regulatory, or technological risk.</li>
-                                    <li>Participation is <strong>voluntary</strong> and carries potential for partial or total loss.</li>
-                                    <li>Users are responsible for understanding and mitigating risk <strong>before engaging</strong> with the
+                                    <li>Participation is <strong>voluntary</strong> and carries potential for partial or
+                                        total loss.</li>
+                                    <li>Users are responsible for understanding and mitigating risk <strong>before
+                                            engaging</strong> with the
                                         ecosystem.</li>
                                 </ul>
                             </div>
@@ -354,7 +376,7 @@
         </section>
 
 
-         <!-- Footer Section Start -->
+        <!-- Footer Section Start -->
         <footer class="footer relative">
             <div class="container">
                 <div class="footer-content pt-100 pb-70">
@@ -444,7 +466,7 @@
         data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
     <script>
-        (function() {
+        (function () {
             function c() {
                 var b = a.contentDocument || a.contentWindow.document;
                 if (b) {
@@ -466,8 +488,8 @@
                 if ('loading' !== document.readyState) c();
                 else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
                 else {
-                    var e = document.onreadystatechange || function() {};
-                    document.onreadystatechange = function(b) {
+                    var e = document.onreadystatechange || function () { };
+                    document.onreadystatechange = function (b) {
                         e(b);
                         'loading' !== document.readyState && (document.onreadystatechange = e, c())
                     }
@@ -524,6 +546,6 @@
             }
         });
     </script>
-</body>
+    </body>
 
 </html>
