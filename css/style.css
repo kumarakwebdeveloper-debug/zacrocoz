@@ -1422,11 +1422,13 @@ h5 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+      display: flex;
+    align-items: center;
 }
 
 .header .nav-menu > ul > li {
   display: inline-block;
-  padding: 0px 22px;
+  padding: 0px 22px 0 0;
   position: relative;
 }
 
