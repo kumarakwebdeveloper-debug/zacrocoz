@@ -267,7 +267,7 @@ main {
 
 .hero-sub {
   color: var(--text-main);
-  font-size: 14px;
+  font-size: 15px;
   /* max-width: 480px; */
   margin-bottom: 20px;
 }
@@ -333,11 +333,13 @@ main {
 
 .metric-row span:first-child {
   color: var(--text-muted);
+  font-size:14px;
 }
 
 .metric-value {
   font-weight: 600;
   color: var(--text-main);
+  font-size:14px;
 }
 
 .hero-links {
@@ -434,7 +436,7 @@ main {
 
 .metric-label {
   display: block;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-muted);
   margin-bottom: 4px;
 }
@@ -442,7 +444,7 @@ main {
 .metric-main {
   font-size: 20px;
   font-weight: 600;
-  color: var(--text-main);
+  color: var(--header-gold);
 }
 
 .metric-caption {
@@ -467,10 +469,12 @@ main {
 
 .detail-row span:first-child {
   color: var(--text-muted);
+  font-size: 14px;
 }
 
 .detail-row span:last-child {
   color: var(--text-main);
+  font-size: 14px;
 }
 
 .mono {
@@ -773,7 +777,7 @@ main {
   align-items: flex-start;
   gap: 10px;
   padding: 10px 0;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-main);
 }
 
@@ -867,7 +871,7 @@ main {
   border-radius: 12px;
   border-left: 3px solid var(--header-gold-soft);
   transition: all 0.2s ease;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-main);
   line-height: 1.4;
       width: 60%;
@@ -992,7 +996,7 @@ main {
   border-radius: 12px;
   border-left: 3px solid var(--header-gold-soft);
   transition: all 0.2s ease;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-main);
   line-height: 1.4;
 }
@@ -1037,7 +1041,7 @@ main {
 
 .stat-label {
   display: block;
-  font-size: 11px;
+  font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 4px;
 }
@@ -1064,7 +1068,7 @@ main {
   background: rgb(20 29 51);
   border-radius: 10px;
   border: 1px solid var(--header-gold-soft);
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-main);
   transition: all 0.2s ease;
 }
@@ -1086,7 +1090,7 @@ main {
   background: linear-gradient(135deg, var(--header-gold), #e6bf4a);
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   /* text-align: center; */
   padding: 12px;
