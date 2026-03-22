@@ -1903,7 +1903,7 @@ h5 {
 }
 
 .home-banner .home-banner-content {
-  max-width: 570px;
+  /* max-width: 570px; */
 }
 
 .home-banner .home-banner-content .banner-des {
@@ -5649,7 +5649,7 @@ h5 {
     padding-bottom: 80px !important;
   }
   .home-banner .home-banner-content {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin-left: auto;
     margin-right: auto;
   }
