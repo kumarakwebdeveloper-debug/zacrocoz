@@ -2,14 +2,12 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <title>ZacrocoZ</title>
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ZACROCOZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
@@ -17,264 +15,95 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-styles.css">
+</head>
 
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CONTACT</h1>
+            <h2>Connect with the ZACROCOZ Ecosystem</h2>
+            <p>Whether you're a community member, developer, partner, or supporter of the ecosystem, our team is here to
+                assist you.</p>
+            <p>Reach out through the appropriate channel below and we will respond as soon as possible.</p>
+        </div>
+    </section>
 
-    <!-- Header Start -->
-    <header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
-                    </a>
+    <!-- Contact Cards Grid -->
+    <section class="contact-grid">
+        <div class="container">
+            <div class="cards-wrapper">
+                <div class="contact-card">
+                    <h3>General Inquiries</h3>
+                    <p>For general questions, information requests, or media inquiries regarding the ZACROCOZ ecosystem.
+                    </p>
+                    <a href="mailto:info@zacrocoz.com" class="email-btn">info@zacrocoz.com</a>
                 </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
+                <div class="contact-card">
+                    <h3>Technical Support</h3>
+                    <p>For assistance related to wallets, transactions, platform usage, or technical matters.</p>
+                    <a href="mailto:support@zacrocoz.com" class="email-btn">support@zacrocoz.com</a>
                 </div>
-
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
+                <div class="contact-card">
+                    <h3>Community & Ecosystem</h3>
+                    <p>For community initiatives, collaborations, and ecosystem participation.</p>
+                    <a href="mailto:community@zacrocoz.com" class="email-btn">community@zacrocoz.com</a>
                 </div>
-
-                <div class="main-menu">
-
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <<li><a href="zrz-whitepaper.html">White Paper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
-                            <li>
-                                <a href="javascript:void(0)">Explore</a>
-                                <ul class="dropdown-content">
-                                    <li><a href="security.html">Security</a></li>
-                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><a href="governance-model.html">Governance Model</a></li>
-                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="community-connect.html">Community & Connect</a></li>
-                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="btn btn-outline-white btn-sm py-2 px-2">Buy ZRZ</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-box">
-                        <select class="lang-box" onchange="setLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="zh-CN">中文 (Chinese)</option>
-                            <option value="es">Español</option>
-                            <option value="pt">Português</option>
-                            <option value="ru">Русский</option>
-                            <option value="tr">Türkçe</option>
-                            <option value="ko">한국어</option>
-                            <option value="ja">日本語</option>
-                            <option value="el">Ελληνικά</option>
-                            <option value="hi">हिंदी</option>
-                        </select>
-                    </div>
-
+                <div class="contact-card">
+                    <h3>Partnerships</h3>
+                    <p>For strategic collaborations, integrations, and partnership opportunities.</p>
+                    <a href="mailto:partnerships@zacrocoz.com" class="email-btn">partnerships@zacrocoz.com</a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
-
-</header>
-    <!-- Header End -->
-
-
-    <!-- Start Of Main Div -->
-    <div class="main">
-
-        <!-- Subpage Banner Start -->
-        <section class="sub-page-banner relative">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 wow fadeInUp animated">
-                        <div class="page-banner text-center">
-                            <h1 class="sub-banner-title">Contact Us</h1>
-                            <!-- <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li>Contact</li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Subpage Banner End -->
-
-
-        <!-- Contact Start -->
-        <section class="contact-us pt-100 primary-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-5 col-md-12 wow fadeInLeft">
-                        <div class="contact-content">
-                            <h2 class="contact-title">Contact Us</h2>
-                            <ul>
-                                <li>
-                                    <span class="contact-icon"><img src="images/phone.png" alt="Phone Icon"></span>
-                                    <a href="tel:+91123456789" class="contact-label">+91 123 456 789</a>
-                                </li>
-                                <li>
-                                    <span class="contact-icon"><img src="images/mail.png" alt="Mail Icon"></span>
-                                    <a href="#" class="contact-label"><span class="__cf_email__" data-cfemail=""></span></a>
-                                </li>
-                                <li>
-                                    <span class="contact-icon"><img src="images/location-icon.png" alt="Location Icon"></span>
-                                    <span class="contact-label">USA</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-7 col-lg-7 col-md-12 wow fadeInRight">
-                        <div class="contact-form">
-                            <h2 class="page-heading">Leave a message here</h2>
-                            <div class="contactfrmmsg">Thank You! Your message has been sent.</div>
-                            <form method="post" class="contactfrm">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="text" class="form-control" placeholder="Name*" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="text" class="form-control" placeholder="Email*" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="text" class="form-control" placeholder="Subject*" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="text" class="form-control" placeholder="Phone*" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="text" class="form-control" placeholder="Country*" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="text" class="form-control" placeholder="State*" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <textarea class="form-control" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12">
-                                        <button type="submit" class="btn">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Footer Section Start -->
-    <footer class="footer relative">
+    <!-- Response Time & Security -->
+    <section class="info-section">
         <div class="container">
-            <div class="footer-content pt-100 pb-70">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-logo wow fadeInUp">
-                            <a href="index.php"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
-                            <ul class="footer-social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-box wow fadeInUp delay-1">
-                            <h3 class="footer-title">Explore</h3>
-                            <ul class="footer-link">
-                                <li><a href="#">Explore work</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-box wow fadeInUp delay-2">
-                            <h3 class="footer-title">Navigation</h3>
-                            <ul class="footer-link">
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="#">Explore</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-box wow fadeInUp delay-3">
-                            <h3 class="footer-title">Latest Updates</h3>
-                            <form class="form-group">
-                                <input class="form-control" type="text" placeholder="Your Email Address" required="">
-                                <button class="btn-small" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
+            <div class="info-grid">
+                <div class="info-block">
+                    <h4>Response Time</h4>
+                    <p>Our team typically responds within <strong>24–48 hours</strong>, depending on inquiry volume.</p>
+                </div>
+                <div class="info-block">
+                    <h4>Security Notice</h4>
+                    <p>ZACROCOZ will never request private keys, seed phrases, or wallet passwords through email or any
+                        communication channel.</p>
+                    <p>Always ensure official communication originates from the <strong>@zacrocoz.com</strong> domain.
+                    </p>
                 </div>
             </div>
-
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-12 col-lg-7">
-                        <div class="copyright-text">
-                            <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-lg-5">
-                        <div class="copyright-link">
-                            <ul>
-                                <li><a href="privacy-policy.php">Privacy Policy</a></li>
-                                <li><a href="terms-conditions.php">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="official-notice">
+                <h4>Official Communication</h4>
+                <p>All official communications related to the ZACROCOZ ecosystem are conducted exclusively through
+                    verified channels associated with zacrocoz.com.</p>
+                <p>If you encounter suspicious messages claiming to represent ZACROCOZ, please report them immediately.
+                </p>
             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ZACROCOZ</h3>
+                <p>Connect with the ZACROCOZ Ecosystem</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="mailto:info@zacrocoz.com" class="email-link">info@zacrocoz.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZACROCOZ. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Footer Section End -->
 
 
 
-    </div>
-    <!-- End Of Main Div -->
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -284,10 +113,6 @@
     <script src="js/script.js"></script>
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
-
-    
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    </body>
+</body>
 
 </html>

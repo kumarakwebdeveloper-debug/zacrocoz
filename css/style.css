@@ -1883,7 +1883,7 @@ h5 {
 
 .home-banner:before {
   content: "";
-  background: url(../images/home-banner-bg.png);
+  /* background: url(../images/home-banner-bg.png); */
   position: absolute;
   top: 0;
   left: 0;
@@ -4862,6 +4862,7 @@ h5 {
 
 .footer-content .footer-logo {
   margin-bottom: 30px;
+  max-width:100px;
 }
 
 .footer-content .footer-logo .footer-social {
