@@ -5955,4 +5955,19 @@ h5 {
     padding: 8px 15px;
   }
 }
+
+
+.gold.core-values.c-card__excerpt ul li:not(.wallet-item):hover {
+    background: rgba(212,175,55,0.1);
+    transform: translateX(8px);
+    padding-left: 1.5rem;
+    border-left: 3px solid #d4af37;
+}
+
+.wallet-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(212,175,55,0.3);
+    border-color: #d4af37;
+}
+
 /*# sourceMappingURL=style.css.map */
