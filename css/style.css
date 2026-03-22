@@ -2026,6 +2026,16 @@ h5 {
   }
 }
 
+
+.mybtn {
+  background: #d4af37;
+  padding: 8px !important;
+  color:#0f172a !important;
+  font-size:1rem;
+}
+.mybtn:hover {
+  background: #d4af37 !important;
+}
 .rotate-continuous,
 .rotate-continuous.dl {
   width: 180px;
