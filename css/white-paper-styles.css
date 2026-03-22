@@ -668,15 +668,15 @@ h2::after {
 }
 
 .card-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, var(--heading-gold), #f1c40f);
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--bg-primary);
   box-shadow: none;
   transition: all 0.3s ease;
@@ -701,7 +701,7 @@ h2::after {
 .card h3,
 .card h4 {
   color: var(--heading-gold);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
