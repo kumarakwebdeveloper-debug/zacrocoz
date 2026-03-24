@@ -47,7 +47,7 @@
                             </li>
 
                             <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="btn btn-outline-white btn-sm py-2 px-2">Buy ZRZ</a></li>
+                            <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
                         </ul>
                     </div>
 

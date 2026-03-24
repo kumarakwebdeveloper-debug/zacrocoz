@@ -131,7 +131,7 @@
                                 </li>
 
                                 <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="btn btn-outline-white btn-sm py-2 px-2">Buy ZRZ</a></li>
+                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
                             </ul>
                         </div>
 
@@ -171,7 +171,8 @@
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
-                            <h1 class="sub-banner-title">Community & Connect – ZacrocoZ</h1>
+                            <h1 class="sub-banner-title color-gold">Community & Connect – <span
+                                    class="ethno">ZacrocoZ</span></h1>
                             <!-- <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li>Community & Connect – ZacrocoZ</li>
@@ -185,11 +186,12 @@
         <!-- Subpage Banner End -->
         <div class="inner-pages-content">
 
-            <section class="container-fluid botline primary-color py-5 ptb-100 relative">
+            <section class="container-fluid topline primary-color py-5 ptb-100 relative">
 
                 <div class="row align-items-center">
                     <div class="col-md-8 hero-content">
-                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Join the ZacrocoZ Ecosystem</h2>
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Join the <span
+                                class="ethno">ZacrocoZ</span> Ecosystem</h2>
                         <div class="core-values mt-3">
                             <p><span class="ethno">ZacrocoZ</span> thrives on structured participation, transparency,
                                 and long-term blockchain utility. We welcome:</p>
@@ -391,77 +393,15 @@
     </div>
 
 
-    <!-- Footer Section Start -->
-    <!-- Footer Section Start -->
-    <footer class="footer relative">
-        <div class="container">
-            <div class="footer-content pt-100 pb-70">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-logo wow fadeInUp">
-                            <a href="index.html"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
-                            <ul class="footer-social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-box wow fadeInUp delay-1">
-                            <h3 class="footer-title">Explore</h3>
-                            <ul class="footer-link">
-                                <li><a href="#">Explore work</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-box wow fadeInUp delay-2">
-                            <h3 class="footer-title">Navigation</h3>
-                            <ul class="footer-link">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Explore</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="footer-box wow fadeInUp delay-3">
-                            <h3 class="footer-title">Latest Updates</h3>
-                            <form class="form-group">
-                                <input class="form-control" type="text" placeholder="Your Email Address" required="">
-                                <button class="btn-small" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-12 col-lg-7">
-                        <div class="copyright-text">
-                            <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-lg-5">
-                        <div class="copyright-link">
-                            <ul>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-    <!-- Footer Section End -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => console.error("Footer load failed:", error));
+    </script>
 
 
     </div>
@@ -661,6 +601,6 @@
             }
         });
     </script>
-</body>
+    </body>
 
 </html>

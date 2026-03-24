@@ -119,7 +119,7 @@
                                 </li>
 
                                 <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="btn btn-outline-white btn-sm py-2 px-2">Buy ZRZ</a></li>
+                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
                             </ul>
                         </div>
 
@@ -177,8 +177,8 @@
                                 <p>simple, memorable and globally recognizable.</p>
 
                                 <a href="#" class="btn btn-outline-primary py-2 px-3 mb-3">Buy ZRZ</a>
-                                <p>Built in <strong>BNB</strong> Smart chain ◈ Fixed <strong>110M Supply</strong> ◈
-                                    <strong>0% Transsaction Tax</strong> <strong>◈ Multi-Sig Secured Treasury</strong>
+                                <p>Built in <strong>BNB</strong> Smart chain <span class="color-gold">◈</span> Fixed <strong>110M Supply</strong> <span class="color-gold">◈</span> 
+                                    <strong>0% Transsaction Tax</strong> <span class="color-gold">◈</span><strong> Multi-Sig Secured Treasury</strong>
                                 </p>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
         </section>
         <!-- Home Banner Section End -->
 
-        <section class="container-fluid about-us ptb-100 primary-color zrz-hero">
+        <section class="container-fluid topline about-us ptb-100 primary-color zrz-hero">
             <div class="row align-items-center">
 
                 <!-- LEFT CONTENT -->
@@ -239,10 +239,6 @@
 
             </div>
         </section>
-
-        <style>
-
-        </style>
 
         <section class="container-fluid primary-color zrz-two pt-5 relative governance-philosophy">
             <!-- <img src="images/rags.png" alt="Rotating Image" class="rotate-continuous dl"> -->
@@ -816,9 +812,39 @@
 
                 <div class="closing-bottom">
 
-                    <p><strong>Deliberate Design. Defined Decentralization.</strong></p>
+                    <h6><strong>Deliberate Design. Defined Decentralization.</strong></h6>
 
-                    <button class="download-btn" onClick=>downloadPDF()>Download Whitepaper</button>
+                    <button class="mybtn mt-3" onclick="downloadPDF()">
+                        <i class="fa fa-file-pdf"></i> Download Whitepaper
+                    </button>
+
+                    <script>
+                        function downloadPDF() {
+                            const filePath = "./whitepaper/White-Paper.pdf";
+
+                            fetch(filePath)
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error("File not found");
+                                    }
+                                    return response.blob();
+                                })
+                                .then(blob => {
+                                    const url = window.URL.createObjectURL(blob);
+                                    const link = document.createElement("a");
+                                    link.href = url;
+                                    link.download = "White-Paper.pdf";
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    link.remove();
+                                    window.URL.revokeObjectURL(url);
+                                })
+                                .catch(error => {
+                                    alert("Download failed! Check file path.");
+                                    console.error(error);
+                                });
+                        }
+                    </script>
 
                 </div>
 
@@ -827,82 +853,15 @@
         </section>
 
         <!-- Footer Section Start -->
-        <footer class="footer relative">
-            <div class="container">
-                <div class="footer-content pt-5 pb-70">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-logo wow fadeInUp">
-                                <a href="index.html"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
-                                <ul class="footer-social d-flex">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-1">
-                                <h3 class="footer-title">Explore</h3>
-                                <ul class="footer-link">
-                                    <li><a href="security.html">Security</a></li>
-                                    <li><a href="ecosystem-utility.html">Ecosystem</a></li>
-                                    <li><a href="techonology-architecture.html">Technology Architecture</a></li>
-                                    <li><a href="governance-model.html">Governance Model</a></li>
-                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><a href="community-connect.html">Community</a></li>
-                                    <li><a href="zrz-manifesto.html">Manifesto</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-2">
-                                <h3 class="footer-title">Navigation</h3>
-                                <ul class="footer-link">
-                                    <li><a href="about-us.html">About us</a></li>
-                                     <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                                      <li><a href="transparency-dashboard.html">Transparency Dashboard</a></li>
-                                       <li><a href="contact.html">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-3">
-                                <h3 class="footer-title">Latest Updates</h3>
-                                <form class="form-group">
-                                    <input class="form-control" type="text" placeholder="Your Email Address"
-                                        required="">
-                                    <button class="btn-small" type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-7">
-                            <div class="copyright-text">
-                                <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-5">
-                            <div class="copyright-link">
-                                <ul>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => console.error("Footer load failed:", error));
+        </script>
         <!-- Footer Section End -->
 
 
@@ -928,10 +887,12 @@
     </script>
 
     <script>
-        function downloadPDF() {
-            window.location.href = "download-whitepaper.html";
-        }
+        // function downloadPDF() {
+        //     window.location.href = "download-whitepaper.html";
+        // }
 
+
+        
 
 
         const canvas = document.getElementById("blockchainCanvas");
@@ -1362,6 +1323,6 @@
             }
         });
     </script>
-</body>
+    </body>
 
 </html>

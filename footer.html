@@ -1,70 +1,100 @@
- <!-- Footer Section Start -->
-        <footer class="footer relative">
-            <div class="container">
-                <div class="footer-content pt-100 pb-70">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-logo wow fadeInUp">
-                                <a href="index.html"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
-                                <ul class="footer-social">
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
+        <!-- <div id="footer"></div>
+        <script>
+            fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => console.error("Footer load failed:", error));
+        </script> -->
+
+
+        <div class="topline">
+            <footer class="footer relative">
+                <div class="container">
+                    <div class="footer-content pt-5 pb-70">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="footer-logo wow fadeInUp">
+                                    <a href="index.html"><img src="images/logo-icons/PNG/128px flat.png" alt="logo"></a>
+                                    <ul class="footer-social d-flex">
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="footer-box wow fadeInUp delay-1">
+                                    <h3 class="footer-title color-gold">Explore</h3>
+                                    <ul class="footer-link">
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="security.html">Security</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="ecosystem-utility.html">Ecosystem</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="techonology-architecture.html">Technology Architecture</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="governance-model.html">Governance Model</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="roadmap-future-growth.html">Roadmap</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="community-connect.html">Community</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="zrz-manifesto.html">Manifesto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="footer-box wow fadeInUp delay-2">
+                                    <h3 class="footer-title color-gold">Navigation</h3>
+                                    <ul class="footer-link">
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="about-us.html">About us</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="zrz-whitepaper.html">WhitePaper</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="transparency-dashboard.html">Transparency Dashboard</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="contact.html">Contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-6 col-lg-3">
+                                <div class="footer-box wow fadeInUp delay-3">
+                                    <h3 class="footer-title color-gold">Latest Updates</h3>
+                                    <form class="form-group">
+                                        <input class="form-control" type="text" placeholder="Your Email Address"
+                                            required="">
+                                        <button class="btn-small" type="submit">Subscribe</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-1">
-                                <h3 class="footer-title">Explore</h3>
-                                <ul class="footer-link">
-                                    <li><a href="#">Explore work</a></li>
-                                </ul>
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-7">
+                                <div class="copyright-text">
+                                    <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-2">
-                                <h3 class="footer-title">Navigation</h3>
-                                <ul class="footer-link">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Explore</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="footer-box wow fadeInUp delay-3">
-                                <h3 class="footer-title">Latest Updates</h3>
-                                <form class="form-group">
-                                    <input class="form-control" type="text" placeholder="Your Email Address"
-                                        required="">
-                                    <button class="btn-small" type="submit">Subscribe</button>
-                                </form>
+                            <div class="col-md-12 col-lg-5">
+                                <div class="copyright-link">
+                                    <ul>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-7">
-                            <div class="copyright-text">
-                                <p>© <span class="ethno">ZacrocoZ</span> all Rights Reserved</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-5">
-                            <div class="copyright-link">
-                                <ul>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer Section End -->
+            </footer>
+        </div>
