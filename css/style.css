@@ -1447,8 +1447,8 @@ h5 {
 
 .header .nav-menu > ul > li > a {
   font-size: 14px;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  color: #c7ccd1;
+  /* font-family: "Montserrat", sans-serif; */
   text-transform: uppercase;
   font-weight: 600;
   display: block;
@@ -1506,7 +1506,7 @@ h5 {
 
 .header .nav-menu > ul ul li a {
   font-size: 16px;
-  color: #ffffff;
+  color: #c7ccd1;
   font-weight: 500;
   position: relative;
   text-transform: capitalize;
