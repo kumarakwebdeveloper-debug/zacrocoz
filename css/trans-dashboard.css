@@ -333,13 +333,13 @@ main {
 
 .metric-row span:first-child {
   color: var(--text-muted);
-  font-size:14px;
+  font-size: 14px;
 }
 
 .metric-value {
   font-weight: 600;
   color: var(--text-main);
-  font-size:14px;
+  font-size: 14px;
 }
 
 .overview-stats:hover,
@@ -388,10 +388,10 @@ main {
 }
 
 .section-split {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  align-items: flex-start; */
+  align-items: flex-start;
 }
 
 .section-col {
@@ -424,7 +424,7 @@ main {
   overflow: hidden;
 }
 
-.metric-card:hover{
+.metric-card:hover {
   background-color: #1f2f49;
 }
 
@@ -443,8 +443,8 @@ main {
 
 .metric-label {
   display: block;
-  font-size: 13px;
-  color: var(--text-muted);
+  font-size: 15px;
+  color: #c7ccd1;
   margin-bottom: 4px;
 }
 
@@ -455,9 +455,10 @@ main {
 }
 
 .metric-caption {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-muted);
   margin-top: 2px;
+  display: inline-block;
 }
 
 /* Details / checklist */
@@ -614,7 +615,7 @@ main {
 
 @media (max-width: 640px) {
   .section-split {
-    /* grid-template-columns: minmax(0, 1fr); */
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .nav {
@@ -769,8 +770,8 @@ main {
 }
 
 .phase-content:hover {
-    border-color: #d4af37;
-    box-shadow: none;
+  border-color: #d4af37;
+  box-shadow: none;
 }
 /* Philosophy Grid */
 .philosophy-grid {
@@ -881,7 +882,7 @@ main {
   font-size: 14px;
   color: var(--text-main);
   line-height: 1.4;
-      width: 60%;
+  width: 60%;
 }
 
 .infra-point:hover {
@@ -1127,6 +1128,4 @@ main {
   .stat-item {
     padding: 10px 12px;
   }
-
-
 }
