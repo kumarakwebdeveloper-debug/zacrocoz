@@ -346,13 +346,120 @@ h2::after {
   border-radius: 2px;
 }
 
+.vesting-component {
+  background: #0f172a;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 35px;
+  border: 1px solid #d4af3747;
+  margin: 40px 0;
+}
+
+.vesting-title {
+  font-size: 1.8em;
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.vesting-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.vesting-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 25px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.vesting-item:hover {
+  border-left-color: #d4af37;
+  transform: translateX(3px);
+  /* box-shadow: 0 10px 30px rgba(255,107,157,0.2); */
+}
+
+.vesting-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.vesting-header i {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #d4af37, #0f172a);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  color: white;
+}
+
+.vesting-header span {
+  font-weight: 700;
+  color: #feca57;
+  font-size: 1.1em;
+}
+
+.vesting-details {
+  list-style: none;
+  padding: 0;
+}
+
+.vesting-details li {
+  /* padding: 8px 0; */
+  font-size: 1.05em !important;
+  color: #c7ccd1;
+}
+
+.cliff {
+  color: #d4af37;
+}
+/* .linear { color: #4ecdc4; } */
+.controlled {
+  color: #c7ccd1;
+  /* font-style: italic;  */
+  /* background: rgba(165,94,234,0.1); */
+  /* padding: 8px 12px; */
+  border-radius: 6px;
+  /* border-left: 3px solid #a55eea; */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vesting-list {
+    grid-template-columns: 1fr;
+  }
+  .vesting-component {
+    padding: 25px 20px;
+    margin: 30px 0;
+  }
+}
+
+.security li ul li {
+  padding: 10px 32px;
+  border-radius: 6px;
+}
+
+.security li .gold.core-values ul li::before {
+  top: 20%;
+  left: 3%;
+}
+
 /* Overview Section Styles */
 .overview-hero {
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 4rem;
   margin-bottom: 4rem;
-  align-items: start;
+  align-items: center;
 }
 
 .overview-content {
@@ -1370,8 +1477,8 @@ h2::after {
   font-size: 1.45rem;
   line-height: 1.8;
   opacity: 0.96;
-  max-width: 750px;
-  margin: 0 auto 4rem;
+  /* max-width: 750px; */
+  margin: 0 auto 0.75rem;
 }
 
 .core-pillars {

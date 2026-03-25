@@ -4891,16 +4891,17 @@ h5 {
 
 .footer-content .footer-logo {
   margin-bottom: 30px;
-  max-width: 100px;
+  /* max-width: 100px; */
 }
 
 .footer-content .footer-logo .footer-social {
   margin-top: 24px;
+  flex-wrap: wrap;
 }
 
 .footer-content .footer-logo .footer-social li {
   display: inline-block;
-  padding: 0px 5px;
+  padding: 0px 7px 16px 0;
 }
 
 .footer-content .footer-logo .footer-social li:first-child {
@@ -4917,10 +4918,15 @@ h5 {
   background-color: #002248;
   font-size: 16px;
 }
+.footer-content .footer-logo .footer-social li a i{
+  color: #c7ccd1;
+}
 
 .footer-content .footer-logo .footer-social li a:hover {
-  background-color: #009fed;
-  color: #ffffff;
+  background-color: #d4af37bd;
+}
+.footer-content .footer-logo .footer-social li a:hover i {
+  color: #c7ccd1;
 }
 
 .footer-content .footer-box {

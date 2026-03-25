@@ -186,7 +186,8 @@
                                 </li>
 
                                 <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
+                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
+                                        ZRZ</a></li>
                             </ul>
                         </div>
 
@@ -245,9 +246,12 @@
                 <!-- <span class="pill">Transparency Dashboard</span> -->
                 <h2 class="color-gold mt-2 fs"><span class="ethno">ZacrocoZ (ZRZ)</span> Transparency & Tokenomics
                     Dashboard</h2>
-                <h4 class="my-3 color-gold">Deliberate Design. <span>Defined Decentralization.</span></h4>
+                <h4 class="my-3 color-gold"><strong>Fully Verifiable. Structurally Engineered. Built for Long-Term
+                        Trust.</strong></h4>
                 <p class="hero-sub">
-                    ZRZ tokenomics engineered for stability, accountability, and long‑term ecosystem growth.
+                    ZRZ is designed with complete on-chain transparency, multi-signature treasury control, and a
+                    permanently fixed supply model. Every token, wallet, and transaction is publicly verifiable —
+                    ensuring accountability, predictability, and institutional-grade integrity.
                 </p>
                 <div class="hero-actions">
                     <a href="#metrics" class="btn-primary">Open Live Dashboard</a>
@@ -286,9 +290,11 @@
                         <span class="metric-value">12,350</span>
                     </div>
                     <div class="hero-links">
-                        <a href="#" class="link-chip">View Contract · BscScan</a>
-                        <a href="#" class="link-chip">View Liquidity · PancakeSwap</a>
+                        <p><strong>Verification & Access (Investor Trust Layer)</strong></p>
+                        <a href="#" class="link-chip mt-2">View Contract · BscScan</a>
+                        <a href="#" class="link-chip">View Liquidity Pool · PancakeSwap</a>
                         <a href="#" class="link-chip">Add ZRZ to MetaMask</a>
+                        <a href="#" class="link-chip">Verify Multi-Signature Wallet (Treasury)</a>
                     </div>
                 </div>
             </div>
@@ -303,33 +309,33 @@
             <div class="metrics-grid">
                 <div class="metric-card">
                     <span class="metric-label">ZRZ Live Price</span>
+                    <span class="metric-caption">Real-time price derived from DEX liquidity pools</span><br>
                     <span class="metric-main">$0.00245</span>
-                    <span class="metric-caption">From DEX liquidity pools</span>
                 </div>
                 <div class="metric-card">
                     <span class="metric-label">Market Capitalization</span>
+                    <span class="metric-caption">Total market value based on circulating supply</span><br>
                     <span class="metric-main">$2,450,000</span>
-                    <span class="metric-caption">Circulating supply × price</span>
                 </div>
                 <div class="metric-card">
                     <span class="metric-label">Total Liquidity</span>
+                    <span class="metric-caption">Combined liquidity across supported DEX platforms</span><br>
                     <span class="metric-main">$520,000</span>
-                    <span class="metric-caption">Across supported DEXs</span>
                 </div>
                 <div class="metric-card">
                     <span class="metric-label">24H Trading Volume</span>
+                    <span class="metric-caption">Total trading activity within the last 24 hours</span><br>
                     <span class="metric-main">$145,000</span>
-                    <span class="metric-caption">Last 24 hours</span>
                 </div>
                 <div class="metric-card">
                     <span class="metric-label">Total Holders</span>
+                    <span class="metric-caption">Unique wallet addresses holding ZRZ</span>
                     <span class="metric-main">1,845</span>
-                    <span class="metric-caption">Unique addresses</span>
                 </div>
                 <div class="metric-card">
                     <span class="metric-label">Total Transactions</span>
+                    <span class="metric-caption">Cumulative on-chain ZRZ transactions</span><br>
                     <span class="metric-main">12,350</span>
-                    <span class="metric-caption">On‑chain transfers</span>
                 </div>
             </div>
         </section>
@@ -341,15 +347,19 @@
                 <p class="my-3">Immutable, verifiable, and audit‑ready smart contract designed for institutional‑grade
                     transparency.</p>
                 <div class="gold core-values">
-                    <ul class="checklist">
-                        <li>Permanently fixed supply, no minting or inflation.</li>
-                        <li>No transaction tax, blacklist, or upgradeable proxy.</li>
+                    <h6 class="color-gold">Core Contract Properties</h6>
+                    <ul class="checklist mb-3">
+                        <li>Permanently fixed supply — no minting or inflation possible.</li>
+                        <li>No transaction tax, blacklist, or hidden mechanisms.</li>
+                        <li>No upgradeable proxy — contract logic is immutable.</li>
                         <li>Entire supply minted at deployment and fully allocated.</li>
-                        <li>Optional public burn for voluntary supply reduction.</li>
+                        <li>Optional public burn mechanism for supply reduction</li>
+                        <li>Fully verifiable on-chain — no off-chain dependencies</li>
                     </ul>
+                    <p>Designed for audit readiness, transparency, and long-term structural integrity.</p>
                 </div>
             </div>
-            <div class="section-col card">
+            <div class="section-col card mt-3">
                 <div class="detail-row">
                     <span>Token Name</span>
                     <span>ZacrocoZ (ZRZ)</span>
@@ -368,15 +378,33 @@
                 </div>
                 <div class="detail-row">
                     <span>Contract Address</span>
-                    <span class="mono">
+                    <span id="c1" class="mono wallet-address me-0" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to copy" onclick="copyWalletSpan(event, this, 'c1')">
                         0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A
                     </span>
+                    <button class="copy-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to copy wallet address" onclick="copyWallet(event, this, 'c1')">
+                        📋
+                    </button>
+                    <a href="https://bscscan.com/address/0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A" target="_blank"
+                        class="bscscan-link" title="View on BscScan">
+                        🔗
+                    </a>
                 </div>
                 <div class="detail-row">
                     <span>Multi-Signature Governance Wallet</span>
-                    <span class="mono">
+                    <span id="c2" class="mono wallet-address me-0" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to copy" onclick="copyWalletSpan(event, this, 'c2')">
                         0x752eE5486021007e821C5D9a776fb619BDC615ae
                     </span>
+                    <button class="copy-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Click to copy wallet address" onclick="copyWallet(event, this, 'c2')">
+                        📋
+                    </button>
+                    <a href="https://bscscan.com/address/0x752eE5486021007e821C5D9a776fb619BDC615ae" target="_blank"
+                        class="bscscan-link" title="View on BscScan">
+                        🔗
+                    </a>
                 </div>
                 <a href="#" class="btn-outline full-width">Verify on BscScan</a>
             </div>
@@ -390,13 +418,16 @@
             </div>
             <div class="section-split">
                 <div class="gold core-values section-col mt-0">
-                    <ul class="">
-                        <li><strong>Maximum Supply:</strong> 110,000,000 ZRZ</li>
-                        <li><strong>Permanently Capped</strong> No minting; optional public burn only reduces supply
+                    <ul class=" mb-4">
+                        <li><strong class="color-gold">Maximum Supply:</strong><br> 110,000,000 ZRZ</li>
+                        <li><strong class="color-gold">Permanently Capped Supply Model</strong><br> No minting; optional
+                            public burn only reduces supply
                         </li>
-                        <li><strong>Predictable & Transparent:</strong> Ensures structural integrity, removing
-                            uncertainty of elastic supply</li>
+                        <li><strong class="color-gold">Predictable & Transparent Economics</strong><br> ZRZ removes
+                            uncertainty associated with elastic or inflationary token models, ensuring
+                            long-term supply integrity.</li>
                     </ul>
+                    <p>Supply structure is fixed, verifiable, and immutable at the contract level.</p>
                 </div>
             </div>
         </section>
@@ -412,6 +443,7 @@
                             <th>%</th>
                             <th>Purpose</th>
                             <th>Wallet</th>
+                            <th>Model</th>
                         </tr>
                     </thead>
 
@@ -421,7 +453,7 @@
                             <td>Liquidity Allocation</td>
                             <td>45,000,000</td>
                             <td>40.91%</td>
-                            <td>Market stability, LP depth</td>
+                            <td>Market stability, liquidity depth</td>
                             <td style="white-space: nowrap;">
                                 <span id="w1" class="wallet-address" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="Click to copy" onclick="copyWalletSpan(event, this, 'w1')">
@@ -436,13 +468,27 @@
                                     🔗
                                 </a>
                             </td>
+                            <td class="gold core-values">
+                                <strong>Liquidity Structure & Control</strong>
+                                <p class="ps-2">-- Liquidity allocation is permanently designated for liquidity
+                                    provisioning and is not
+                                    part of
+                                    circulating or sellable supply.</p>
+                                <p class="ps-2">-- All liquidity tokens are deployed through structured phases and
+                                    secured via
+                                    multi-signature
+                                    authorization.</p>
+                                <p class="ps-2">-- These tokens are non-discretionary and cannot be accessed outside
+                                    defined liquidity
+                                    operations.</p>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>Development</td>
                             <td>20,000,000</td>
                             <td>18.18%</td>
-                            <td>Core dev, audits, infrastructure, governance</td>
+                            <td>Core development, audits, infrastructure, governance systems</td>
 
                             <td style="white-space: nowrap;">
                                 <span id="w2" class="wallet-address" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -457,6 +503,13 @@
                                     target="_blank" class="bscscan-link" title="View on BscScan">
                                     🔗
                                 </a>
+                            </td>
+                            <td class="gold core-values">
+                                <strong>Vesting Model</strong>
+                                <ul>
+                                    <li>6-month cliff, 48-month linear vesting, Release aligned with development
+                                        milestones</li>
+                                </ul>
                             </td>
                         </tr>
 
@@ -480,13 +533,19 @@
                                     🔗
                                 </a>
                             </td>
+                            <td class="gold core-values">
+                                <strong>Vesting Model</strong>
+                                <ul>
+                                    <li>6-month cliff, 48-month linear vesting, Supports long-term ecosystem growth</li>
+                                </ul>
+                            </td>
                         </tr>
 
                         <tr>
                             <td>Marketing</td>
                             <td>15,000,000</td>
                             <td>13.63%</td>
-                            <td>Exchange listings, campaigns, visibility</td>
+                            <td>Listings, campaigns, adoption initiatives</td>
 
                             <td style="white-space: nowrap;">
                                 <span id="w4" class="wallet-address" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -501,6 +560,13 @@
                                     target="_blank" class="bscscan-link" title="View on BscScan">
                                     🔗
                                 </a>
+                            </td>
+                            <td class="gold core-values">
+                                <strong>Controlled Release Model</strong>
+                                <ul>
+                                    <li>No fixed vesting schedule, Usage-based controlled releases, Monthly allocation
+                                        limits enforced</li>
+                                </ul>
                             </td>
                         </tr>
 
@@ -525,6 +591,12 @@
                                     🔗
                                 </a>
                             </td>
+                            <td class="gold core-values">
+                                <strong>Vesting Model</strong>
+                                <ul>
+                                    <li>12-month cliff, 36-month linear vesting</li>
+                                </ul>
+                            </td>
                         </tr>
 
                         <tr>
@@ -546,6 +618,12 @@
                                     target="_blank" class="bscscan-link" title="View on BscScan">
                                     🔗
                                 </a>
+                            </td>
+                            <td class="gold core-values">
+                                <strong>Distribution Model</strong>
+                                <ul>
+                                    <li>3-month cliff, 18-month controlled release</li>
+                                </ul>
                             </td>
                         </tr>
 
@@ -639,7 +717,7 @@
                             <td>Multi-Signature Governance Wallet</td>
                             <td>---</td>
                             <td>---</td>
-                            <td>Treasury approvals, liquidity authorization, ecosystem fund security</td>
+                            <td>Treasury control, liquidity authorization, ecosystem fund protection</td>
                             <td style="white-space: nowrap;">
                                 <span id="w7" class="wallet-address" data-bs-toggle="tooltip" data-bs-placement="top"
                                     title="Click to copy" onclick="copyWalletSpan(event, this, 'w7')">
@@ -653,6 +731,14 @@
                                     target="_blank" class="bscscan-link" title="View on BscScan">
                                     🔗
                                 </a>
+                            </td>
+                            <td class="gold core-values">
+                                <strong>Security Mechanism</strong>
+                                <p class="ps-2">-- All critical treasury and liquidity actions require multiple
+                                    independent approvals
+                                    before
+                                    execution.</p>
+                                <p class="ps-2">-- No single entity has unilateral control over funds.</p>
                             </td>
                         </tr>
 
@@ -670,49 +756,47 @@
                         <div class="phase-item">
                             <span class="phase-number">01</span>
                             <div class="phase-content">
-                                <span class="phase-amount">20M ZRZ</span>
+                                <span class="phase-amount">15,000,000 ZRZ</span>
                                 <span class="phase-desc">Initial LP, 3-year lock</span>
                             </div>
                         </div>
                         <div class="phase-item">
                             <span class="phase-number">02</span>
                             <div class="phase-content">
-                                <span class="phase-amount">10M ZRZ</span>
-                                <span class="phase-desc">Early growth, 3-year lock</span>
+                                <span class="phase-amount">10,000,000 ZRZ</span>
+                                <span class="phase-desc">Growth Expansion, 3-year lock</span>
                             </div>
                         </div>
                         <div class="phase-item">
                             <span class="phase-number">03</span>
                             <div class="phase-content">
-                                <span class="phase-amount">10M ZRZ</span>
-                                <span class="phase-desc">Platform activation, 3-year lock</span>
+                                <span class="phase-amount">10,000,000 ZRZ</span>
+                                <span class="phase-desc">Platform Scaling, 3-year lock</span>
                             </div>
                         </div>
                         <div class="phase-item">
                             <span class="phase-number">04</span>
                             <div class="phase-content">
-                                <span class="phase-amount">5M ZRZ</span>
+                                <span class="phase-amount">10,000,000 ZRZ</span>
                                 <span class="phase-desc">Global expansion, 3-year lock</span>
                             </div>
                         </div>
                     </div>
+                    <p class="mt-4">👉 Each phase operates independently and is permanently dedicated to liquidity
+                        provisioning.</p>
                 </div>
 
                 <div class="philosophy-section">
                     <h3 class="section-gold">Transparency Philosophy</h3>
-                    <div class="philosophy-grid">
-                        <div class="philo-point">
-                            <span class="philo-icon">🔗</span>
-                            <span>Every wallet fully public and verifiable on-chain</span>
-                        </div>
-                        <div class="philo-point">
-                            <span class="philo-icon">📊</span>
-                            <span>Transfers are fully traceable</span>
-                        </div>
-                        <div class="philo-point">
-                            <span class="philo-icon">🚫</span>
-                            <span>No hidden reserves</span>
-                        </div>
+                    <div class="philosophy-grid gold core-values">
+                        <ul>
+                            <li>All wallets are publicly visible and verifiable on-chain</li>
+                            <li>Every transaction is traceable in real-time</li>
+                            <li>No hidden allocations or undisclosed reserves</li>
+                            <li>All tokens follow structured vesting or controlled release</li>
+                            <li>No large, unpredictable unlock events</li>
+                        </ul>
+                        <p class="mt-3">👉 Transparency is enforced through blockchain, not claims.</p>
                     </div>
                 </div>
             </div>
@@ -725,14 +809,24 @@
                 <h2 class="color-gold">Liquidity Infrastructure</h2>
             </div>
 
-            <div class="infra-points">
-                <div class="infra-point">
+            <div class="infra-points gold core-values">
+                <ul>
+                    <li>45,000,000 ZRZ permanently allocated to liquidity</li>
+                    <li>Phase-based deployment ensures controlled market expansion</li>
+                    <li>Each phase independently locked for 3 years</li>
+                    <li>Prevents sudden market shocks and volatility</li>
+                    <li>Strengthens liquidity depth and price stability</li>
+                    <li>Improves long-term investor confidence</li>
+                </ul>
+
+                <p>👉 Liquidity-backed tokens are excluded from active circulating supply.</p>
+                <!-- <div class="infra-point">
                     <span class="point-icon">🏗️</span>
-                    <span>45,000,000 ZRZ Dedicated to liquidity</span>
+                    <span>45,000,000 ZRZ permanently allocated to liquidity</span>
                 </div>
                 <div class="infra-point">
                     <span class="point-icon">🔒</span>
-                    <span>Structured phase deployment with individual 3-year locks</span>
+                    <span>Phase-based deployment ensures controlled market expansion</span>
                 </div>
                 <div class="infra-point">
                     <span class="point-icon">📈</span>
@@ -741,7 +835,7 @@
                 <div class="infra-point">
                     <span class="point-icon">🏗️</span>
                     <span>Liquidity treated as infrastructure, not speculative fuel</span>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -750,13 +844,13 @@
             <div class="section-col">
                 <h2 class="color-gold mb-3">Governance & Security</h2>
                 <div class="gold core-values">
-                    <h5><strong>Governance Model:</strong></h5>
+                    <h5 class="color-gold">Governance Model:</h5>
                     <ul class="">
-                        <li>Hybrid, DAO‑ready governance with transparent treasury and on‑chain enforcement.</li>
-                        <li>Proposal submission by token holders and core team.</li>
-                        <li>Weighted voting via staked ZRZ for responsible decisions.</li>
-                        <li>Treasury releases aligned with governance approvals.</li>
-                        <li>Future: AI‑assisted insights and time‑weighted voting.</li>
+                        <li>Hybrid DAO-ready governance framework.</li>
+                        <li>Proposal submission by community and core contributors.</li>
+                        <li>Voting power based on staked ZRZ participation.</li>
+                        <li>Treasury usage aligned with governance decisions.</li>
+                        <li>Future integration of AI-assisted governance insights.</li>
                     </ul>
                 </div>
             </div>
@@ -764,12 +858,14 @@
                 <h5><strong>Security & Trust</strong></h5>
                 <div class="gold core-values">
                     <ul class="">
-                        <li>Smart contract audit pending final submission.</li>
-                        <li>0% buy/sell tax, no hidden tokenomics.</li>
-                        <li>Phase‑based LP locks with public verification.</li>
+                        <li>Smart contract audit- In Progress (public report will be released).</li>
+                        <li>0% buy/sell tax, - no hidden tokenomics.</li>
+                        <li>Phase-based liquidity locks with on-chain verification.</li>
                         <li>Fully public wallet transparency</li>
-                        <li>Controlled token release tied to growth milestones.</li>
+                        <li>Controlled token release aligned with ecosystem growth.</li>
                     </ul>
+                    <p class="mt-3">👉 All vesting wallets operate under predefined schedules enforced via
+                        multi-signature control.</p>
                 </div>
             </div>
 
@@ -778,11 +874,16 @@
                     <h3 class="section-gold">Multi-Signature Security Model:</h3>
                 </div>
 
-                <div class="summary-tagline">
+                <div class="summary-tagline gold core-values">
                     <p>Critical treasury and liquidity operations are secured through a multi-signature wallet requiring
-                        multiple approvals.</p>
-                    <p>This eliminates single-point control risk and ensures institutional-grade operational security.
+                        multiple approvals before execution.
                     </p>
+                    <ul>
+                        <li>Eliminates single-point control risk</li>
+                        <li>Enforces structured authorization for all fund movements</li>
+                        <li>Ensures institutional-grade operational security</li>
+                    </ul>
+                    <p class="mt-3">👉 No individual wallet can execute transactions independently.</p>
                 </div>
             </div>
         </section>
@@ -792,22 +893,29 @@
             <!-- SECTION 7: BLOCKCHAIN VERIFICATION -->
             <div class="verification-section">
                 <div class="section-header-verif">
-                    <h2 class="color-gold">Blockchain Verification</h2>
+                    <h3 class="section-gold">Blockchain Verification</h3>
                 </div>
+                <p>All <span class="ethno">ZacrocoZ</span> ecosystem activity is publicly verifiable on-chain.</p>
                 <div class="verif-points">
+                    <p>Users can independently verify:</p>
                     <div class="verif-point">
-                        <span class="point-icon">⛓️</span>
-                        <span>All ecosystem activity fully on-chain</span>
+                        <span>Smart contract code</span>
                     </div>
                     <div class="verif-point">
-                        <span class="point-icon">✅</span>
-                        <span>Independent verification of contract, wallets, token supply, liquidity deployment,
-                            transfers</span>
+                        <!-- <span class="point-icon">✅</span> -->
+                        <span>Total token supply</span>
                     </div>
                     <div class="verif-point">
-                        <span class="point-icon">🛡️</span>
-                        <span>Investor trust built via transparency, not promises</span>
+                        <span>Wallet balances</span>
                     </div>
+                    <div class="verif-point">
+                        <span>Liquidity deployment</span>
+                    </div>
+                    <div class="verif-point">
+                        <span>Transaction history</span>
+                    </div>
+                    <p class="mt-3 mb-2">🔗 Direct verification available via BscScan and DEX interfaces</p>
+                    <p>👉 Transparency is enforced through blockchain infrastructure.</p>
                 </div>
             </div>
 
@@ -824,26 +932,48 @@
                     </div>
                     <div class="stat-item">
                         <span class="stat-label">Liquidity Allocation</span>
-                        <span class="stat-value">40.91%</span>
+                        <span class="stat-value">45,000,000(40.91%)</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-label">Staking Allocation</span>
-                        <span class="stat-value">4.55%</span>
+                        <span class="stat-label">Development:</span>
+                        <span class="stat-value">20,000,000 (18.18%)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Ecosystem:</span>
+                        <span class="stat-value">15,000,000 (13.63%)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Marketing</span>
+                        <span class="stat-value">15,000,000 (13.63%)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Strategic Reserve</span>
+                        <span class="stat-value">10,000,000 (9.09%)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Staking & Rewards</span>
+                        <span class="stat-value">5,000,000 (4.55%)</span>
                     </div>
                 </div>
 
-                <div class="summary-features">
+                <div class="summary-features mt-3">
                     <div class="feature-tag">
-                        <span class="feature-icon">🚫</span>
+                        <span>Phase-Based Liquidity Deployment (3-Year Lock Per Phase)</span>
+                    </div>
+                    <div class="feature-tag">
                         <span>No Mint | No Tax | No Upgradeable Contract</span>
                     </div>
                     <div class="feature-tag">
-                        <span class="feature-icon">👁️</span>
-                        <span>Full Public Wallet Transparency</span>
+                        <span>Fully Public Wallet Transparency</span>
                     </div>
                     <div class="feature-tag">
-                        <span class="feature-icon">⚖️</span>
-                        <span>Governance-Ready Architecture with Multi-Signature Security Layer</span>
+                        <span>Multi-Signature Secured Treasury</span>
+                    </div>
+                    <div class="feature-tag">
+                        <span>Structured Vesting Across Core Allocations</span>
+                    </div>
+                    <div class="feature-tag">
+                        <span>Liquidity Allocation Non-Circulating & Locked</span>
                     </div>
                 </div>
 
@@ -854,18 +984,38 @@
                 </div>
             </div>
         </div>
+
+        <section class="closing-hero" style="padding-top:80px;">
+            <div class="closing-content">
+                <h2 class="color-gold text-center">Final Statement</h2>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-7">
+                        <p class="closing-lead min-txt">
+                           ✅ ZRZ tokenomics are engineered for structural stability, transparent governance, and long-term
+                            ecosystem growth.
+                        </p>
+                        <p class="closing-lead min-txt py-2">✅ Transparency is not presented as a feature — it is enforced at the
+                            protocol level.</p>
+                        <p class="closing-lead min-txt">✅ Every token within the <span class="ethno">ZacrocoZ</span> ecosystem is either locked, vested, or
+                            controlled through
+                            structured release mechanisms, ensuring a predictable, verifiable, and manipulation-resistant
+                            supply model.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section Start -->
     <div id="footer"></div>
-        <script>
-            fetch("footer.html")
+    <script>
+        fetch("footer.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
             })
             .catch(error => console.error("Footer load failed:", error));
-        </script>
+    </script>
     <!-- Footer Section End -->
 
 
