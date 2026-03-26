@@ -27,7 +27,7 @@
                         <ul>
                             <li><a href="index.html" class="active">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">White Paper</a></li>
+                            <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
                             <li><a href="transparency-dashboard.html">Transparency</a></li>
 
                             <li>
