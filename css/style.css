@@ -905,7 +905,10 @@ h5 {
 
 .c-card .c-card__description.hm {
   background-color: #0f172a;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .story-arrows {
   position: absolute;
@@ -1465,36 +1468,36 @@ h5 {
 }
 
 .header .nav-menu > ul > li:hover > a {
-  color: #009fed;
+  color: #d4af37;
 }
 
 .header .nav-menu > ul > li:hover ul {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+  /* -webkit-transform: translateY(0); */
+  transform: translateY(-3%);
   z-index: 999999 !important;
 }
 
 .header .nav-menu > ul > li a.active {
-  color: #009fed;
+  color: #d4af37;
 }
 
 .header .nav-menu > ul ul {
-  position: absolute;
-  background: #011631;
-  text-align: left;
-  min-width: 214px;
-  padding: 16px 27px;
-  -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.1);
-  opacity: 0;
-  visibility: hidden;
-  border-radius: 5px;
-  -webkit-transition: all 600ms ease;
-  transition: all 600ms ease;
-  -webkit-transform: translateY(-4%);
-  transform: translateY(-4%);
+    position: absolute;
+    background: #011631;
+    text-align: left;
+    min-width: 284px;
+    padding: 16px 27px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateY(4%);
+    transform: translateY(4%);
 }
 
 .header .nav-menu > ul ul li {
@@ -1513,7 +1516,7 @@ h5 {
 }
 
 .header .nav-menu > ul ul li a:hover {
-  color: #009fed;
+  color: #d4af37;
 }
 
 .header.sticky-header {
@@ -4862,6 +4865,50 @@ h5 {
   }
 }
 
+/* Language change */
+.lang-wrapper {
+  display: inline-flex;
+  align-items: center;
+  background: #0f172a;
+  border: 1px solid #d4af37;
+  border-radius: 6px;
+  padding: 6px 16px;
+  color: #c7ccd1;
+  position: relative;
+  margin-left: 32px;
+}
+
+/* Globe */
+.lang-icon {
+  margin-right: 6px;
+}
+
+/* Hide real select text */
+.lang-wrapper select {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Display text (EN) */
+.lang-display {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+/* Arrows */
+.lang-arrow {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.lang-arrow i {
+  line-height: 8px;
+}
 /*----------------------------------------
     Footer Style
 -----------------------------------------*/
@@ -4918,7 +4965,7 @@ h5 {
   background-color: #002248;
   font-size: 16px;
 }
-.footer-content .footer-logo .footer-social li a i{
+.footer-content .footer-logo .footer-social li a i {
   color: #c7ccd1;
 }
 
@@ -4961,7 +5008,9 @@ h5 {
 .footer-content .footer-box .footer-link li:last-child a {
   padding-bottom: 0px;
 }
-
+.footer-content .footer-box .footer-link li  i{
+  font-size: 12px;
+}
 .footer-content .footer-box .form-group .btn-small,
 .footer-content .footer-box .form-group .btn-large,
 .footer-content .footer-box .form-group .btn-two,

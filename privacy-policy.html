@@ -131,7 +131,7 @@
                     <!-- NAV MENU -->
                     <div class="nav-menu">
                         <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="about-us.html">About Us</a></li>
                             <li><a href="zrz-whitepaper.html">White Paper</a></li>
                             <li><a href="transparency-dashboard.html">Transparency</a></li>
@@ -158,20 +158,41 @@
                     </div>
 
                     <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-box">
-                        <select class="lang-box" onchange="setLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="zh-CN">中文 (Chinese)</option>
-                            <option value="es">Español</option>
-                            <option value="pt">Português</option>
-                            <option value="ru">Русский</option>
-                            <option value="tr">Türkçe</option>
-                            <option value="ko">한국어</option>
-                            <option value="ja">日本語</option>
-                            <option value="el">Ελληνικά</option>
-                            <option value="hi">हिंदी</option>
-                        </select>
-                    </div>
+                    <div class="lang-wrapper">
+                            <span class="lang-icon">
+                                <i class="fa fa-globe"></i>
+                            </span>
+
+                            <select id="langSelect" onchange="setLanguage(this.value)">
+                                <option value="en" data-code="EN">English</option>
+                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
+                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
+                                <option value="de" data-code="DE">German (Deutsch)</option>
+                                <option value="fr" data-code="FR">French (Français)</option>
+                                <option value="ko" data-code="KO">Korean (한국어)</option>
+                                <option value="ar" data-code="AR">Arabic (العربية)</option>
+                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
+                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
+                                <option value="es" data-code="ES">Spanish (Español)</option>
+                                <option value="pt" data-code="PT">Portuguese (Português)</option>
+                                <option value="ru" data-code="RU">Russian (Русский)</option>
+                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
+                                <option value="fa" data-code="FA">Persian (فارسی)</option>
+                                <option value="th" data-code="TH">Thai (ไทย)</option>
+                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
+                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
+                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
+                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
+                            </select>
+
+                            <!-- Display selected short code -->
+                            <span class="lang-display" id="langDisplay">EN</span>
+
+                            <span class="lang-arrow">
+                                <i class="fa fa-chevron-up"></i>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </div>
 
                 </div>
             </div>

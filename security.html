@@ -33,6 +33,21 @@
             color: #c7ccd1 !important;
             font-size: 14px;
         }
+
+        .sub-page-banner.relative {
+            background-image: url('images/security-banner.jpg') !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-image video {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+            border-radius: 12px;
+        }
     </style>
 
     <header class="header header-home">
@@ -62,46 +77,79 @@
                         <!-- NAV MENU -->
                         <div class="nav-menu">
                             <ul>
-                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="index.html">Home</a></li>
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="zrz-whitepaper.html">White Paper</a></li>
                                 <li><a href="transparency-dashboard.html">Transparency</a></li>
 
                                 <li>
-                                    <a href="javascript:void(0)">Explore</a>
+                                    <a href="javascript:void(0)" class="active">Explore <i
+                                            class="fa fa-angle-double-down me-1 color-gold"></i></a>
                                     <ul class="dropdown-content">
-                                        <li><a href="security.html">Security</a></li>
-                                        <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                        <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                        <li><a href="governance-model.html">Governance Model</a></li>
-                                        <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="community-connect.html">Community & Connect</a></li>
-                                        <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                        <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                        <li><a href="utility-clarification.html">Utility Clarification</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="security.html" class="active">Security</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="ecosystem-utility.html">Ecosystem Utility</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="techonology-architecture.html">Technology & Architecture</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="governance-model.html">Governance Model</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="roadmap-future-growth.html">Roadmap</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="faq.html">FAQ</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="community-connect.html">Community & Connect</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="zrz-manifesto.html">ZRZ Manifesto</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="risk-disclosure.html">Risk Disclosure</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
+                                                href="utility-clarification.html">Utility Clarification</a></li>
                                     </ul>
                                 </li>
 
                                 <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
+                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
+                                        ZRZ</a></li>
                             </ul>
                         </div>
 
                         <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                        <div class="lang-box">
-                            <select class="lang-box" onchange="setLanguage(this.value)">
-                                <option value="en">English</option>
-                                <option value="zh-CN">中文 (Chinese)</option>
-                                <option value="es">Español</option>
-                                <option value="pt">Português</option>
-                                <option value="ru">Русский</option>
-                                <option value="tr">Türkçe</option>
-                                <option value="ko">한국어</option>
-                                <option value="ja">日本語</option>
-                                <option value="el">Ελληνικά</option>
-                                <option value="hi">हिंदी</option>
+                        <div class="lang-wrapper">
+                            <span class="lang-icon">
+                                <i class="fa fa-globe"></i>
+                            </span>
+
+                            <select id="langSelect" onchange="setLanguage(this.value)">
+                                <option value="en" data-code="EN">English</option>
+                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
+                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
+                                <option value="de" data-code="DE">German (Deutsch)</option>
+                                <option value="fr" data-code="FR">French (Français)</option>
+                                <option value="ko" data-code="KO">Korean (한국어)</option>
+                                <option value="ar" data-code="AR">Arabic (العربية)</option>
+                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
+                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
+                                <option value="es" data-code="ES">Spanish (Español)</option>
+                                <option value="pt" data-code="PT">Portuguese (Português)</option>
+                                <option value="ru" data-code="RU">Russian (Русский)</option>
+                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
+                                <option value="fa" data-code="FA">Persian (فارسی)</option>
+                                <option value="th" data-code="TH">Thai (ไทย)</option>
+                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
+                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
+                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
+                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
                             </select>
+
+                            <!-- Display selected short code -->
+                            <span class="lang-display" id="langDisplay">EN</span>
+
+                            <span class="lang-arrow">
+                                <i class="fa fa-chevron-up"></i>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
                         </div>
 
                     </div>
@@ -119,7 +167,7 @@
     <div class="main">
 
         <!-- Subpage Banner Start -->
-        <section class="sub-page-banner primary-color  before relative">
+        <section class="sub-page-banner relative">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp animated">
@@ -141,20 +189,22 @@
                 </div>
 
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Built on Protection. Engineered for
                             Trust. Designed for Longevity.</h2>
                         <div class="core-values mt-1">
-                            <p class="wow fadeInUp delay-1">Security within the ZacrocoZ ecosystem is not an
+                            <p class="wow fadeInUp delay-1">-- Security within the ZacrocoZ ecosystem is not an
                                 afterthought — it is a core architectural pillar. Every contract, wallet, liquidity
                                 deployment, and governance mechanism is structured to minimize risk, maximize
                                 transparency, and protect participants.</p>
-                            <p class="wow fadeInUp delay-2 mt-1">ZRZ is engineered to operate in a secure, verifiable,
+                            <p class="wow fadeInUp delay-2 mt-1">-- ZRZ is engineered to operate in a secure, verifiable,
                                 and resilient blockchain environment.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 hero-image wow fadeInUp">
-                        <img src="images/built-on-protection.png" alt="Supply Structure">
+                    <div class="col-md-7 hero-image wow fadeInUp">
+                        <video autoplay muted loop id="myVideo">
+                            <source src="images/security-page-video.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </section>

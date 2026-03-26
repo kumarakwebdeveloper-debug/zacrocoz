@@ -55,7 +55,7 @@
             top: 0;
             border-radius: 5px 0 0 5px;
         }
-        
+
 
         .heading-part .sub-title {
             color: #d4af37;
@@ -93,83 +93,105 @@
 
 
     <header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
+        <div class="container">
+            <div class="row flex-align">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo-icons/PNG/128px flat.png" alt="logo">
+                        </a>
+                    </div>
                 </div>
 
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
-                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9">
+                    <div class="menu-toggle">
+                        <span></span>
+                    </div>
 
-                <div class="main-menu">
+                    <div class="menu-search">
+                        <a href="javascript:void(0)" class="search">
+                            <img src="images/search.png" alt="search">
+                        </a>
+                    </div>
 
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">White Paper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
+                    <div class="main-menu">
 
-                            <li>
-                                <a href="javascript:void(0)">Explore</a>
+                        <!-- NAV MENU -->
+                        <div class="nav-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html" class="active">About Us</a></li>
+                                <li><a href="zrz-whitepaper.html">White Paper</a></li>
+                                <li><a href="transparency-dashboard.html">Transparency</a></li>
+
+                                <li>
+                                <a href="javascript:void(0)">Explore <i class="fa fa-angle-double-down me-1 color-gold"></i></a>
                                 <ul class="dropdown-content">
-                                    <li><a href="security.html">Security</a></li>
-                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><a href="governance-model.html">Governance Model</a></li>
-                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="community-connect.html">Community & Connect</a></li>
-                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="security.html">Security</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="ecosystem-utility.html">Ecosystem Utility</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="techonology-architecture.html">Technology & Architecture</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="governance-model.html">Governance Model</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="roadmap-future-growth.html">Roadmap</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="faq.html">FAQ</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="community-connect.html">Community & Connect</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="risk-disclosure.html">Risk Disclosure</a></li>
+                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="utility-clarification.html">Utility Clarification</a></li>
                                 </ul>
                             </li>
 
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
-                        </ul>
-                    </div>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
+                                        ZRZ</a></li>
+                            </ul>
+                        </div>
 
-                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-box">
-                        <select class="lang-box" onchange="setLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="zh-CN">中文 (Chinese)</option>
-                            <option value="es">Español</option>
-                            <option value="pt">Português</option>
-                            <option value="ru">Русский</option>
-                            <option value="tr">Türkçe</option>
-                            <option value="ko">한국어</option>
-                            <option value="ja">日本語</option>
-                            <option value="el">Ελληνικά</option>
-                            <option value="hi">हिंदी</option>
-                        </select>
-                    </div>
+                        <!-- 🌐 CUSTOM LANGUAGE SELECT -->
+                        <div class="lang-wrapper">
+                            <span class="lang-icon">
+                                <i class="fa fa-globe"></i>
+                            </span>
 
+                            <select id="langSelect" onchange="setLanguage(this.value)">
+                                <option value="en" data-code="EN">English</option>
+                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
+                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
+                                <option value="de" data-code="DE">German (Deutsch)</option>
+                                <option value="fr" data-code="FR">French (Français)</option>
+                                <option value="ko" data-code="KO">Korean (한국어)</option>
+                                <option value="ar" data-code="AR">Arabic (العربية)</option>
+                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
+                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
+                                <option value="es" data-code="ES">Spanish (Español)</option>
+                                <option value="pt" data-code="PT">Portuguese (Português)</option>
+                                <option value="ru" data-code="RU">Russian (Русский)</option>
+                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
+                                <option value="fa" data-code="FA">Persian (فارسی)</option>
+                                <option value="th" data-code="TH">Thai (ไทย)</option>
+                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
+                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
+                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
+                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
+                            </select>
+
+                            <!-- Display selected short code -->
+                            <span class="lang-display" id="langDisplay">EN</span>
+
+                            <span class="lang-arrow">
+                                <i class="fa fa-chevron-up"></i>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
+        <!-- HIDDEN GOOGLE TRANSLATE -->
+        <div id="google_translate_element" style="display:none;"></div>
 
-</header>
+    </header>
 
 
     <!-- Start Of Main Div -->
@@ -204,9 +226,11 @@
                                 <h2 class="mb-2 color-gold">About <span class="ethno">ZacrocoZ</span></h2>
                                 <span class="sub-title">A Structured Digital Infrastructure</span>
                                 <p><span class="ethno">ZacrocoZ</span> was not created to chase market momentum.</p>
-                                <p>It was engineered to <strong>introduce structural discipline</strong> into decentralized ecosystems.</p>
+                                <p>It was engineered to <strong>introduce structural discipline</strong> into
+                                    decentralized ecosystems.</p>
                             </div>
-                            <p>In an industry often driven by hype and rapid cycles, <strong>ZacrocoZ</strong> prioritizes architecture over acceleration. The project is built around:</p>
+                            <p>In an industry often driven by hype and rapid cycles, <strong>ZacrocoZ</strong>
+                                prioritizes architecture over acceleration. The project is built around:</p>
                             <div class="core-values">
                                 <ul>
                                     <li>Clearly defined tokenomics</li>
@@ -217,7 +241,8 @@
                             </div>
                             <div class="core-values">
                                 <p>All anchored by a <strong>permanently fixed supply of 110,000,000 ZRZ.</strong></p>
-                                <p>This is <strong>not experimental token engineering.</strong> <strong>It is intentional economic design.</strong></p>
+                                <p>This is <strong>not experimental token engineering.</strong> <strong>It is
+                                        intentional economic design.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -236,15 +261,17 @@
 
             <div class="row align-items-center">
                 <div class="col-md-4 hero-image wow fadeInUp">
-                    <img src="images/why-we-exists.jpeg"
-                        alt="ZacrocoZ exists">
+                    <img src="images/why-we-exists.jpeg" alt="ZacrocoZ exists">
                 </div>
                 <div class="col-md-8 hero-content about-detail core-values bp">
-                    <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Why <span class="ethno">ZacrocoZ</span> Exists</h2>
-                    <p class="wow fadeInDown">Many digital assets are launched with elastic supply models, unclear liquidity strategies, or upgradeable contracts that alter fundamentals post-deployment.</p>
+                    <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Why <span class="ethno">ZacrocoZ</span>
+                        Exists</h2>
+                    <p class="wow fadeInDown">Many digital assets are launched with elastic supply models, unclear
+                        liquidity strategies, or upgradeable contracts that alter fundamentals post-deployment.</p>
 
                     <div class="core-values mt-3">
-                        <h6 class="color-gold wow fadeInUp"><span class="ethno">ZacrocoZ</span> <strong>follows the opposite philosophy:</strong></h5>
+                        <h6 class="color-gold wow fadeInUp"><span class="ethno">ZacrocoZ</span> <strong>follows the
+                                opposite philosophy:</strong></h5>
                             <ul>
                                 <li class="wow fadeInUp delay-1"><strong>Predictability over modification</strong></li>
                                 <li class="wow fadeInUp delay-2"><strong>Transparency over complexity</strong></li>
@@ -253,7 +280,9 @@
                     </div>
 
                     <div class="core-values wow fadeInLeft animated">
-                        <p>Our goal is to <strong>build a long-term ecosystem</strong> where participants <strong>understand the architecture from day one,</strong> and that architecture <strong>does not change without clear, structured governance evolution.</strong></p>
+                        <p>Our goal is to <strong>build a long-term ecosystem</strong> where participants
+                            <strong>understand the architecture from day one,</strong> and that architecture
+                            <strong>does not change without clear, structured governance evolution.</strong></p>
                     </div>
                 </div>
 
@@ -266,33 +295,49 @@
                 <img src="images/featured-pattern.png" alt="featured-pattern" class="pattern pattern-2">
             </div> -->
         </section>
-        
+
         <section class="container-fluid primary-color zrz-two ptb-100 relative">
             <h2 class="color-gold mb-md-5 text-center wow fadeInDown">Core Design Principles</h2>
             <div class="row align-items-center">
                 <div class="col-md-4">
-                    <ul class="nav nav-pills flex-column nav-pills border-end border-3 me-3 align-items-center" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills flex-column nav-pills border-end border-3 me-3 align-items-center"
+                        id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link fw-semibold active position-relative" id="pills-first-tab" data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab" aria-controls="pills-first" aria-selected="true">Immutable Supply Integrity</button>
+                            <button class="nav-link fw-semibold active position-relative" id="pills-first-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab"
+                                aria-controls="pills-first" aria-selected="true">Immutable Supply Integrity</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link fw-semibold position-relative" id="pills-second-tab" data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab" aria-controls="pills-second" aria-selected="false">Controlled Liquidity Expansion</button>
+                            <button class="nav-link fw-semibold position-relative" id="pills-second-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab"
+                                aria-controls="pills-second" aria-selected="false">Controlled Liquidity
+                                Expansion</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link fw-semibold position-relative" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">Transparent Allocation Framework</button>
+                            <button class="nav-link fw-semibold position-relative" id="pills-third-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab"
+                                aria-controls="pills-third" aria-selected="false">Transparent Allocation
+                                Framework</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link fw-semibold position-relative" id="pills-fourth-tab" data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab" aria-controls="pills-fourth" aria-selected="true">Governance-Ready from Inception</button>
+                            <button class="nav-link fw-semibold position-relative" id="pills-fourth-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab"
+                                aria-controls="pills-fourth" aria-selected="true">Governance-Ready from
+                                Inception</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link fw-semibold position-relative" id="pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab" aria-controls="pills-fifth" aria-selected="false">Utility Without Overstatement</button>
+                            <button class="nav-link fw-semibold position-relative" id="pills-fifth-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab"
+                                aria-controls="pills-fifth" aria-selected="false">Utility Without Overstatement</button>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-8">
 
-                    <div class="about-detail core-values tab-content border rounded-3 border-white p-3 text-danger w-100 mt-0" id="pills-tabContent" style="min-height: 330px;display: flex;align-items: center;">
-                        <div class="tab-pane fade show active" id="pills-first" role="tabpanel" aria-labelledby="pills-first-tab">
+                    <div class="about-detail core-values tab-content border rounded-3 border-white p-3 text-danger w-100 mt-0"
+                        id="pills-tabContent" style="min-height: 330px;display: flex;align-items: center;">
+                        <div class="tab-pane fade show active" id="pills-first" role="tabpanel"
+                            aria-labelledby="pills-first-tab">
                             <div class="heading-part">
                                 <span class="sub-title">Immutable Supply Integrity</span>
                             </div>
@@ -319,7 +364,8 @@
                                     </ol>
                                 </li>
                             </ul>
-                            <p class="mt-3 color-gold">Liquidity is <strong>strategic infrastructure,</strong> not a short-term incentive.</p>
+                            <p class="mt-3 color-gold">Liquidity is <strong>strategic infrastructure,</strong> not a
+                                short-term incentive.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">
                             <div class="heading-part">
@@ -338,13 +384,15 @@
                                 </li>
                                 <li><strong>Every transfer is traceable. No undisclosed reserves.</strong></li>
                             </ul>
-                            <p class="mt-3 color-gold">Transparency is enforced by <strong>blockchain,</strong> not marketing promises.</p>
+                            <p class="mt-3 color-gold">Transparency is enforced by <strong>blockchain,</strong> not
+                                marketing promises.</p>
                         </div>
                         <div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-fourth-tab">
                             <div class="heading-part">
                                 <span class="sub-title">Governance-Ready from Inception</span>
                             </div>
-                            <p><span class="ethno">ZacrocoZ</span> is built to <strong>evolve toward structured DAO participation</strong></p>
+                            <p><span class="ethno">ZacrocoZ</span> is built to <strong>evolve toward structured DAO
+                                    participation</strong></p>
                             <ul>
                                 <li class="exd">Token holders will engage in:
                                     <ol>
@@ -355,7 +403,8 @@
                                     </ol>
                                 </li>
                             </ul>
-                            <p class="mt-3 color-gold"><strong>Decentralization is phased and deliberate,</strong> ensuring community and technical readiness</p>
+                            <p class="mt-3 color-gold"><strong>Decentralization is phased and deliberate,</strong>
+                                ensuring community and technical readiness</p>
 
                         </div>
                         <div class="tab-pane fade" id="pills-fifth" role="tabpanel" aria-labelledby="pills-fifth-tab">
@@ -370,7 +419,8 @@
                                 <li>Ecosystem contribution mechanisms</li>
                                 <li>Staking and structural rewards</li>
                             </ul>
-                            <p class="mt-3 color-gold"><strong>ZRZ does not represent equity, ownership, or profit rights. It is designed solely for ecosystem participation.</strong></p>
+                            <p class="mt-3 color-gold"><strong>ZRZ does not represent equity, ownership, or profit
+                                    rights. It is designed solely for ecosystem participation.</strong></p>
                         </div>
                     </div>
                 </div>
@@ -421,14 +471,16 @@
                                 </li>
                             </ul>
                             <div class="core-values">
-                                <p class="mt-3 color-gold">The contract is <strong>auditable, readable, and final.</strong></p>
+                                <p class="mt-3 color-gold">The contract is <strong>auditable, readable, and
+                                        final.</strong></p>
                             </div>
                         </div>
                     </section>
                     <section>
                         <div class="card rotating-card">
                             <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Long-Term Ecosystem Vision</h2>
-                            <p class="color-gold"><span class="ethno">ZacrocoZ</span> is structured for <strong>sustainable expansion beyond token issuance:</strong></p>
+                            <p class="color-gold"><span class="ethno">ZacrocoZ</span> is structured for
+                                <strong>sustainable expansion beyond token issuance:</strong></p>
                             <ul>
                                 <li>Governance infrastructure</li>
                                 <li>Ecosystem integrations</li>
@@ -437,13 +489,16 @@
                                 <li>AI-supported economic modeling</li>
                             </ul>
                             <div class="core-values">
-                                <p class="mt-3 color-gold">Growth is <strong>not artificial.</strong> It emerges from <strong>structured liquidity, transparent treasury, clear governance, and defined utility alignment.</strong></p>
+                                <p class="mt-3 color-gold">Growth is <strong>not artificial.</strong> It emerges from
+                                    <strong>structured liquidity, transparent treasury, clear governance, and defined
+                                        utility alignment.</strong></p>
                             </div>
                         </div>
                     </section>
                     <section>
                         <div class="card">
-                            <h2 class="color-gold mb-md-2 text-center wow fadeInDown">A Different Approach to Growth</h2>
+                            <h2 class="color-gold mb-md-2 text-center wow fadeInDown">A Different Approach to Growth
+                            </h2>
                             <ul>
                                 <li>No artificial scarcity events</li>
                                 <li>No transactional taxes</li>
@@ -459,7 +514,8 @@
                                 </ul>
                             </div>
                             <div class="core-values mt-3">
-                                <p class="color-gold">Momentum without structure fades. <strong>Structure creates lasting growth.</p>
+                                <p class="color-gold">Momentum without structure fades. <strong>Structure creates
+                                        lasting growth.</p>
                             </div>
                         </div>
                     </section>
@@ -467,7 +523,8 @@
                     <section>
                         <div class="card rotating-card">
                             <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Positioning Statement</h2>
-                            <p class="color-gold"><span class="ethno">ZacrocoZ</span> is a <strong>long-term digital asset ecosystem:</strong></p>
+                            <p class="color-gold"><span class="ethno">ZacrocoZ</span> is a <strong>long-term digital
+                                    asset ecosystem:</strong></p>
 
                             <ul>
                                 <li>Fixed supply</li>
@@ -477,7 +534,8 @@
                                 <li>Institutional-grade structure</li>
                             </ul>
                             <div class="core-values mt-3">
-                                <p class="color-gold">Built <strong>not to react to the market,</strong> but to <strong>remain consistent within it.</strong></p>
+                                <p class="color-gold">Built <strong>not to react to the market,</strong> but to
+                                    <strong>remain consistent within it.</strong></p>
                             </div>
                         </div>
                     </section>
@@ -497,7 +555,8 @@
                         <div class="about-detail mv wow fadeInLeft">
                             <div class="heading-part">
                                 <h2 class="mb-2 color-gold">Mission</h2>
-                                <p><strong>To establish a digital asset ecosystem where trust, structure, and transparency drive sustainable growth.</strong></p>
+                                <p><strong>To establish a digital asset ecosystem where trust, structure, and
+                                        transparency drive sustainable growth.</strong></p>
                             </div>
                             <div class="core-values gold cg mt-3">
                                 <ul>
@@ -514,7 +573,9 @@
                         <div class="about-detail mv wow fadeInRight">
                             <div class="heading-part">
                                 <h2 class="mb-2 color-gold">Vision</h2>
-                                <p>To redefine how decentralized ecosystems operate — combining disciplined architecture with community-driven governance, creating a resilient, sustainable, and accountable blockchain economy.</p>
+                                <p>To redefine how decentralized ecosystems operate — combining disciplined architecture
+                                    with community-driven governance, creating a resilient, sustainable, and accountable
+                                    blockchain economy.</p>
                             </div>
                             <div class="core-values gold cg mt-3">
                                 <ul>
@@ -531,15 +592,15 @@
         </section>
 
 
-         <!-- Footer Section Start -->
+        <!-- Footer Section Start -->
         <div id="footer"></div>
         <script>
             fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            })
-            .catch(error => console.error("Footer load failed:", error));
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => console.error("Footer load failed:", error));
         </script>
         <!-- Footer Section End -->
 
@@ -609,6 +670,6 @@
             }
         });
     </script>
-</body>
+    </body>
 
 </html>
