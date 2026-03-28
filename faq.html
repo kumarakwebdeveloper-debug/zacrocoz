@@ -461,6 +461,16 @@
 
 </div>
 <!-- End Of Main Div -->
+
+<div id="footer"></div>
+        <script>
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => console.error("Footer load failed:", error));
+        </script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -553,53 +563,34 @@
 <script src="js/lang_translator.js"></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+<script src="js/lang_translator.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <script>
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
 
-    function setLanguage(lang) {
+            const currentPage = window.location.pathname.split("/").pop();
 
-        // ENGLISH → delete cookie + reload
-        if (lang === "en") {
-            document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-            document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-            localStorage.removeItem("lang");
-            location.reload();
-            return;
-        }
+            const menuLinks = document.querySelectorAll(".nav-menu a");
 
-        localStorage.setItem("lang", lang);
+            menuLinks.forEach(link => {
+                const linkPage = link.getAttribute("href");
 
-        const interval = setInterval(() => {
-            let select = document.querySelector(".goog-te-combo");
+                link.classList.remove("active");
 
-            if (select) {
-                select.value = lang; // use zh-CN for Chinese
-                select.dispatchEvent(new Event("change"));
-                clearInterval(interval);
-
-                setTimeout(() => {
-                    const banner = document.querySelector(".goog-te-banner-frame");
-                    if (banner) banner.style.display = "none";
-                    document.body.style.top = "0px";
-                }, 100);
-            }
-        }, 200);
-    }
-
-    // ONLY set dropdown value (no auto translate)
-    document.addEventListener("DOMContentLoaded", () => {
-        const savedLang = localStorage.getItem("lang");
-        const dropdown = document.querySelector(".lang-box select");
-        if (dropdown && savedLang) {
-            dropdown.value = savedLang;
-        }
-    });
+                if (
+                    linkPage === currentPage ||
+                    (currentPage === "" && linkPage === "index.html")
+                ) {
+                    link.classList.add("active");
+                }
+            });
+        });
 </script>
+
 </body>
 
 </html>
