@@ -82,104 +82,7 @@
     </style>
 
 
-    <header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-main.png" alt="logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
-                </div>
-
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
-                </div>
-
-                <div class="main-menu">
-
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                            <li>
-                                <a href="javascript:void(0)" class="active">Explore <i class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                <ul class="dropdown-content">
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="security.html">Security</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="ecosystem-utility.html" class="active">Ecosystem Utility</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="governance-model.html">Governance Model</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="faq.html">FAQ</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="community-connect.html">Community & Connect</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="utility-clarification.html">Utility Clarification</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
-
-</header>
+    <div id="header"></div>
 
 
     <!-- Start Of Main Div -->
@@ -192,7 +95,7 @@
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
                             <h1 class="sub-banner-title color-gold">Ecosystem & Utility</h1>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -208,8 +111,11 @@
                     </div>
                     <div class="col-md-6">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">ZRZ Token Utility Framework</h2>
-                        <p class="color-gold wow fadeInRight"><strong>Powering the <span class="ethno">ZacrocoZ</span> ecosystem: Governance. Rewards. Access. Growth.</strong></p>
-                        <p>ZRZ is more than a token — it is the functional engine of the ecosystem. Every token has a clear, deliberate purpose, creating sustainable value, measurable trust, and long-term participation.</p>
+                        <p class="color-gold wow fadeInRight"><strong>Powering the <span class="ethno">ZacrocoZ</span>
+                                ecosystem: Governance. Rewards. Access. Growth.</strong></p>
+                        <p>ZRZ is more than a token — it is the functional engine of the ecosystem. Every token has a
+                            clear, deliberate purpose, creating sustainable value, measurable trust, and long-term
+                            participation.</p>
                     </div>
                 </div>
             </section>
@@ -337,7 +243,8 @@
                     position: relative;
                     z-index: 2;
                 }
-                .core-values p{
+
+                .core-values p {
                     color: #c7ccd1;
                 }
             </style>
@@ -351,15 +258,21 @@
                     <div class="about-detail core-values bp">
                         <section>
                             <div class="card">
-                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Platform Access & Services</h2>
+                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Platform Access & Services
+                                </h2>
                                 <p>ZRZ holders gain <strong>full ecosystem participation,</strong> including:</p>
                                 <ul class="gold core-values">
-                                    <li><strong class="color-gold">Exclusive Tools & Dashboards</strong> Access AI-powered analytics, predictive governance dashboards, and real-time staking insights</li>
-                                    <li><strong class="color-gold">Marketplace & Partner Integrations</strong> Utilize ZRZ across platform services, partner applications, and DeFi modules</li>
-                                    <li><strong class="color-gold">Priority Participation</strong> Early access to innovations, events, ecosystem initiatives, and protocol updates</li>
+                                    <li><strong class="color-gold">Exclusive Tools & Dashboards</strong> Access
+                                        AI-powered analytics, predictive governance dashboards, and real-time staking
+                                        insights</li>
+                                    <li><strong class="color-gold">Marketplace & Partner Integrations</strong> Utilize
+                                        ZRZ across platform services, partner applications, and DeFi modules</li>
+                                    <li><strong class="color-gold">Priority Participation</strong> Early access to
+                                        innovations, events, ecosystem initiatives, and protocol updates</li>
                                 </ul>
                                 <div class="core-values">
-                                    <p class="color-gold">ZRZ ensures <strong>active participants are empowered and rewarded</strong> with meaningful platform privileges</p>
+                                    <p class="color-gold">ZRZ ensures <strong>active participants are empowered and
+                                            rewarded</strong> with meaningful platform privileges</p>
                                 </div>
                             </div>
                         </section>
@@ -368,13 +281,18 @@
                                 <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Governance & Voting</h2>
                                 <p>ZRZ enables <strong>structured, community-led decision-making:</strong></p>
                                 <ul>
-                                    <li><strong class="color-gold">Proposal Submission</strong> Token holders can submit platform improvement and ecosystem growth proposals</li>
-                                    <li><strong class="color-gold">Voting Power</strong> Weighted by staked ZRZ, ensuring engaged participants shape the ecosystem</li>
-                                    <li><strong class="color-gold">Transparent Execution</strong> All governance actions recorded on-chain for full accountability</li>
-                                    <li><strong class="color-gold">AI-Enhanced Insights</strong> Governance decisions are informed by predictive analytics, ensuring fair, data-driven outcomes</li>
+                                    <li><strong class="color-gold">Proposal Submission</strong> Token holders can submit
+                                        platform improvement and ecosystem growth proposals</li>
+                                    <li><strong class="color-gold">Voting Power</strong> Weighted by staked ZRZ,
+                                        ensuring engaged participants shape the ecosystem</li>
+                                    <li><strong class="color-gold">Transparent Execution</strong> All governance actions
+                                        recorded on-chain for full accountability</li>
+                                    <li><strong class="color-gold">AI-Enhanced Insights</strong> Governance decisions
+                                        are informed by predictive analytics, ensuring fair, data-driven outcomes</li>
                                 </ul>
                                 <div class="core-values">
-                                    <p class="color-gold">Governance is <strong>responsible, measurable, and aligned with long-term ecosystem health</strong></p>
+                                    <p class="color-gold">Governance is <strong>responsible, measurable, and aligned
+                                            with long-term ecosystem health</strong></p>
                                 </div>
                             </div>
                         </section>
@@ -383,40 +301,56 @@
                                 <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Staking & Rewards</h2>
                                 <p>ZRZ supports <strong>flexible, intelligent participation:</strong></p>
                                 <ul>
-                                    <li><strong class="color-gold">Adaptive Staking Plans</strong> Short- and long-term options tailored for diverse commitment levels</li>
-                                    <li><strong class="color-gold">AI-Optimized Rewards</strong> Staking incentives dynamically adjusted to maximize liquidity, engagement, and sustainability</li>
-                                    <li><strong class="color-gold">Early Adopter Incentives</strong> Enhanced rewards to recognize early trust and contribution</li>
+                                    <li><strong class="color-gold">Adaptive Staking Plans</strong> Short- and long-term
+                                        options tailored for diverse commitment levels</li>
+                                    <li><strong class="color-gold">AI-Optimized Rewards</strong> Staking incentives
+                                        dynamically adjusted to maximize liquidity, engagement, and sustainability</li>
+                                    <li><strong class="color-gold">Early Adopter Incentives</strong> Enhanced rewards to
+                                        recognize early trust and contribution</li>
                                 </ul>
                                 <div class="core-values">
-                                    <p class="color-gold">Staking is <strong>strategic, aligned with ecosystem growth, and reinforces long-term participation</strong></p>
+                                    <p class="color-gold">Staking is <strong>strategic, aligned with ecosystem growth,
+                                            and reinforces long-term participation</strong></p>
                                 </div>
                             </div>
                         </section>
 
                         <section>
                             <div class="card rotating-card">
-                                <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Ecosystem Participation & Utility</h2>
+                                <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Ecosystem Participation &
+                                    Utility</h2>
                                 <ul>
-                                    <li><strong class="color-gold">Liquidity Provision</strong> Stake ZRZ to support liquidity pools, earning fees and structured rewards</li>
-                                    <li><strong class="color-gold">Treasury Interaction</strong> Participate in treasury programs, governance allocations, and funding initiatives</li>
-                                    <li><strong class="color-gold">Cross-Platform Integration</strong> Use ZRZ for partner services, AI-driven products, and platform expansions</li>
+                                    <li><strong class="color-gold">Liquidity Provision</strong> Stake ZRZ to support
+                                        liquidity pools, earning fees and structured rewards</li>
+                                    <li><strong class="color-gold">Treasury Interaction</strong> Participate in treasury
+                                        programs, governance allocations, and funding initiatives</li>
+                                    <li><strong class="color-gold">Cross-Platform Integration</strong> Use ZRZ for
+                                        partner services, AI-driven products, and platform expansions</li>
                                 </ul>
                                 <div class="core-values mt-3">
-                                    <p class="color-gold">Every token interaction contributes to <strong>network depth, structural stability, and community empowerment</strong></p>
+                                    <p class="color-gold">Every token interaction contributes to <strong>network depth,
+                                            structural stability, and community empowerment</strong></p>
                                 </div>
                             </div>
                         </section>
                         <section>
                             <div class="card">
-                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Long-Term Value & Growth Potential</h2>
+                                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Long-Term Value & Growth
+                                    Potential</h2>
                                 <ul>
-                                    <li><strong class="color-gold">Limited Supply</strong> Permanent cap ensures <strong>scarcity and structural value retention</strong></li>
-                                    <li><strong class="color-gold">AI-Driven Tokenomics</strong> Continuous monitoring of supply, staking, and rewards prevents imbalance and volatility</li>
-                                    <li><strong class="color-gold">Hybrid Governance</strong> Community-led + AI-assisted guidance supports predictable, sustainable ecosystem growth</li>
-                                    <li><strong class="color-gold">Future-Proof Utility</strong> Ready for DeFi integrations, NFT collaborations, cross-chain expansion, and next-generation AI services</li>
+                                    <li><strong class="color-gold">Limited Supply</strong> Permanent cap ensures
+                                        <strong>scarcity and structural value retention</strong></li>
+                                    <li><strong class="color-gold">AI-Driven Tokenomics</strong> Continuous monitoring
+                                        of supply, staking, and rewards prevents imbalance and volatility</li>
+                                    <li><strong class="color-gold">Hybrid Governance</strong> Community-led +
+                                        AI-assisted guidance supports predictable, sustainable ecosystem growth</li>
+                                    <li><strong class="color-gold">Future-Proof Utility</strong> Ready for DeFi
+                                        integrations, NFT collaborations, cross-chain expansion, and next-generation AI
+                                        services</li>
                                 </ul>
                                 <div class="core-values">
-                                    <p class="color-gold">ZRZ is <strong>engineered to grow with the ecosystem, not against it</strong></p>
+                                    <p class="color-gold">ZRZ is <strong>engineered to grow with the ecosystem, not
+                                            against it</strong></p>
                                 </div>
                             </div>
                         </section>
@@ -428,22 +362,29 @@
                 <div class="row align-items-center justify-content-center">
 
                     <div class="col-md-6">
-                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">ZRZ: The Token That Works, Grows, and Rewards</h2>
-                        <p>With ZRZ, <strong>every participant is part of a self-reinforcing, transparent ecosystem:</strong></p>
+                        <h2 class="color-gold mb-md-3 text-center wow fadeInDown">ZRZ: The Token That Works, Grows, and
+                            Rewards</h2>
+                        <p>With ZRZ, <strong>every participant is part of a self-reinforcing, transparent
+                                ecosystem:</strong></p>
                         <div class="card">
                             <ul>
                                 <li><strong>Use ZRZ</strong> for platform access, staking, and liquidity support</li>
                                 <li><strong>Shape the ecosystem</strong> through governance participation</li>
                                 <li><strong>Earn rewards</strong> via active engagement and contribution</li>
-                                <li><strong>Trust the infrastructure</strong> — AI-assisted, transparent, and audit-ready</li>
+                                <li><strong>Trust the infrastructure</strong> — AI-assisted, transparent, and
+                                    audit-ready</li>
                             </ul>
                             <div class="core-values">
-                                <p class="color-gold wow fadeInUp delay-5 animated" style="visibility: visible;"><strong>ZRZ is not just a token — it is the backbone of a human-centric, AI-enhanced blockchain economy, combining utility, governance, and long-term structural growth</strong></p>
+                                <p class="color-gold wow fadeInUp delay-5 animated" style="visibility: visible;">
+                                    <strong>ZRZ is not just a token — it is the backbone of a human-centric, AI-enhanced
+                                        blockchain economy, combining utility, governance, and long-term structural
+                                        growth</strong></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/zrz-works-grows-reards.jpg" alt="The Token That Works, Grows, and Rewards" style="position: relative;z-index: 9;" class="img-fluid w-100">
+                        <img src="images/zrz-works-grows-reards.jpg" alt="The Token That Works, Grows, and Rewards"
+                            style="position: relative;z-index: 9;" class="img-fluid w-100">
                     </div>
                 </div>
             </section>
@@ -516,15 +457,15 @@
 
 
         <!-- Footer Section Start -->
-         <!-- Footer Section Start -->
+        <!-- Footer Section Start -->
         <div id="footer"></div>
         <script>
             fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            })
-            .catch(error => console.error("Footer load failed:", error));
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => console.error("Footer load failed:", error));
         </script>
         <!-- Footer Section End -->
         <!-- Footer Section End -->
@@ -543,7 +484,7 @@
     <script src="js/particle.min.js"></script>
 
     <script>
-        (function() {
+        (function () {
             function c() {
                 var b = a.contentDocument || a.contentWindow.document;
                 if (b) {
@@ -565,8 +506,8 @@
                 if ('loading' !== document.readyState) c();
                 else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
                 else {
-                    var e = document.onreadystatechange || function() {};
-                    document.onreadystatechange = function(b) {
+                    var e = document.onreadystatechange || function () { };
+                    document.onreadystatechange = function (b) {
                         e(b);
                         'loading' !== document.readyState && (document.onreadystatechange = e, c())
                     }
@@ -579,55 +520,34 @@
         data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
 
+    <script src="js/lang_translator.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
 
-        function setLanguage(lang) {
+                const currentPage = window.location.pathname.split("/").pop();
 
-            // ENGLISH → delete cookie + reload
-            if (lang === "en") {
-                document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                localStorage.removeItem("lang");
-                location.reload();
-                return;
-            }
+                const menuLinks = document.querySelectorAll(".nav-menu a");
 
-            localStorage.setItem("lang", lang);
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
 
-            const interval = setInterval(() => {
-                let select = document.querySelector(".goog-te-combo");
+                    link.classList.remove("active");
 
-                if (select) {
-                    select.value = lang; // use zh-CN for Chinese
-                    select.dispatchEvent(new Event("change"));
-                    clearInterval(interval);
-
-                    setTimeout(() => {
-                        const banner = document.querySelector(".goog-te-banner-frame");
-                        if (banner) banner.style.display = "none";
-                        document.body.style.top = "0px";
-                    }, 100);
-                }
-            }, 200);
-        }
-
-        // ONLY set dropdown value (no auto translate)
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("lang");
-            const dropdown = document.querySelector(".lang-box select");
-            if (dropdown && savedLang) {
-                dropdown.value = savedLang;
-            }
-        });
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
     </script>
-</body>
+    <script src="js/lang_translator.js"></script>
+    </body>
 
 </html>

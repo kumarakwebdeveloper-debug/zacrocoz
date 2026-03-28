@@ -172,10 +172,10 @@ body {
   display: none !important;
 }
 
-.header {
+/* .header {
   position: relative;
   z-index: 1000;
-}
+} */
 
 .lang-box {
   /* margin-left: 20px; */
@@ -1475,7 +1475,7 @@ h5 {
   opacity: 1;
   visibility: visible;
   /* -webkit-transform: translateY(0); */
-  transform: translateY(-3%);
+  transform: translateY(-10%);
   z-index: 999999 !important;
 }
 
@@ -5509,21 +5509,27 @@ h5 {
   }
   .header .main-menu {
     height: calc(100vh - 58px);
-    top: 58px;
+    top: 12%;
   }
   .header .main-menu .connect-wallet {
     max-width: 800px;
     padding: 0px 20px;
   }
+  .header .nav-menu > ul {
+    display: inline-table;
+  }
   .header .logo img {
-    max-width: 185px;
+    max-width: 100px;
+  }
+  .home-banner .home-banner-content::before {
+    content: "" !important;
   }
   .header.sticky-header .main-menu {
     height: calc(100vh - 58px);
     top: 58px;
   }
   .header.sticky-header .logo img {
-    max-width: 185px;
+    max-width: 100px !important;
   }
   .menu-toggle {
     right: 20px;
@@ -5734,8 +5740,8 @@ h5 {
   }
   /*------- Home Banner -------*/
   .home-banner {
-    padding-top: 135px !important;
-    padding-bottom: 80px !important;
+    padding-top: 55px !important;
+    padding-bottom: 0px !important;
   }
   .home-banner .home-banner-content {
     /* max-width: 600px; */
@@ -5748,10 +5754,47 @@ h5 {
     padding-top: 16px;
     padding-bottom: 28px;
   }
+  .art-img video {
+    height: 360px;
+  }
+  .container-fluid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   .page-heading {
     font-size: 24px;
     line-height: 36px;
   }
+  .fdcl {
+    flex-direction: column;
+  }
+  .zrz-stands.rs {
+    padding: 60px 0 !important;
+  }
+  .mbrs .core-values ul li {
+    max-width: 97vw !important;
+  }
+  .c-card {
+    display: flex !important;
+    /* flex-direction: column !important; */
+  }
+  .c-card .c-card__description {
+    padding: 0px !important;
+  }
+  .c-card__tagline {
+    overflow: visible;
+  }
+
+   .art-img video {
+    height: 340px;
+  }
+  .wallet-address {
+    font-size: 0.8rem;
+  }
+  .gold.core-values.c-card__excerpt.home li {
+    /* padding: 0.5rem 0.5rem; */
+  }
+
   /*------- Popular Collection -------*/
   .category-box:hover .category-content {
     bottom: 24px;
@@ -5901,6 +5944,9 @@ h5 {
     padding-bottom: 30px;
   }
   /*------- Header -------*/
+
+  .header .nav-menu > ul {
+  }
   .search-form-modal .form-group .form-control {
     font-size: 16px;
     padding: 0px 20px 11px 0px;
@@ -6014,6 +6060,51 @@ h5 {
     -webkit-transform: none;
     transform: none;
   }
+
+  .art-img video {
+    height: 340px !important;
+  }
+  .wallet-address {
+    font-size: 0.8rem !important;
+  }
+  .gold.core-values.c-card__excerpt.home li {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .c-card__description p {
+    padding-left: 10px;
+}
+    .mbrs .core-values ul li {
+        max-width: 87vw !important;
+    }
+        .philosophy-content h2 {
+        font-size: 2rem;
+    }
+    .closing-web3{
+          padding: 80px 0%;
+    }
+    .closing-header h2 {
+    font-size: 40px;
+}
+.closing-grid{
+  display: flex;
+    flex-direction: column;
+}
+.feature-card{
+  padding: 15px;
+    display: flex;
+    align-items: center;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+        margin-bottom: 0;
+    margin-right: 20px;
+}
+.feature-card h3 {
+    font-size: 16px;
+    color: #c7ccd1;
+}
   /*------- Single Artwork Page -------*/
   .nav-tab ul li a {
     min-width: 96px;

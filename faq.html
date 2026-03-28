@@ -34,117 +34,7 @@
     }
 </style>
 
-<header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-main.png" alt="logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
-                </div>
-
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
-                </div>
-
-                <div class="main-menu">
-
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                            <li>
-                                <a href="javascript:void(0)" class="active">Explore <i
-                                        class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                <ul class="dropdown-content">
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="security.html">Security</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="governance-model.html">Governance Model</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="faq.html" class="active">FAQ</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="community-connect.html">Community & Connect</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                            href="utility-clarification.html">Utility Clarification</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
-                                    ZRZ</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-wrapper">
-                        <span class="lang-icon">
-                            <i class="fa fa-globe"></i>
-                        </span>
-
-                        <select id="langSelect" onchange="setLanguage(this.value)">
-                            <option value="en" data-code="EN">English</option>
-                            <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                            <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                            <option value="de" data-code="DE">German (Deutsch)</option>
-                            <option value="fr" data-code="FR">French (Français)</option>
-                            <option value="ko" data-code="KO">Korean (한국어)</option>
-                            <option value="ar" data-code="AR">Arabic (العربية)</option>
-                            <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                            <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                            <option value="es" data-code="ES">Spanish (Español)</option>
-                            <option value="pt" data-code="PT">Portuguese (Português)</option>
-                            <option value="ru" data-code="RU">Russian (Русский)</option>
-                            <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                            <option value="fa" data-code="FA">Persian (فارسی)</option>
-                            <option value="th" data-code="TH">Thai (ไทย)</option>
-                            <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                            <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                            <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                            <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                        </select>
-
-                        <!-- Display selected short code -->
-                        <span class="lang-display" id="langDisplay">EN</span>
-
-                        <span class="lang-arrow">
-                            <i class="fa fa-chevron-up"></i>
-                            <i class="fa fa-chevron-down"></i>
-                        </span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
-
-</header>
+<div id="header"></div>
 
 <div class="main">
 
@@ -155,7 +45,14 @@
                 <div class="col-md-12 wow fadeInUp animated">
                     <div class="page-banner text-center">
                         <h1 class="sub-banner-title color-gold">Faq</h1>
-
+                        <p class="my-2">Institutional-Grade Clarity for Investors and Ecosystem Participants
+                        </p>
+                        <p><span class="ethno">ZacrocoZ</span> is built on principles of transparency,
+                            structured
+                            liquidity, and long-term economic
+                            design. <br>The answers below provide clear insight into the project’s architecture,
+                            governance framework,
+                            and sustainable growth model.</p>
                     </div>
                 </div>
             </div>
@@ -172,13 +69,9 @@
             <img src="" alt="">
         </div>
         <div class="row align-items-center justify-content-center">
-            <div class="col-md-6">
-                <h2 class="color-gold mb-md-3 text-center wow fadeInDown">FAQ – ZacrocoZ (ZRZ)</h2>
-                <p><strong>Clear Answers. Designed for Investors, Community, and Ecosystem Participants.</strong>
-                </p>
-                <p class="mt-2"><span class="ethno">ZacrocoZ</span> is engineered for long-term structural growth,
-                    transparency, and utility. Each answer
-                    below reflects our phase-based strategy, fixed supply, and governance-aligned approach.</p>
+            <div class="col-md-6 text-center">
+                <h2 class="color-gold mb-md-3 wow fadeInDown">FAQ – ZacrocoZ (ZRZ)</h2>
+                <p style="font-style: italic;">Clear, Structured, and Designed for Investor Confidence</p>
             </div>
             <div class="col-md-6">
                 <img src="images/faq-1.avif" alt="FAQ" style="position: relative;z-index: 9;">
@@ -220,18 +113,23 @@
                                                         (ZRZ)?</span></div>
                                                 <div class="gold faq-panel core-values mt-1">
                                                     <strong>Answer:</strong>
-                                                    <p><span class="ethno">ZacrocoZ</span> is a purpose-built
-                                                        blockchain ecosystem powered by the ZRZ utility token. ZRZ
-                                                        enables participants to:</p>
+                                                    <p><span class="ethno">ZacrocoZ</span> is a purpose-built blockchain
+                                                        ecosystem engineered for structured
+                                                        decentralization, long-term stability, and real utility.</p>
+                                                    <p>ZRZ functions as the core utility token enabling:</p>
                                                     <ul>
-                                                        <li>Access platform tools and AI-driven dashboards</li>
-                                                        <li>Participate in structured governance and voting</li>
-                                                        <li>Stake tokens and earn rewards</li>
-                                                        <li>Contribute to ecosystem development and strategic
-                                                            programs</li>
+                                                        <li>Access to AI-powered tools, dashboards, and ecosystem
+                                                            services</li>
+                                                        <li>Participation in structured governance and proposal-based
+                                                            decision-making</li>
+                                                        <li>Staking for rewards aligned with long-term participation
+                                                        </li>
+                                                        <li>Contribution to ecosystem growth, partnerships, and
+                                                            innovation</li>
                                                     </ul>
-                                                    <p>ZRZ is not speculative — it is designed to support long-term
-                                                        utility, governance, and ecosystem growth.</p>
+                                                    <p>ZRZ is not designed for speculation. It is architected for
+                                                        sustainable growth through utility,
+                                                        transparency, and disciplined economic design.</p>
                                                 </div>
                                             </div>
 
@@ -241,14 +139,15 @@
                                                 <div class="gold faq-panel core-values">
                                                     <strong>Answer:</strong>
                                                     <ul class="mb-2">
-                                                        <li><strong>Total Supply: </strong>110,000,000 ZRZ</li>
+                                                        <li><strong>Total Supply: </strong>110,000,000 ZRZ (Permanently
+                                                            Fixed)</li>
                                                         <li><strong>Blockchain: </strong>BNB Smart Chain (BEP-20)
                                                         </li>
                                                         <li><strong>Decimals: </strong>18</li>
                                                         <!-- <li><strong>Official Contract Address:
                                                                 </strong>0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A</li> -->
                                                         <li class="wallet-item br">
-                                                            <span class="wallet-label"><strong>Official Contract
+                                                            <span class="wallet-label"><strong>Contract
                                                                     Address</strong></span>
                                                             <span id="w1" class="wallet-address"
                                                                 data-bs-toggle="tooltip" data-bs-placement="top"
@@ -267,21 +166,24 @@
                                                                 🔗
                                                             </a>
                                                         </li>
-                                                        <li><strong>Minting: </strong>Permanently disabled</li>
-                                                        <li><strong>Burn: </strong>Optional public burn for
-                                                            voluntary reduction</li>
                                                     </ul>
-                                                    <p><strong>Key Point:</strong> The entire supply was minted once
-                                                        at deployment. There is <strong>no inflation, no tax, and no
-                                                            upgrade proxy.</strong> The contract is transparent,
-                                                        final, and verifiable on-chain.</p>
+                                                    <p><strong>Key Properties</strong></p>
+                                                    <ul>
+                                                        <li><strong>Minting: </strong>Permanently disabled</li>
+                                                        <li>No inflation mechanism exists</li>
+                                                        <li>No transaction tax (0% buy/sell)</li>
+                                                        <li>No upgrade proxy — contract is immutable</li>
+                                                        <li>Fully verifiable on-chain via BscScan</li>
+                                                    </ul>
+                                                    <p>The entire supply was minted once at deployment, ensuring
+                                                        complete supply transparency and
+                                                        predictability.</p>
                                                 </div>
                                             </div>
 
                                             <div class="faq-box">
                                                 <div class="faq-title">How is ZRZ allocated?</div>
                                                 <div class="gold faq-panel core-values">
-                                                    <strong>Answer:</strong>
                                                     <table class="table table-bordered">
                                                         <thead>
                                                             <tr>
@@ -293,48 +195,50 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>Liquidity Allocation</td>
-                                                                <td>50,000,000</td>
-                                                                <td>45.45%</td>
-                                                                <td>Phased 3-year lock to ensure market stability
+                                                                <td>Liquidity</td>
+                                                                <td>45,000,000</td>
+                                                                <td>40.91%</td>
+                                                                <td>Phase-based LP deployment with 3-year locks
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Development</td>
                                                                 <td>20,000,000</td>
                                                                 <td>18.18%</td>
-                                                                <td>Core development, infrastructure, security
-                                                                    audits, governance tooling</td>
+                                                                <td>Infrastructure, audits, governance tools</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Ecosystem</td>
                                                                 <td>15,000,000</td>
                                                                 <td>13.63%</td>
-                                                                <td>Community incentives, partnerships, platform
-                                                                    growth</td>
+                                                                <td>Incentives, partnerships, adoption</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Marketing</td>
                                                                 <td>15,000,000</td>
                                                                 <td>13.63%</td>
-                                                                <td>Brand expansion, exchange listings, awareness
-                                                                    campaigns</td>
+                                                                <td>Brand growth, listings, expansion</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Strategic Reserve</td>
                                                                 <td>10,000,000</td>
                                                                 <td>9.09%</td>
-                                                                <td>Future ecosystem scaling, emergency support,
-                                                                    long-term sustainability</td>
+                                                                <td>Long-term sustainability & protection</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Staking & Rewards</td>
+                                                                <td>5,000,000</td>
+                                                                <td>4.55%</td>
+                                                                <td>Staking incentives & governance rewards</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                     <div class="core-values">
-                                                        <p class="color-gold wow fadeInUp delay-5">All allocation
-                                                            wallets are <strong>publicly verifiable on BNB Smart
-                                                                Chain.</strong> Transparency ensures
-                                                            every transfer and balance is independently traceable.
-                                                        </p>
+                                                        <p class="color-gold wow fadeInUp">All wallets are
+                                                            publicly visible and independently verifiable on-chain.</p>
+                                                        <p>Selected treasury allocations are secured through
+                                                            Multi-Signature authorization to ensure
+                                                            controlled and accountable fund management.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -343,94 +247,101 @@
                                                 <div class="faq-title">How does liquidity work?</div>
                                                 <div class="gold faq-panel core-values">
                                                     <strong>Answer:</strong>
-                                                    <p>Liquidity deployment is structured and phased, not
-                                                        instantaneous:</p>
+                                                    <p>Liquidity is deployed in a phased and controlled structure to
+                                                        prevent market instability.</p>
                                                     <ul class="mb-2">
-                                                        <li><strong>Phase 1:</strong> 20,000,000 ZRZ – Locked
-                                                            immediately for 3 years</li>
-                                                        <li><strong>Phase 2:</strong> 10,000,000 ZRZ – Locked 3
-                                                            years at deployment</li>
-                                                        <li><strong>Phase 3:</strong> 10,000,000 ZRZ – Locked 3
-                                                            years at deployment</li>
-                                                        <li><strong>Phase 4:</strong> 10,000,000 ZRZ – Locked 3
-                                                            years at deployment</li>
+                                                        <li><strong>Phase 1:</strong> 15,000,000 ZRZ – Locked
+                                                            for 3 years</li>
+                                                        <li><strong>Phase 2:</strong> 10,000,000 ZRZ – Locked for 3
+                                                            years </li>
+                                                        <li><strong>Phase 3:</strong> 10,000,000 ZRZ – Locked for 3
+                                                            years</li>
+                                                        <li><strong>Phase 4:</strong> 10,000,000 ZRZ – Locked for 3
+                                                            years</li>
                                                     </ul>
-                                                    <strong>Highlights:</strong>
+                                                    <strong>Key Mechanisms:</strong>
                                                     <ul>
-                                                        <li>Liquidity expands gradually to reduce market shock</li>
-                                                        <li>Each phase is locked individually</li>
-                                                        <li>All LP deployments are on-chain verifiable</li>
-                                                        <li>Remaining 60M tokens are allocated for development,
-                                                            ecosystem, marketing, and reserve</li>
+                                                        <li>Gradual liquidity expansion reduces volatility</li>
+                                                        <li>Each phase is independently locked</li>
+                                                        <li>No sudden liquidity withdrawals are possible</li>
+                                                        <li>All LP positions are verifiable on-chain</li>
                                                     </ul>
+                                                    <p>This model ensures long-term price stability and investor
+                                                        protection.</p>
                                                 </div>
                                             </div>
 
                                             <div class="faq-box">
                                                 <div class="faq-title">What are the main utilities of ZRZ?</div>
                                                 <div class="gold faq-panel core-values">
+                                                    <p>ZRZ is a multi-functional utility token powering the ecosystem:
+                                                    </p>
                                                     <ul>
-                                                        <li><strong>Platform Access: </strong>Unlock AI-powered
-                                                            dashboards, tools, and partner services</li>
-                                                        <li><strong>Governance: </strong>Submit proposals and vote
-                                                            on ecosystem decisions</li>
-                                                        <li><strong>Staking & Rewards: </strong>Earn tiered rewards
-                                                            aligned with ecosystem growth</li>
-                                                        <li><strong>Contributor Programs: </strong>Incentivize
-                                                            developers, partners, and community engagement</li>
-                                                        <li><strong>Future Interoperability: </strong>Ready for AI
-                                                            modules, NFTs, and DeFi integrations</li>
+                                                        <li><strong>Platform Access: </strong>AI dashboards, tools, and
+                                                            partner integrations</li>
+                                                        <li><strong>Governance: </strong>Proposal submission and voting
+                                                            rights</li>
+                                                        <li><strong>Staking & Rewards: </strong>Tiered reward mechanisms
+                                                        </li>
+                                                        <li><strong>Contributor Incentives: </strong>Developer and
+                                                            ecosystem participation rewards</li>
+                                                        <li><strong>Future Integrations: </strong>DeFi, AI modules,
+                                                            NFTs, and cross-chain expansion</li>
                                                     </ul>
+                                                    <p>ZRZ utility is designed to expand as the ecosystem evolves.</p>
                                                 </div>
                                             </div>
 
                                             <div class="faq-box">
                                                 <div class="faq-title">How is ZRZ different from other tokens?</div>
                                                 <div class="gold faq-panel core-values">
+                                                    <p>ZRZ is structurally different from typical tokens:</p>
                                                     <ul>
-                                                        <li>Fixed supply of <strong>110M ZRZ,</strong> no minting
-                                                        </li>
-                                                        <li><strong>Phase-based liquidity locks</strong> for
-                                                            long-term market stability</li>
-                                                        <li><strong>Public wallet transparency</strong> with full
-                                                            on-chain verification</li>
-                                                        <li><strong>Governance-focused, utility-driven</strong></li>
-                                                        <li>Designed for <strong>sustainable growth,</strong> not
-                                                            short-term speculation</li>
+                                                        <li>Permanently fixed supply (no inflation)</li>
+                                                        <li>Phase-based liquidity with long-term locks</li>
+                                                        <li>No transaction tax (0%)</li>
+                                                        <li>No hidden mechanics or upgrade controls</li>
+                                                        <li>Public wallet transparency</li>
+                                                        <li>Governance-aligned utility design</li>
                                                     </ul>
+                                                    <p>ZRZ prioritizes structure, predictability, and long-term
+                                                        sustainability over short-term hype.</p>
                                                 </div>
                                             </div>
                                             <div class="faq-box">
                                                 <div class="faq-title">How can I participate in ZacrocoZ?</div>
                                                 <div class="gold faq-panel core-values">
+                                                    <p>Participants can engage with the ecosystem through:</p>
                                                     <ul>
-                                                        <li>Fixed supply of <strong>110M ZRZ,</strong> no Join
-                                                            official community channels: <strong>Telegram, Discord,
-                                                                X (Twitter)</strong></li>
-                                                        <li>Acquire ZRZ via <strong>verified exchanges or liquidity
-                                                                pools</strong></li>
-                                                        <li>Stake ZRZ to earn rewards</li>
-                                                        <li>Engage in governance proposals and voting</li>
-                                                        <li>Contribute to community initiatives, bounties, and
-                                                            ecosystem development</li>
+                                                        <li>Acquiring ZRZ via supported liquidity pools or exchanges
+                                                        </li>
+                                                        <li>Staking tokens to earn rewards</li>
+                                                        <li>Participating in governance proposals and voting</li>
+                                                        <li>Engaging with community platforms (Telegram, Discord, X)
+                                                        </li>
+                                                        <li>Contributing to ecosystem development and initiatives</li>
                                                     </ul>
+                                                    <p>Participation is designed to reward long-term engagement.</p>
                                                 </div>
                                             </div>
                                             <div class="faq-box">
                                                 <div class="faq-title">Are my funds safe with ZacrocoZ?</div>
                                                 <div class="gold faq-panel core-values">
+                                                    <p>Security is a core architectural principle of <span
+                                                            class="ethno">ZacrocoZ</span>:</p>
                                                     <ul>
-                                                        <li>All operational wallets are <strong>public and on-chain
-                                                                verifiable</strong> no Join official community
-                                                            channels: <strong>Telegram, Discord, X
-                                                                (Twitter)</strong></li>
-                                                        <li><strong>Structured liquidity locks</strong> prevent
-                                                            premature extraction</li>
-                                                        <li>Zero buy/sell tax ensures transparent transactions</li>
-                                                        <li><strong>Audit pending:</strong> Security review will be
-                                                            submitted in alignment with phase-wise
-                                                            deployment</li>
+                                                        <li>Liquidity is locked for 3 years per phase</li>
+                                                        <li>All wallets are publicly verifiable on-chain</li>
+                                                        <li>No transaction tax ensures transparent transfers</li>
+                                                        <li>No minting or hidden supply expansion</li>
                                                     </ul>
+                                                    <p><strong>Multi-Signature Security:</strong></p>
+                                                    <p>-- Critical treasury operations require multiple authorized
+                                                        approvals, eliminating single-point
+                                                        control risks and ensuring secure fund management.</p>
+                                                    <p><strong>Audit:</strong></p>
+                                                    <p>-- A professional smart contract audit is planned in alignment
+                                                        with ecosystem expansion phases.</p>
                                                 </div>
                                             </div>
                                             <div class="faq-box">
@@ -441,17 +352,20 @@
                                                         <li><strong>Website:</strong> <a
                                                                 href="https://zacrocoz.com/">www.zacrocoz.com</a>
                                                         </li>
-                                                        <li><strong>Whitepaper:</strong> Available on the website
+                                                        <li><strong>Whitepaper:</strong> Available on the official
+                                                            website
                                                         </li>
-                                                        <li><strong>Community Channels:</strong> Telegram, Discord,
-                                                            X (Twitter)</li>
-                                                        <li><strong>Code Repository:</strong> GitHub / Official
-                                                            links provided on the website</li>
+                                                        <li><strong>Telegram:</strong> Official community channel</li>
+                                                        <li><strong>Discord:</strong> Community discussions</li>
+                                                        <li><strong>X (Twitter): </strong>Project updates</li>
+                                                        <li><strong>GitHub:</strong> Technical resources and code</li>
                                                     </ul>
+                                                    <p>All official links are published on the website for verification.
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="faq-box">
-                                                <div class="faq-title">Can ZRZ supply ever increase or be burned?
+                                                <div class="faq-title">Can ZRZ supply ever increase or be reduced?
                                                 </div>
                                                 <div class="gold faq-panel core-values">
                                                     <ul>
@@ -463,6 +377,71 @@
                                                         <li>Supply expansion is <strong>impossible</strong> under
                                                             any condition</li>
                                                     </ul>
+                                                    <p><strong>Burn Mechanism:</strong></p>
+                                                    <ul>
+                                                        <li>Optional token burns may occur voluntarily, but no forced
+                                                            reduction of user holdings exists.</li>
+                                                        <li>ZRZ maintains strict supply integrity to ensure long-term
+                                                            predictability.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="faq-box">
+                                                <div class="faq-title">Can the team sell or dump tokens?
+                                                </div>
+                                                <div class="gold faq-panel core-values">
+                                                    <p>ZRZ follows a structured allocation and liquidity model:</p>
+                                                    <ul>
+                                                        <li>Liquidity is locked and cannot be withdrawn prematurely</li>
+                                                        <li>Treasury usage is controlled through Multi-Signature
+                                                            authorization</li>
+                                                        <li>Token distribution is aligned with long-term ecosystem
+                                                            milestones</li>
+                                                    </ul>
+                                                    <p>This structure prevents sudden market shocks and ensures
+                                                        controlled token movement.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-box">
+                                                <div class="faq-title">Who controls the treasury?Who controls the
+                                                    treasury?
+                                                </div>
+                                                <div class="gold faq-panel core-values">
+                                                    <p>Treasury operations are governed through a Multi-Signature wallet
+                                                        system.</p>
+                                                    <ul>
+                                                        <li>No single entity has unilateral control</li>
+                                                        <li>Multiple approvals are required for execution</li>
+                                                        <li>All transactions are publicly visible on-chain</li>
+                                                    </ul>
+                                                    <p>This ensures accountability, transparency, and
+                                                        institutional-grade fund security.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-box">
+                                                <div class="faq-title">Is ZRZ a short-term investment?
+                                                </div>
+                                                <div class="gold faq-panel core-values">
+                                                    <p>ZRZ is not designed for short-term speculation.</p>
+                                                    <p><strong>It is built for:</strong></p>
+                                                    <ul>
+                                                        <li>Long-term ecosystem growth</li>
+                                                        <li>Structured governance participation</li>
+                                                        <li>Sustainable utility expansion</li>
+                                                    </ul>
+                                                    <p>The architecture prioritizes endurance over short-term
+                                                        volatility.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-box">
+                                                <div class="faq-title">Still have questions?
+                                                </div>
+                                                <div class="gold faq-panel core-values">
+                                                    <p>All <span class="ethno">ZacrocoZ</span> wallets, transactions,
+                                                        and ecosystem operations are publicly verifiable on-chain.
+                                                        For additional clarity, users can explore the Transparency
+                                                        Dashboard, review the Whitepaper, or
+                                                        connect through official community channels.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,42 +549,8 @@
 <script src="js/lang-translate.js"></script>
 <script src="js/particle.min.js"></script>
 
-<script defer="" src="../../../../../beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
-    integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
-    data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-    crossorigin="anonymous"></script>
-<script>
-    (function () {
-        function c() {
-            var b = a.contentDocument || a.contentWindow.document;
-            if (b) {
-                var d = b.createElement('script');
-                d.innerHTML = "window.__CF$cv$params={r:'9d4068cdd8db9cf4',t:'MTc3MjExOTA0Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                b.getElementsByTagName('head')[0].appendChild(d)
-            }
-        }
-        if (document.body) {
-            var a = document.createElement('iframe');
-            a.height = 1;
-            a.width = 1;
-            a.style.position = 'absolute';
-            a.style.top = 0;
-            a.style.left = 0;
-            a.style.border = 'none';
-            a.style.visibility = 'hidden';
-            document.body.appendChild(a);
-            if ('loading' !== document.readyState) c();
-            else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-            else {
-                var e = document.onreadystatechange || function () { };
-                document.onreadystatechange = function (b) {
-                    e(b);
-                    'loading' !== document.readyState && (document.onreadystatechange = e, c())
-                }
-            }
-        }
-    })();
-</script>
+
+<script src="js/lang_translator.js"></script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script>

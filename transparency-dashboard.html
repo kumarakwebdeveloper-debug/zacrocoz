@@ -20,20 +20,6 @@
         font-size: 32px !important;
     }
 
-    /* #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        opacity: 0.05;
-        z-index: -1;
-    } */
-
-    .sub-page-banner {
-        background: #0f172a;
-    }
-
     .sub-page-banner::after {
         background-image: none;
     }
@@ -51,9 +37,7 @@
 </style>
 
 <style>
-    /* FIXED VIDEO BACKGROUND SECTION - Content scrolls behind */
-
-    .sub-page-banner {
+    .sub-page-banner,.videoblk {
         position: relative;
         height: 70vh;
         overflow: hidden;
@@ -63,7 +47,7 @@
         background: #0f172a;
     }
 
-    #myVideo {
+    #myVideo,#smbanner {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -107,13 +91,10 @@
     }
 
 
-    /* SCROLLING CONTENT STARTS BELOW VIDEO */
     body {
-        /* padding-top: 50vh; */
         position: relative;
     }
 
-    /* Bottom gold line */
     .botline::after {
         content: '';
         position: absolute;
@@ -126,14 +107,6 @@
         z-index: 4;
     }
 
-    /* Mobile adjustments */
-    @media (max-width: 768px) {
-        body {
-            /* padding-top: 80vh; */
-            /* Slightly less on mobile */
-        }
-    }
-
     .sub-page-banner .container {
         top: 10% !important;
         transform: translateY(-10%) !important;
@@ -142,116 +115,7 @@
 
 
 <body>
-    <header class="header header-home">
-        <div class="container">
-            <div class="row flex-align">
-                <div class="col-xl-3 col-lg-3 col-md-3">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo-main.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-xl-9 col-lg-9 col-md-9">
-                    <div class="menu-toggle">
-                        <span></span>
-                    </div>
-
-                    <div class="menu-search">
-                        <a href="javascript:void(0)" class="search">
-                            <img src="images/search.png" alt="search">
-                        </a>
-                    </div>
-
-                    <div class="main-menu">
-
-                        <!-- NAV MENU -->
-                        <div class="nav-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                                <li><a href="transparency-dashboard.html" class="active">Transparency</a></li>
-
-                                <li>
-                                    <a href="javascript:void(0)">Explore <i
-                                            class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                    <ul class="dropdown-content">
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="security.html">Security</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="techonology-architecture.html">Technology & Architecture</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="governance-model.html">Governance Model</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="roadmap-future-growth.html">Roadmap</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="faq.html">FAQ</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="community-connect.html">Community & Connect</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="risk-disclosure.html">Risk Disclosure</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="utility-clarification.html">Utility Clarification</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
-                                        ZRZ</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HIDDEN GOOGLE TRANSLATE -->
-        <div id="google_translate_element" style="display:none;"></div>
-
-    </header>
+    <div id="header"></div>
 
     <!-- <div id="copy-alert" class="copy-alert">Wallet Copied!</div> -->
 
@@ -259,7 +123,7 @@
 
     <section class="sub-page-banner botline relative">
         <video autoplay muted loop id="myVideo">
-            <source src="images/bg-video.mp4" type="video/mp4">
+            <source src="images/transparency-banner.mov" type="video/mp4">
         </video>
         <div class="container">
             <div class="row">
@@ -377,6 +241,12 @@
         </section>
 
         <!-- CONTRACT OVERVIEW -->
+         <div class="videoblk pt-100">
+             <video autoplay muted loop id="smbanner">
+                 <source src="images/transparency-banner-live-price.mov" type="video/mp4">
+             </video>
+
+         </div>
         <section id="contract" class="section section-split">
             <div class="section-col">
                 <h2 class="color-gold">Contract Overview</h2>
@@ -1121,8 +991,58 @@
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
 
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    </script>
+
+    <script src="js/lang_translator.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <!-- <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    </script>
     <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -1168,7 +1088,7 @@
                 dropdown.value = savedLang;
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

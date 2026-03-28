@@ -34,111 +34,15 @@
             background-position: top right;
             position: relative;
         }
-        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
             background-color: #d4af37cf;
         }
     </style>
 
 
-    <header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-main.png" alt="logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
-                </div>
-
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
-                </div>
-
-                <div class="main-menu">
-
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                            <li>
-                                <a href="javascript:void(0)">Explore</a>
-                                <ul class="dropdown-content">
-                                    <li><a href="security.html">Security</a></li>
-                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><a href="governance-model.html">Governance Model</a></li>
-                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="community-connect.html">Community & Connect</a></li>
-                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
-
-</header>
+    <div id="header"></div>
 
 
     <!-- Start Of Main Div -->
@@ -151,7 +55,7 @@
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
                             <h1 class="sub-banner-title">ZRZ Tokenomics & Allocation</h1>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -204,14 +108,19 @@
                         <div class="core-values mt-1">
                             <h5 class="color-gold wow fadeInUp">Key Highlights:</h5>
                             <ul>
-                                <li class="wow fadeInUp delay-1">Permanently <strong>fixed supply</strong> — no minting or inflation</li>
-                                <li class="wow fadeInUp delay-2"><strong>No transaction tax, no blacklist, no upgradeable proxy</strong></li>
-                                <li class="wow fadeInUp delay-3">Entire supply minted at deployment and fully allocated</li>
-                                <li class="wow fadeInUp delay-4"><strong>Optional public burn</strong> enables voluntary supply reduction</li>
+                                <li class="wow fadeInUp delay-1">Permanently <strong>fixed supply</strong> — no minting
+                                    or inflation</li>
+                                <li class="wow fadeInUp delay-2"><strong>No transaction tax, no blacklist, no
+                                        upgradeable proxy</strong></li>
+                                <li class="wow fadeInUp delay-3">Entire supply minted at deployment and fully allocated
+                                </li>
+                                <li class="wow fadeInUp delay-4"><strong>Optional public burn</strong> enables voluntary
+                                    supply reduction</li>
                             </ul>
                         </div>
                         <div class="core-values mt-1">
-                            <p class="wow fadeInUp delay-5">The contract is <strong>immutable, verifiable, and audit-ready — fully aligned with institutional-grade transparency standards.</p>
+                            <p class="wow fadeInUp delay-5">The contract is <strong>immutable, verifiable, and
+                                    audit-ready — fully aligned with institutional-grade transparency standards.</p>
                         </div>
                     </div>
                 </div>
@@ -230,13 +139,13 @@
                             </ul>
                         </div>
                         <div class="core-values mt-3">
-                            <p class="wow fadeInUp delay-5">ZRZ ensures <strong>predictability and structural integrity,</strong> removing the uncertainty of elastic supply models.</p>
+                            <p class="wow fadeInUp delay-5">ZRZ ensures <strong>predictability and structural
+                                    integrity,</strong> removing the uncertainty of elastic supply models.</p>
 
                         </div>
                     </div>
                     <div class="col-md-4 hero-image wow fadeInUp">
-                        <img src="images/supply-structure.webp"
-                            alt="Supply Structure">
+                        <img src="images/supply-structure.webp" alt="Supply Structure">
                     </div>
                 </div>
                 <div class="bg-pattern">
@@ -355,7 +264,8 @@
                             </tbody>
                         </table>
                         <div class="core-values">
-                            <p class="color-gold wow fadeInUp delay-5">Allocation percentages balance <strong>liquidity strength, operational sustainability,and ecosystem expansion.</strong></p>
+                            <p class="color-gold wow fadeInUp delay-5">Allocation percentages balance <strong>liquidity
+                                    strength, operational sustainability,and ecosystem expansion.</strong></p>
                         </div>
                     </div>
                 </div>
@@ -370,35 +280,51 @@
                 <!-- <h2 class="color-gold mb-md-5 text-center wow fadeInDown">Core Design Principles</h2> -->
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <ul class="nav nav-pills flex-column nav-pills border-end border-3 me-3 align-items-center" id="pills-tab" role="tablist">
+                        <ul class="nav nav-pills flex-column nav-pills border-end border-3 me-3 align-items-center"
+                            id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-semibold active position-relative" id="pills-first-tab" data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab" aria-controls="pills-first" aria-selected="true">Wallet Transparency</button>
+                                <button class="nav-link fw-semibold active position-relative" id="pills-first-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-first" type="button" role="tab"
+                                    aria-controls="pills-first" aria-selected="true">Wallet Transparency</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-semibold position-relative" id="pills-second-tab" data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab" aria-controls="pills-second" aria-selected="false">Liquidity Model</button>
+                                <button class="nav-link fw-semibold position-relative" id="pills-second-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-second" type="button" role="tab"
+                                    aria-controls="pills-second" aria-selected="false">Liquidity Model</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-semibold position-relative" id="pills-third-tab" data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab" aria-controls="pills-third" aria-selected="false">Tokenomics Philosophy</button>
+                                <button class="nav-link fw-semibold position-relative" id="pills-third-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-third" type="button" role="tab"
+                                    aria-controls="pills-third" aria-selected="false">Tokenomics Philosophy</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-semibold position-relative" id="pills-fourth-tab" data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab" aria-controls="pills-fourth" aria-selected="true">Exclusions & Safety</button>
+                                <button class="nav-link fw-semibold position-relative" id="pills-fourth-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-fourth" type="button" role="tab"
+                                    aria-controls="pills-fourth" aria-selected="true">Exclusions & Safety</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-semibold position-relative" id="pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab" aria-controls="pills-fifth" aria-selected="false">Transparency Commitment</button>
+                                <button class="nav-link fw-semibold position-relative" id="pills-fifth-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-fifth" type="button" role="tab"
+                                    aria-controls="pills-fifth" aria-selected="false">Transparency Commitment</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-semibold position-relative" id="pills-sixth-tab" data-bs-toggle="pill" data-bs-target="#pills-sixth" type="button" role="tab" aria-controls="pills-sixth" aria-selected="false">Structural Summary</button>
+                                <button class="nav-link fw-semibold position-relative" id="pills-sixth-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-sixth" type="button" role="tab"
+                                    aria-controls="pills-sixth" aria-selected="false">Structural Summary</button>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-8">
 
-                        <div class="about-detail core-values tab-content border rounded-3 border-white p-3 text-danger w-100 mt-0" id="pills-tabContent" style="min-height: 330px;display: flex;align-items: center;">
-                            <div class="tab-pane fade show active" id="pills-first" role="tabpanel" aria-labelledby="pills-first-tab">
+                        <div class="about-detail core-values tab-content border rounded-3 border-white p-3 text-danger w-100 mt-0"
+                            id="pills-tabContent" style="min-height: 330px;display: flex;align-items: center;">
+                            <div class="tab-pane fade show active" id="pills-first" role="tabpanel"
+                                aria-labelledby="pills-first-tab">
                                 <div class="heading-part">
                                     <h3 class="color-gold mb-3">Wallet Transparency</h3>
                                     <p>All wallets are publicly verifiable on BNB Smart Chain:</p>
-                                    <p><strong>Liquidity Allocation Wallet-</strong> 50,000,000 ZRZ 0x23E9E929eEd2Df8D191FBA4ff899E1d58cb2C380</p>
+                                    <p><strong>Liquidity Allocation Wallet-</strong> 50,000,000 ZRZ
+                                        0x23E9E929eEd2Df8D191FBA4ff899E1d58cb2C380</p>
                                 </div>
                                 <ul>
                                     <li>Phased deployment</li>
@@ -407,53 +333,66 @@
                                 </ul>
                                 <div class="row mt-2">
                                     <div class="col-md-12 mt-3">
-                                        <p><strong class="color-gold">Development Wallet</strong> – 20,000,000 ZRZ 0x61F5274033475775700bA67073Da00de33f257e0</p>
+                                        <p><strong class="color-gold">Development Wallet</strong> – 20,000,000 ZRZ
+                                            0x61F5274033475775700bA67073Da00de33f257e0</p>
                                         <ul>
-                                            <li>Supports ecosystem construction: core dev, audits, infrastructure, governance tools</li>
+                                            <li>Supports ecosystem construction: core dev, audits, infrastructure,
+                                                governance tools</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-12 mt-3">
-                                        <p><strong class="color-gold">Ecosystem Wallet</strong> – 15,000,000 ZRZ 0x255095639Dde3393390c14d8c3bE67315E06aC37</p>
+                                        <p><strong class="color-gold">Ecosystem Wallet</strong> – 15,000,000 ZRZ
+                                            0x255095639Dde3393390c14d8c3bE67315E06aC37</p>
                                         <ul>
                                             <li>Drives adoption: incentives, partnerships, platform growth</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-12 mt-3">
-                                        <p><strong class="color-gold">Marketing Wallet</strong> – 15,000,000 ZRZ 0x4a2BA54328972C1a5b8B7B19723bd18434F48621</p>
+                                        <p><strong class="color-gold">Marketing Wallet</strong> – 15,000,000 ZRZ
+                                            0x4a2BA54328972C1a5b8B7B19723bd18434F48621</p>
                                         <ul>
-                                            <li>Structured for phased awareness campaigns, exchange listings, strategic visibility</li>
+                                            <li>Structured for phased awareness campaigns, exchange listings, strategic
+                                                visibility</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-12 mt-3">
-                                        <p><strong class="color-gold">Strategic Reserve Wallet</strong>- 10,000,000 ZRZ 0x3fFD564cCc45413296caDE8D2FD61FA71c59194f</p>
+                                        <p><strong class="color-gold">Strategic Reserve Wallet</strong>- 10,000,000 ZRZ
+                                            0x3fFD564cCc45413296caDE8D2FD61FA71c59194f</p>
                                         <ul>
-                                            <li>Reserved for long-term sustainability and strategic growth initiatives</li>
+                                            <li>Reserved for long-term sustainability and strategic growth initiatives
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="mt-2">
                                     <p class="color-gold">
-                                        <strong>Transparency is infrastructure.</strong> Every transfer is traceable. No undisclosed reserves.
+                                        <strong>Transparency is infrastructure.</strong> Every transfer is traceable. No
+                                        undisclosed reserves.
                                     </p>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-second" role="tabpanel" aria-labelledby="pills-second-tab">
+                            <div class="tab-pane fade" id="pills-second" role="tabpanel"
+                                aria-labelledby="pills-second-tab">
                                 <div class="heading-part">
                                     <h3 class="color-gold mb-3">Liquidity Model</h3>
                                     <p>Liquidity is the <strong>foundation of market stability:</strong></p>
                                 </div>
                                 <ul>
-                                    <li>50,000,000 ZRZ dedicated to liquidity   </li>
+                                    <li>50,000,000 ZRZ dedicated to liquidity </li>
                                     <li><strong>Structured phase deployment:</strong> 3-year lock per phase</li>
-                                    <li><strong>Progressive release</strong> ensures capital efficiency and market depth</li>
+                                    <li><strong>Progressive release</strong> ensures capital efficiency and market depth
+                                    </li>
                                     <li>Prevents sudden shocks or extraction behavior</li>
-                                    <li>Strengthens <strong>investor confidence</strong> and long-term price stability</li>
+                                    <li>Strengthens <strong>investor confidence</strong> and long-term price stability
+                                    </li>
                                 </ul>
-                                <p class="mt-3 color-gold">Liquidity is <strong>infrastructure, not speculative fuel.</strong></p>
+                                <p class="mt-3 color-gold">Liquidity is <strong>infrastructure, not speculative
+                                        fuel.</strong></p>
                             </div>
-                            <div class="tab-pane fade" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">
+                            <div class="tab-pane fade" id="pills-third" role="tabpanel"
+                                aria-labelledby="pills-third-tab">
                                 <div class="heading-part">
-                                     <h3 class="color-gold mb-3">Tokenomics Philosophy</h3>
+                                    <h3 class="color-gold mb-3">Tokenomics Philosophy</h3>
                                 </div>
                                 <p>ZRZ is designed to balance:</p>
                                 <ul>
@@ -462,9 +401,12 @@
                                     <li><strong>Ecosystem expansion</strong></li>
                                     <li><strong>Reserve security</strong></li>
                                 </ul>
-                                <p class="mt-3 color-gold">Majority allocation to liquidity ensures <strong>trading depth and stability,</strong> while operational and ecosystem allocations sustain long-term growth.</p>
+                                <p class="mt-3 color-gold">Majority allocation to liquidity ensures <strong>trading
+                                        depth and stability,</strong> while operational and ecosystem allocations
+                                    sustain long-term growth.</p>
                             </div>
-                            <div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-fourth-tab">
+                            <div class="tab-pane fade" id="pills-fourth" role="tabpanel"
+                                aria-labelledby="pills-fourth-tab">
                                 <div class="heading-part">
                                     <h3 class="color-gold mb-3">Exclusions & Safety</h3>
                                     <p>ZRZ does not include:</p>
@@ -476,22 +418,27 @@
                                     <li>Automatic redistribution</li>
                                     <li>Blacklist functions or mint authority</li>
                                 </ul>
-                                <p class="mt-3 color-gold">The economic structure is <strong>fixed, auditable, and verifiable.</strong></p>
-                                
+                                <p class="mt-3 color-gold">The economic structure is <strong>fixed, auditable, and
+                                        verifiable.</strong></p>
+
                             </div>
-                            <div class="tab-pane fade" id="pills-fifth" role="tabpanel" aria-labelledby="pills-fifth-tab">
+                            <div class="tab-pane fade" id="pills-fifth" role="tabpanel"
+                                aria-labelledby="pills-fifth-tab">
                                 <div class="heading-part">
                                     <h3 class="color-gold mb-3">Transparency Commitment</h3>
-                                    <p>Every wallet is fully <strong>public on-chain,</strong> enabling independent verification of:</p>
+                                    <p>Every wallet is fully <strong>public on-chain,</strong> enabling independent
+                                        verification of:</p>
                                 </div>
                                 <ul>
                                     <li>Wallet balances</li>
                                     <li>Transfers and allocations</li>
                                     <li>Liquidity phase locks</li>
                                 </ul>
-                                <p class="mt-3 color-gold"><strong>Investor trust is built through visibility, not promises.</strong></p>
+                                <p class="mt-3 color-gold"><strong>Investor trust is built through visibility, not
+                                        promises.</strong></p>
                             </div>
-                             <div class="tab-pane fade" id="pills-sixth" role="tabpanel" aria-labelledby="pills-sixth-tab">
+                            <div class="tab-pane fade" id="pills-sixth" role="tabpanel"
+                                aria-labelledby="pills-sixth-tab">
                                 <div class="heading-part">
                                     <h3 class="color-gold mb-3">Structural Summary</h3>
                                 </div>
@@ -503,7 +450,8 @@
                                     <li><strong>Public Wallet Transparency</strong></li>
                                     <li><strong>Governance-Ready Architecture</strong></li>
                                 </ul>
-                                <p class="mt-3 color-gold"><strong>ZRZ tokenomics are engineered for durability, not volatility.</strong></p>
+                                <p class="mt-3 color-gold"><strong>ZRZ tokenomics are engineered for durability, not
+                                        volatility.</strong></p>
                             </div>
                         </div>
                     </div>
@@ -517,17 +465,17 @@
 
 
     <!-- Footer Section Start -->
-     <!-- Footer Section Start -->
-        <div id="footer"></div>
-        <script>
-            fetch("footer.html")
+    <!-- Footer Section Start -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
             })
             .catch(error => console.error("Footer load failed:", error));
-        </script>
-        <!-- Footer Section End -->
+    </script>
+    <!-- Footer Section End -->
     <!-- Footer Section End -->
 
 
@@ -543,92 +491,34 @@
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
 
+
+
     <script>
-        (function() {
-            function c() {
-                var b = a.contentDocument || a.contentWindow.document;
-                if (b) {
-                    var d = b.createElement('script');
-                    d.innerHTML = "window.__CF$cv$params={r:'9d4068db5a859cf4',t:'MTc3MjExOTA0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d)
-                }
-            }
-            if (document.body) {
-                var a = document.createElement('iframe');
-                a.height = 1;
-                a.width = 1;
-                a.style.position = 'absolute';
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = 'none';
-                a.style.visibility = 'hidden';
-                document.body.appendChild(a);
-                if ('loading' !== document.readyState) c();
-                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-                else {
-                    var e = document.onreadystatechange || function() {};
-                    document.onreadystatechange = function(b) {
-                        e(b);
-                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
                     }
-                }
-            }
-        })();
+                });
+            });
     </script>
-    <script defer="" src="../../../../../beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
-        integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
-        data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-
-        function setLanguage(lang) {
-
-            // ENGLISH → delete cookie + reload
-            if (lang === "en") {
-                document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                localStorage.removeItem("lang");
-                location.reload();
-                return;
-            }
-
-            localStorage.setItem("lang", lang);
-
-            const interval = setInterval(() => {
-                let select = document.querySelector(".goog-te-combo");
-
-                if (select) {
-                    select.value = lang; // use zh-CN for Chinese
-                    select.dispatchEvent(new Event("change"));
-                    clearInterval(interval);
-
-                    setTimeout(() => {
-                        const banner = document.querySelector(".goog-te-banner-frame");
-                        if (banner) banner.style.display = "none";
-                        document.body.style.top = "0px";
-                    }, 100);
-                }
-            }, 200);
-        }
-
-        // ONLY set dropdown value (no auto translate)
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("lang");
-            const dropdown = document.querySelector(".lang-box select");
-            if (dropdown && savedLang) {
-                dropdown.value = savedLang;
-            }
-        });
-    </script>
-</body>
+    <script src="js/lang_translator.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
 
 </html>

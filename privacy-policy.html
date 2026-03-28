@@ -104,105 +104,7 @@
     <!-- Preloader End -->
 
 
-    <header class="header header-home">
-    <div class="container">
-        <div class="row flex-align">
-            <div class="col-xl-3 col-lg-3 col-md-3">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images/logo-main.png" alt="logo">
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-xl-9 col-lg-9 col-md-9">
-                <div class="menu-toggle">
-                    <span></span>
-                </div>
-
-                <div class="menu-search">
-                    <a href="javascript:void(0)" class="search">
-                        <img src="images/search.png" alt="search">
-                    </a>
-                </div>
-
-                <div class="main-menu">
-
-                    <!-- NAV MENU -->
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                            <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                            <li>
-                                <a href="javascript:void(0)">Explore</a>
-                                <ul class="dropdown-content">
-                                    <li><a href="security.html">Security</a></li>
-                                    <li><a href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                    <li><a href="techonology-architecture.html">Technology & Architecture</a></li>
-                                    <li><a href="governance-model.html">Governance Model</a></li>
-                                    <li><a href="roadmap-future-growth.html">Roadmap</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="community-connect.html">Community & Connect</a></li>
-                                    <li><a href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                    <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
-                                    <li><a href="utility-clarification.html">Utility Clarification</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy ZRZ</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                    <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- HIDDEN GOOGLE TRANSLATE -->
-    <div id="google_translate_element" style="display:none;"></div>
-
-</header>
+       <div id="header"></div>
 
 
     <!-- Start Of Main Div -->
@@ -396,92 +298,33 @@
     <script src="js/script.js"></script>
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
-
-    <script defer="" src="../../../../../beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
-        integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
-        data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
+    
     <script>
-        (function() {
-            function c() {
-                var b = a.contentDocument || a.contentWindow.document;
-                if (b) {
-                    var d = b.createElement('script');
-                    d.innerHTML = "window.__CF$cv$params={r:'9d4068bede999cf4',t:'MTc3MjExOTA0NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d)
-                }
-            }
-            if (document.body) {
-                var a = document.createElement('iframe');
-                a.height = 1;
-                a.width = 1;
-                a.style.position = 'absolute';
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = 'none';
-                a.style.visibility = 'hidden';
-                document.body.appendChild(a);
-                if ('loading' !== document.readyState) c();
-                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-                else {
-                    var e = document.onreadystatechange || function() {};
-                    document.onreadystatechange = function(b) {
-                        e(b);
-                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
                     }
-                }
-            }
-        })();
+                });
+            });
     </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-
-        function setLanguage(lang) {
-
-            // ENGLISH → delete cookie + reload
-            if (lang === "en") {
-                document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                localStorage.removeItem("lang");
-                location.reload();
-                return;
-            }
-
-            localStorage.setItem("lang", lang);
-
-            const interval = setInterval(() => {
-                let select = document.querySelector(".goog-te-combo");
-
-                if (select) {
-                    select.value = lang; // use zh-CN for Chinese
-                    select.dispatchEvent(new Event("change"));
-                    clearInterval(interval);
-
-                    setTimeout(() => {
-                        const banner = document.querySelector(".goog-te-banner-frame");
-                        if (banner) banner.style.display = "none";
-                        document.body.style.top = "0px";
-                    }, 100);
-                }
-            }, 200);
-        }
-
-        // ONLY set dropdown value (no auto translate)
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("lang");
-            const dropdown = document.querySelector(".lang-box select");
-            if (dropdown && savedLang) {
-                dropdown.value = savedLang;
-            }
-        });
-    </script>
+    <script src="js/lang_translator.js"></script>
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

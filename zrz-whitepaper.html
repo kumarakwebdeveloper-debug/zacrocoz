@@ -1380,6 +1380,30 @@
     <script src="js/particle.min.js"></script>
 
     <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    </script>
+    <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement(
                 {

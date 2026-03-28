@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/home-page-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/extra-styles.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
@@ -138,118 +138,42 @@
             position: relative;
             z-index: 0;
         }
+
+        /* Dropdown Fix */
+        .has-dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            top: 120%;
+            left: 0;
+            background: #0d0d1a;
+            min-width: 250px;
+            border-radius: 10px;
+            padding: 10px 0;
+            display: none;
+            z-index: 999;
+        }
+
+        .has-dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content li {
+            padding: 8px 20px;
+        }
+
+        .dropdown-content li a {
+            color: #ccc;
+            transition: 0.3s;
+        }
+
+        .dropdown-content li a:hover {
+            color: #f5b942;
+        }
     </style>
-    <header class="header header-home">
-        <div class="container">
-            <div class="row flex-align">
-                <div class="col-xl-3 col-lg-3 col-md-3">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo-main.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-xl-9 col-lg-9 col-md-9">
-                    <div class="menu-toggle">
-                        <span></span>
-                    </div>
-
-                    <div class="menu-search">
-                        <a href="javascript:void(0)" class="search">
-                            <img src="images/search.png" alt="search">
-                        </a>
-                    </div>
-
-                    <div class="main-menu">
-
-                        <!-- NAV MENU -->
-                        <div class="nav-menu">
-                            <ul>
-                                <li><a href="index.html" class="active">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                                <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                                <li>
-                                    <a href="javascript:void(0)">Explore <i
-                                            class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                    <ul class="dropdown-content">
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="security.html">Security</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="techonology-architecture.html">Technology & Architecture</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="governance-model.html">Governance Model</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="roadmap-future-growth.html">Roadmap</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="faq.html">FAQ</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="community-connect.html">Community & Connect</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="risk-disclosure.html">Risk Disclosure</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="utility-clarification.html">Utility Clarification</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
-                                        ZRZ</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                        <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HIDDEN GOOGLE TRANSLATE -->
-        <div id="google_translate_element" style="display:none;"></div>
-
-    </header>
+    <div id="header"></div>
 
 
     <!-- Start Of Main Div -->
@@ -316,8 +240,9 @@
                 <!-- LEFT CONTENT -->
                 <div class="col-md-7 hero-content wow fadeInLeft animated">
 
-                    <h2 class="mb-md-3 color-gold">Structured Beyond Speculation</h2>
-                    <p class="">In a market dominated by hype, volatility, and fragmented governance, ZRZ introduces
+                    <h2 class="mb-3 color-gold">Structured Beyond Speculation</h2>
+                    <p class=" mb-3">In a market dominated by hype, volatility, and fragmented governance, ZRZ
+                        introduces
                         structure.</p>
 
                     <div class="feature mt-md-4 wow fadeInLeft animated">
@@ -407,10 +332,10 @@
             <div class="section-decoration"></div>
         </section>
 
-        <section class="container-fluid zrz-stands rs ptb-100 relative">
+        <section class="container-fluid zrz-stands mbrs rs ptb-100 relative">
 
-            <div class="row align-items-center">
-                <div class="col-md-8 hero-content">
+            <div class="row align-items-center fdcl">
+                <div class="col-sm-12 col-md-8 hero-content mb-5 md-md-0">
 
                     <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Phase-Based Liquidity Architecture</h2>
                     <p class="wow fadeInDown text-center color-gold">Liquidity is structured, not rushed.</p>
@@ -418,12 +343,13 @@
                     <div class="core-values mt-3 pbla">
                         <ul>
                             <li><i class="fa fa-check"></i> 45,000,000 ZRZ phased liquidity deployment</li>
-                            <li><i class="fa fa-check"></i> Each liquidity phase follows a 3-year lock (structured vesting mechanism)</li>
+                            <li><i class="fa fa-check"></i> Each liquidity phase follows a 3-year lock (structured
+                                vesting mechanism)</li>
                             <li><i class="fa fa-check"></i> Independent phase locks ensuring controlled release</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 hero-image wow fadeInUp">
+                <div class="col-sm-12 col-md-4 hero-image wow fadeInUp">
                     <img src="images/phase-based-liquidity-arch.jpeg" alt="Phase-Based Liquidity Architecture"
                         class="w-100">
                 </div>
@@ -663,6 +589,7 @@
                                 <ul>
                                     <li><strong>Foundation:</strong> Token deployment, liquidity locks, community
                                         formation</li>
+                                    <br class="d-sm-block d-md-none">
                                     <li><strong>Expansion:</strong> Governance tools, ecosystem integrations, AI-driven
                                         enhancements</li>
                                     <li><strong>Sustainability:</strong> Security audits, treasury verification,
@@ -1190,6 +1117,30 @@
         topvideo.playbackRate = 0.75;
         myvideo.playbackRate = 0.75;
     </script>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    </script>
 
     <script>
         document.querySelectorAll(".particles-bg").forEach(canvas => {
@@ -1344,104 +1295,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
 
-        function setLanguage(lang) {
+    <script src="js/lang_translator.js"></script>
 
-            // ENGLISH → delete cookie + reload
-            if (lang === "en") {
-                document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                localStorage.removeItem("lang");
-                location.reload();
-                return;
-            }
+    <script src="js/lang_translator.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-            localStorage.setItem("lang", lang);
-
-            const interval = setInterval(() => {
-                let select = document.querySelector(".goog-te-combo");
-
-                if (select) {
-                    select.value = lang; // use zh-CN for Chinese
-                    select.dispatchEvent(new Event("change"));
-                    clearInterval(interval);
-
-                    setTimeout(() => {
-                        const banner = document.querySelector(".goog-te-banner-frame");
-                        if (banner) banner.style.display = "none";
-                        document.body.style.top = "0px";
-                    }, 100);
-                }
-            }, 200);
-        }
-
-        // ONLY set dropdown value (no auto translate)
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("lang");
-            const dropdown = document.querySelector(".lang-box select");
-            if (dropdown && savedLang) {
-                dropdown.value = savedLang;
-            }
-        });
-    </script>
-
-
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-
-        function setLanguage(lang) {
-
-            // ENGLISH → delete cookie + reload
-            if (lang === "en") {
-                document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                localStorage.removeItem("lang");
-                location.reload();
-                return;
-            }
-
-            localStorage.setItem("lang", lang);
-
-            const interval = setInterval(() => {
-                let select = document.querySelector(".goog-te-combo");
-
-                if (select) {
-                    select.value = lang; // use zh-CN for Chinese
-                    select.dispatchEvent(new Event("change"));
-                    clearInterval(interval);
-
-                    setTimeout(() => {
-                        const banner = document.querySelector(".goog-te-banner-frame");
-                        if (banner) banner.style.display = "none";
-                        document.body.style.top = "0px";
-                    }, 100);
-                }
-            }, 200);
-        }
-
-        // ONLY set dropdown value (no auto translate)
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("lang");
-            const dropdown = document.querySelector(".lang-box select");
-            if (dropdown && savedLang) {
-                dropdown.value = savedLang;
-            }
-        });
-    </script>
+    <!-- <script src="js/lang_translator.js"></script> -->
     </body>
 
 </html>

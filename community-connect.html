@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/governance-modestyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
-    
+
 
     <style>
         .inner-pages-content table {
@@ -150,117 +150,7 @@
     </style>
 
 
-    <header class="header header-home">
-        <div class="container">
-            <div class="row flex-align">
-                <div class="col-xl-3 col-lg-3 col-md-3">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo-main.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-xl-9 col-lg-9 col-md-9">
-                    <div class="menu-toggle">
-                        <span></span>
-                    </div>
-
-                    <div class="menu-search">
-                        <a href="javascript:void(0)" class="search">
-                            <img src="images/search.png" alt="search">
-                        </a>
-                    </div>
-
-                    <div class="main-menu">
-
-                        <!-- NAV MENU -->
-                        <div class="nav-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                                <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                                <li>
-                                    <a href="javascript:void(0)" class="active">Explore <i
-                                            class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                    <ul class="dropdown-content">
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="security.html">Security</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="techonology-architecture.html">Technology & Architecture</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="governance-model.html">Governance Model</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="roadmap-future-growth.html">Roadmap</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="faq.html">FAQ</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="community-connect.html">Community & Connect</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="zrz-manifesto.html" class="active">ZRZ Manifesto</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="risk-disclosure.html">Risk Disclosure</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="utility-clarification.html">Utility Clarification</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
-                                        ZRZ</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                        <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HIDDEN GOOGLE TRANSLATE -->
-        <div id="google_translate_element" style="display:none;"></div>
-
-    </header>
+        <div id="header"></div>
 
 
     <!-- Start Of Main Div -->
@@ -272,8 +162,15 @@
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
-                            <h1 class="sub-banner-title color-gold">Community & Connect – <span
-                                    class="ethno">ZacrocoZ</span></h1>
+                            <h1 class="sub-banner-title color-gold">Community & Engagement — <span
+                                    class="ethno">ZacrocoZ</span> Ecosystem</h1>
+                            <p class="my-2"><span class="ethno">ZacrocoZ</span> is built on structured participation,
+                                transparent
+                                systems, and long-term ecosystem
+                                alignment.</p>
+                            <p>This is not a passive network — it is an actively governed, contribution-driven
+                                environment
+                                designed for sustainable growth.</p>
                             <!-- <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li>Community & Connect – ZacrocoZ</li>
@@ -294,16 +191,24 @@
                         <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Join the <span
                                 class="ethno">ZacrocoZ</span> Ecosystem</h2>
                         <div class="core-values mt-3">
-                            <p><span class="ethno">ZacrocoZ</span> thrives on structured participation, transparency,
-                                and long-term blockchain utility. We welcome:</p>
+                            <p><span class="ethno">ZacrocoZ</span> is engineered to support meaningful participation
+                                across multiple roles within the ecosystem. We welcome:</p>
                             <ul>
-                                <li><strong>Developers</strong> building tools and integrations</li>
-                                <li><strong>Contributors</strong> supporting ecosystem growth</li>
-                                <li><strong>Learners</strong> seeking blockchain knowledge</li>
-                                <li><strong>Community members</strong> engaging responsibly</li>
+                                <li>Developers building tools, integrations, and infrastructure</li>
+                                <li>Contributors supporting ecosystem expansion and strategic initiatives</li>
+                                <li>Learners exploring blockchain, governance, and AI-driven systems</li>
+                                <li>Community participants engaging responsibly within a structured environment</li>
                             </ul>
-                            <p class="mt-3">Participation is <strong>verified, meaningful, and aligned</strong> with ZRZ
-                                governance, utility, and ecosystem principles.</p>
+                            <p class="mt-3">All participation is aligned with governance principles, measurable
+                                contribution, and long-term
+                                ecosystem value creation.</p>
+                            <p class="my-2">Participation is not symbolic — it is structured, verifiable, and rewarded
+                                on-chain
+                                through
+                                ZRZ-based incentive mechanisms.</p>
+                            <p>All contributions are designed to strengthen ecosystem integrity, scalability, and
+                                long-term
+                                sustainability.</p>
                         </div>
                     </div>
                     <div class="col-md-4 hero-image wow fadeInUp">
@@ -317,7 +222,10 @@
 
                     <div class="col-md-8">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Official Channels & Verification</h2>
-                        <p>Always use verified ZacrocoZ channels to avoid scams:</p>
+                        <p>All official <span class="ethno">ZacrocoZ</span> communication channels are publicly
+                            verifiable.</p>
+                        <p>Participants are strongly advised to interact only through the verified sources listed below.
+                        </p>
                         <table class="table table-bordered mt-3">
                             <thead>
                                 <tr>
@@ -331,6 +239,10 @@
                                     <td><a href="https://zacrocoz.com/" target="_blank">zacrocoz.com</a></td>
                                 </tr>
                                 <tr>
+                                    <td><strong>🐦 X (Twitter): </strong></td>
+                                    <td><a href="https://x.com/ZacrocoZ" target="_blank">Twitter Link</a></td>
+                                </tr>
+                                <tr>
                                     <td><strong>📢 Telegram:</strong></td>
                                     <td><a href="https://t.me/ZacrocoZ" target="_blank">Telegram</a></td>
                                 </tr>
@@ -338,10 +250,6 @@
                                     <td><strong>📱 WhatsApp Channel:</strong></td>
                                     <td><a href="https://whatsapp.com/channel/0029VbC48g284OmEXVctxE2n"
                                             target="_blank">Whatsapp Channel</a></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>🐦 X (Twitter): </strong></td>
-                                    <td><a href="https://x.com/ZacrocoZ" target="_blank">Twitter Link</a></td>
                                 </tr>
                                 <tr>
                                     <td><strong>🌐 Official Website:</strong>Liquidity Allocation</td>
@@ -385,10 +293,10 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="core-values">
+                        <!-- <div class="core-values">
                             <p class="color-gold wow fadeInUp delay-2">⚠ <strong>Always verify before any
                                     transaction.</strong> Avoid unofficial or third-party sources.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -401,73 +309,124 @@
                         <!-- PHASE 1 -->
                         <div class="phase-card wow fadeInUp" data-wow-delay="0.1s">
                             <div class="phase-number">01</div>
-                            <h4 class="color-gold">Community Participation & Contribution</h4>
-                            <p><span class="ethno">ZacrocoZ</span> grows through active and responsible participation:
+                            <h4 class="color-gold">Contract Notice</h4>
                             </p>
                             <div class="gold core-values">
                                 <ul class="ps-0">
-                                    <li>Engage in governance proposals and voting once activated</li>
-                                    <li>Support ecosystem initiatives, collaborations, and integrations</li>
-                                    <li>Participate in educational programs and knowledge sharing</li>
-                                    <li>Provide structured feedback for platform improvements</li>
+                                    <li>Only interact with the verified ZRZ smart contract address.</li>
+                                    <li><span class="ethno">ZacrocoZ</span> does not deploy duplicate tokens, mirror
+                                        contracts, or unofficial versions under any circumstances.</li>
                                 </ul>
-                                <p class="phase-summary">Participation is rewarded on-chain through ZRZ-based
-                                    incentives, fostering long-term ecosystem growth.</p>
                             </div>
                         </div>
 
                         <!-- PHASE 2 -->
                         <div class="phase-card wow fadeInUp" data-wow-delay="0.2s">
                             <div class="phase-number">02</div>
-                            <h4 class="color-gold">Security & Safety Guidelines</h4>
-                            <p>For secure interactions:</p>
+                            <h4 class="color-gold">Security Notice</h4>
                             <div class="gold core-values">
                                 <ul>
-                                    <li>Never trust private messages or DMs claiming to represent <span
-                                            class="ethno">ZacrocoZ</span></li>
-                                    <li>ZRZ is a utility token, not a guarantee of profits</li>
-                                    <li>Only interact with <strong>official wallets, addresses, and smart
-                                            contracts</strong></li>
-                                    <li>Verify all transactions and ecosystem updates via official channels</li>
-                                    <li><strong>Security awareness and trust are core principles</strong> of <span
-                                            class="ethno">ZacrocoZ</span></li>
+                                    <li><span class="ethno">ZacrocoZ</span> will never request private keys, wallet
+                                        access, or direct token transfers.</li>
+                                    <li>All official communication occurs exclusively through verified channels listed
+                                        above.</li>
+                                    <li>Always independently verify wallet addresses and smart contracts before
+                                        executing
+                                        transactions.</li>
+                                    <li>Any unauthorized communication or impersonation attempt should be treated as
+                                        fraudulent.</li>
                                 </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="phase-card wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="phase-number">03</div>
+                            <h4 class="color-gold">Community Participation & Contribution</h4>
+                            <p><span class="ethno">ZacrocoZ</span> grows through active and responsible, and structured
+                                participation:
+                            </p>
+                            <div class="gold core-values">
+                                <ul class="ps-0">
+                                    <li>Engage in governance proposals and voting mechanisms</li>
+                                    <li>Support ecosystem initiatives, integrations, and partnerships</li>
+                                    <li>Participate in educational programs and knowledge sharing</li>
+                                    <li>Provide structured feedback for platform and protocol improvements</li>
+                                </ul>
+                                <p class="phase-summary">Participation is governed by transparent frameworks designed to
+                                    ensure fairness, accountability,
+                                    and measurable contribution.
+                                    <br>
+                                    All incentives are distributed on-chain through ZRZ, reinforcing trust,
+                                    transparency, and
+                                    ecosystem alignment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- PHASE 2 -->
+                        <div class="phase-card wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="phase-number">04</div>
+                            <h4 class="color-gold">Security Awareness</h4>
+                            <p>For secure interaction within the <span class="ethno">ZacrocoZ</span> ecosystem:</p>
+                            <div class="gold core-values">
+                                <ul>
+                                    <li><span class="ethno">ZacrocoZ</span> will never initiate contact via private
+                                        messages, DMs, or unsolicited outreach</li>
+                                    <li>Never share private keys, seed phrases, or wallet credentials under any
+                                        circumstances</li>
+                                    <li>Only interact with verified smart contracts, wallets, and official communication
+                                        channels</li>
+                                    <li>Always verify contract addresses independently before executing transactions
+                                    </li>
+                                    <li>Any unauthorized communication should be considered fraudulent</li>
+                                </ul>
+                                <p class="mt-2">Security awareness is essential. Trust only verifiable and publicly
+                                    accessible sources.</p>
                             </div>
                         </div>
 
                         <!-- PHASE 3 -->
                         <div class="phase-card wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="phase-number">03</div>
+                            <div class="phase-number">05</div>
                             <h3 class="color-gold">Future Updates & Communication</h3>
-                            <p>All official updates regarding:</p>
+                            <p>All official updates are structured, transparent, and publicly communicated. These
+                                include:</p>
                             <div class="gold core-values">
                                 <ul>
-                                    <li>Liquidity deployment</li>
-                                    <li>Token allocation progress</li>
-                                    <li>Platform launches and tool expansions</li>
-                                    <li>Governance activation and treasury reports</li>
-                                    <li>Strategic partnerships</li>
+                                    <li>Liquidity deployment progress and lock confirmations</li>
+                                    <li>Token allocation tracking and treasury transparency</li>
+                                    <li>Platform launches, upgrades, and ecosystem expansions</li>
+                                    <li>Governance activation, proposals, and treasury reports</li>
+                                    <li>Strategic partnerships and infrastructure integrations</li>
+                                    <li>Vesting schedule updates and token unlock transparency</li>
                                 </ul>
                             </div>
-                            <p class="phase-summary">will be publicly communicated via official channels. No private
-                                operations, hidden schemes, or sudden changes.</p>
+                            <p class="phase-summary">All updates are communicated exclusively through official channels.
+                                <br><span class="ethno">ZacrocoZ</span> does not operate through private coordination,
+                                hidden announcements, or off-chain
+                                decision-making.
+                            </p>
                         </div>
 
                         <div class="phase-card wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="phase-number">04</div>
+                            <div class="phase-number">06</div>
                             <h3 class="color-gold">Our Commitment to the Community</h3>
-                            <p><span class="ethno">ZacrocoZ</span> ensures:</p>
+                            <p><span class="ethno">ZacrocoZ</span> is committed to maintaining a transparent,
+                                accountable, and resilient ecosystem::</p>
                             <div class="gold core-values">
                                 <ul>
-                                    <li>Long-term ecosystem sustainability</li>
-                                    <li>Responsible liquidity management</li>
-                                    <li>Transparent token allocation and vesting</li>
-                                    <li>Community-driven governance</li>
-                                    <li>Continuous platform and tool innovation</li>
+                                    <li>Long-term ecosystem sustainability through structured growth</li>
+                                    <li>Responsible liquidity management with phased deployment strategies</li>
+                                    <li>Transparent token allocation supported by verifiable on-chain data</li>
+                                    <li>Governance evolution aligned with community participation</li>
+                                    <li>Continuous innovation across platform, infrastructure, and AI integration</li>
                                 </ul>
                             </div>
-                            <p class="phase-summary">Trust is built through <strong>clarity, accountability, and
-                                    transparency — not empty promises.</strong></p>
+                            <p class="phase-summary">All commitments are executed through verifiable on-chain actions
+                                and publicly auditable
+                                processes. <br> Trust is built through transparency, accountability, and consistency —
+                                not promises.</p>
                         </div>
                     </div>
 
@@ -483,20 +442,25 @@
                     </div>
                     <div class="col-md-6">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Closing Statement</h2>
-                        <p class="mt-2"><span class="ethno">ZacrocoZ</span> represents a modern, human-centered
-                            blockchain ecosystem:</p>
+                        <p class="mt-2"><span class="ethno">ZacrocoZ</span> represents a structured, transparent, and
+                            future-ready blockchain ecosystem engineered for long-term sustainability.</p>
                         <div class="core-values mt-1">
                             <ul>
-                                <li>Structured and transparent</li>
-                                <li>Utility-focused and community-powered</li>
-                                <li>Governed by long-term sustainability principles</li>
+                                <li>Architected with fixed supply integrity and controlled liquidity deployment</li>
+                                <li>Built around real utility, governance participation, and ecosystem expansion</li>
+                                <li>Designed with accountability, verifiability, and risk-aware growth principles</li>
 
                             </ul>
                         </div>
-                        <div class="core-values mt-1">
-                            <p class="wow fadeInUp delay-2">If you value responsible <strong>growth, real utility, and
-                                    verified participation,</strong> <span class="ethno">ZacrocoZ</span> welcomes
-                                you to <strong>join, contribute, and grow</strong> with the ecosystem.</p>
+                        <div class="core-values mt-3">
+                            <p class="wow fadeInUp delay-2"><span class="ethno">ZacrocoZ</span> is not driven by
+                                short-term market cycles — it is
+                                designed to establish a durable,
+                                intelligent, and scalable digital economy. <br>Participants who value structure,
+                                clarity, and long-term ecosystem development are invited to
+                                engage, contribute, and grow within the <span class="ethno">ZacrocoZ</span> network.
+                                <br><span class="ethno">ZacrocoZ</span> is engineered for continuity, not speculation.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -747,55 +711,34 @@
         });
     </script>
 
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
 
     <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
 
-        function setLanguage(lang) {
+                const currentPage = window.location.pathname.split("/").pop();
 
-            // ENGLISH → delete cookie + reload
-            if (lang === "en") {
-                document.cookie = "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                document.cookie = "googtrans=; domain=" + location.hostname + "; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
-                localStorage.removeItem("lang");
-                location.reload();
-                return;
-            }
+                const menuLinks = document.querySelectorAll(".nav-menu a");
 
-            localStorage.setItem("lang", lang);
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
 
-            const interval = setInterval(() => {
-                let select = document.querySelector(".goog-te-combo");
+                    link.classList.remove("active");
 
-                if (select) {
-                    select.value = lang; // use zh-CN for Chinese
-                    select.dispatchEvent(new Event("change"));
-                    clearInterval(interval);
-
-                    setTimeout(() => {
-                        const banner = document.querySelector(".goog-te-banner-frame");
-                        if (banner) banner.style.display = "none";
-                        document.body.style.top = "0px";
-                    }, 100);
-                }
-            }, 200);
-        }
-
-        // ONLY set dropdown value (no auto translate)
-        document.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("lang");
-            const dropdown = document.querySelector(".lang-box select");
-            if (dropdown && savedLang) {
-                dropdown.value = savedLang;
-            }
-        });
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
     </script>
+    <script src="js/lang_translator.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 
 </html>

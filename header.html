@@ -1,0 +1,105 @@
+<header class="header header-home">
+        <div class="container">
+            <div class="row flex-align">
+
+                <!-- LOGO -->
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo-main.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MENU -->
+                <div class="col-xl-9 col-lg-9 col-md-9">
+
+                    <!-- MOBILE TOGGLE -->
+                    <div class="menu-toggle">
+                        <span></span>
+                    </div>
+
+                    <div class="main-menu">
+
+                        <!-- NAV -->
+                        <div class="nav-menu">
+                            <ul>
+
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
+                                <li><a href="transparency-dashboard.html">Transparency</a></li>
+
+                                <!-- DROPDOWN -->
+                                <li class="has-dropdown">
+                                    <a href="javascript:void(0)">
+                                        Explore
+                                        <i class="fa fa-angle-double-down color-gold ms-1"></i>
+                                    </a>
+
+                                    <ul class="dropdown-content">
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="security.html">Security</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="ecosystem-utility.html">Ecosystem Utility</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="techonology-architecture.html">Technology & Architecture</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="governance-model.html">Governance Model</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="roadmap-future-growth.html">Roadmap</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="faq.html">FAQ</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="community-connect.html">Community</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="zrz-manifesto.html">Manifesto</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="risk-disclosure.html">Risk Disclosure</a></li>
+                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a href="utility-clarification.html">Utility Clarification</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="contact.html">Contact</a></li>
+
+                                <!-- CTA -->
+                                <li>
+                                    <a href="#" class="btn-buy">Buy ZRZ</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- 🌐 LANGUAGE -->
+                        <div class="lang-wrapper">
+                            <span class="lang-icon">
+                                <i class="fa fa-globe"></i>
+                            </span>
+
+                            <select id="langSelect" onchange="setLanguage(this.value)">
+                                <option value="en" data-code="EN">English</option>
+                                <option value="zh-CN" data-code="中文">Mandarin</option>
+                                <option value="ja" data-code="日本語">Japanese</option>
+                                <option value="de" data-code="DE">German</option>
+                                <option value="fr" data-code="FR">French</option>
+                                <option value="ko" data-code="KO">Korean</option>
+                                <option value="ar" data-code="AR">Arabic</option>
+                                <option value="iw" data-code="HE">Hebrew</option>
+                                <option value="el" data-code="GR">Greek</option>
+                                <option value="es" data-code="ES">Spanish</option>
+                                <option value="pt" data-code="PT">Portuguese</option>
+                                <option value="ru" data-code="RU">Russian</option>
+                                <option value="tr" data-code="TR">Turkish</option>
+                                <option value="fa" data-code="FA">Persian</option>
+                                <option value="th" data-code="TH">Thai</option>
+                                <option value="vi" data-code="VI">Vietnamese</option>
+                                <option value="hi" data-code="HI">Hindi</option>
+                            </select>
+
+                            <span class="lang-display" id="langDisplay">EN</span>
+
+                            <span class="lang-arrow">
+                                <i class="fa fa-chevron-up"></i>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GOOGLE TRANSLATE -->
+        <div id="google_translate_element" style="display:none;"></div>
+    </header>

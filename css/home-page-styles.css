@@ -499,13 +499,17 @@
   }
 
   .pillar {
-    padding: 28px 32px 28px 72px;
+    padding: 18px 32px 18px 72px;
+        border: 1px solid #d4a12f80;
+  }
+  .pillars-stack{
+        gap: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .philosophy-content h2 {
-    font-size: 2.8rem;
+    font-size: 2.25rem;
   }
 
   .pillar-number {
