@@ -41,121 +41,12 @@
         }
     </style>
 
-    <header class="header header-home">
-        <div class="container">
-            <div class="row flex-align">
-                <div class="col-xl-3 col-lg-3 col-md-3">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo-main.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
 
-                <div class="col-xl-9 col-lg-9 col-md-9">
-                    <div class="menu-toggle">
-                        <span></span>
-                    </div>
-
-                    <div class="menu-search">
-                        <a href="javascript:void(0)" class="search">
-                            <img src="images/search.png" alt="search">
-                        </a>
-                    </div>
-
-                    <div class="main-menu">
-
-                        <!-- NAV MENU -->
-                        <div class="nav-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                                <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                                <li>
-                                    <a href="javascript:void(0)" class="active">Explore <i
-                                            class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                    <ul class="dropdown-content">
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="security.html" class="active">Security</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="techonology-architecture.html">Technology & Architecture</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="governance-model.html">Governance Model</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="roadmap-future-growth.html">Roadmap</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="faq.html">FAQ</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="community-connect.html">Community & Connect</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="risk-disclosure.html">Risk Disclosure</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="utility-clarification.html">Utility Clarification</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
-                                        ZRZ</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- 🌐 CUSTOM LANGUAGE SELECT -->
-                        <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <!-- Display selected short code -->
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- HIDDEN GOOGLE TRANSLATE -->
-        <div id="google_translate_element" style="display:none;"></div>
-
-    </header>
 
 
     <!-- Start Of Main Div -->
     <div class="main">
+        <div id="header"></div>
 
         <!-- Subpage Banner Start -->
         <section class="sub-page-banner relative">
@@ -184,7 +75,7 @@
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Built on Protection. Engineered for
                             Trust. Designed for Longevity.</h2>
                         <div class="core-values mt-1">
-                            <p class="wow fadeInUp delay-1">-- Security within the ZacrocoZ ecosystem is not an
+                            <p class="wow fadeInUp delay-1">-- Security within the <span class="ethno">ZacrocoZ</span> ecosystem is not an
                                 afterthought — it is a core architectural pillar. Every contract, wallet, liquidity
                                 deployment, and governance mechanism is structured to minimize risk, maximize
                                 transparency, and protect participants.</p>
@@ -220,7 +111,7 @@
                                 <li>Multi-layer validation checks</li>
                                 <li>Event-based transparency logging</li>
                             </ul>
-                            <p class="mt-2">All contracts are designed to be audit-ready and publicly verifiable
+                            <p class="mt-3">All contracts are designed to be audit-ready and publicly verifiable
                                 on-chain.</p>
                         </div>
                     </div>
@@ -232,7 +123,7 @@
                 <!-- <h2 class="color-gold mb-md-5 text-center wow fadeInDown">Core Design Principles</h2> -->
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <ul class="nav nav-pills flex-column nav-pills border-end border-3 me-3 align-items-center"
+                        <ul class="nav nav-pills abt mb-4 mb-md-0 flex-column nav-pills border-end border-3 me-3 align-items-center"
                             id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link fw-semibold active position-relative" id="pills-first-tab"
@@ -600,8 +491,6 @@
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
 
-    <script src="js/lang_translator.js"></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
         fetch('header.html')
@@ -627,6 +516,9 @@
                 });
             });
     </script>
+    <script src="js/lang_translator.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     </body>
 
 </html>

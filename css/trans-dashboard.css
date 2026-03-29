@@ -1128,4 +1128,44 @@ main {
   .stat-item {
     padding: 10px 12px;
   }
+  main {
+    padding-inline: 24px;
+  }
+  .sub-page-banner,
+  .videoblk {
+    height: 40vh !important;
+  }
+  main .container {
+    padding: 0px 0px !important;
+  }
+  .hero-left h2 {
+    font-size: 24px !important;
+  }
+  .hero-left h4 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  main h2 {
+    font-size: 24px !important;
+  }
+  .core-values ul {
+    padding-left: 0rem;
+  }
+  .phase-list {
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .liquidity-infra {
+    margin-bottom: 0 !important;
+  }
+  #governance {
+    margin-top: 40px !important;
+  }
+  #governance .section-col h2 {
+    margin-bottom: 0 !important;
+}
+#governance .section-col .core-values {
+    margin-top: 16px;
+}
 }

@@ -34,12 +34,12 @@
     }
 </style>
 
-<div id="header"></div>
 
-<div class="main">
+<div class="main vpha">
+    <div id="header"></div>
 
     <!-- Subpage Banner Start -->
-    <section class="sub-page-banner before primary-color relative">
+    <section class="sub-page-banner vp before primary-color relative">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 wow fadeInUp animated">
@@ -463,14 +463,14 @@
 <!-- End Of Main Div -->
 
 <div id="footer"></div>
-        <script>
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("footer").innerHTML = data;
-                })
-                .catch(error => console.error("Footer load failed:", error));
-        </script>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.error("Footer load failed:", error));
+</script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -560,11 +560,6 @@
 <script src="js/particle.min.js"></script>
 
 
-<script src="js/lang_translator.js"></script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script src="js/lang_translator.js"></script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script>
     fetch('header.html')
@@ -578,9 +573,9 @@
 
             menuLinks.forEach(link => {
                 const linkPage = link.getAttribute("href");
-
+                
                 link.classList.remove("active");
-
+                
                 if (
                     linkPage === currentPage ||
                     (currentPage === "" && linkPage === "index.html")
@@ -589,7 +584,9 @@
                 }
             });
         });
-</script>
+    </script>
+    <script src="js/lang_translator.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 

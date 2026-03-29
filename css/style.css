@@ -670,6 +670,39 @@ h5 {
   z-index: 1;
 }
 
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #0d0d1a;
+  min-width: 250px;
+  border-radius: 10px;
+  padding: 10px 0;
+  display: none;
+  z-index: 999;
+}
+
+.has-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 8px 20px;
+}
+
+.dropdown-content li a {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.dropdown-content li a:hover {
+  color: #f5b942;
+}
+
 .inner-pages-content .tab-content p {
   color: #c7ccd1;
   font-size: 14px;
@@ -5380,7 +5413,7 @@ h5 {
   }
   .header.sticky-header .main-menu {
     height: calc(100vh - 60px);
-    top: 60px;
+    top: 100px;
   }
   .header.sticky-header .nav-menu > ul > li > a {
     padding: 11px 0px;
@@ -5695,6 +5728,10 @@ h5 {
     -ms-flex-order: 2;
     order: 2;
   }
+
+  .about-us {
+    overflow-x: hidden;
+  }
   /*------- Spacer Style  -------*/
   .ptb-100 {
     padding-top: 50px;
@@ -5785,7 +5822,7 @@ h5 {
     overflow: visible;
   }
 
-   .art-img video {
+  .art-img video {
     height: 340px;
   }
   .wallet-address {
@@ -5959,7 +5996,12 @@ h5 {
   /*------- Section Heading -------*/
   .heading-part h2 {
     padding-top: 7px;
+            font-size: 1.5rem;
   }
+  .closing-header {
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
   .view-all {
     display: none;
   }
@@ -6073,38 +6115,303 @@ h5 {
 
   .c-card__description p {
     padding-left: 10px;
-}
-    .mbrs .core-values ul li {
-        max-width: 87vw !important;
-    }
-        .philosophy-content h2 {
-        font-size: 2rem;
-    }
-    .closing-web3{
-          padding: 80px 0%;
-    }
-    .closing-header h2 {
+  }
+  .mbrs .core-values ul li {
+    max-width: 87vw !important;
+  }
+  .philosophy-content h2 {
+    font-size: 2rem;
+  }
+  .closing-web3 {
+    padding:380px 0%;
+  }
+  .closing-header h2 {
     font-size: 40px;
-}
-.closing-grid{
-  display: flex;
+  }
+  .closing-grid {
+    display: flex;
     flex-direction: column;
-}
-.feature-card{
-  padding: 15px;
+  }
+  .feature-card {
+    padding: 10px;
     display: flex;
     align-items: center;
+  }
+  .closing-grid {
+    gap: 15px;
 }
-.icon {
+  .icon {
     width: 40px;
     height: 40px;
-        margin-bottom: 0;
+    margin-bottom: 0;
     margin-right: 20px;
-}
-.feature-card h3 {
+  }
+  .feature-card h3 {
     font-size: 16px;
     color: #c7ccd1;
+  }
+  .sub-page-banner {
+    height: 40vh;
+  }
+  .zrz-stands.rs {
+    padding: 20px 16px !important;
+  }
+  .abt.nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .abt.border-3 {
+    border-width: 0px !important;
+  }
+
+  .abt.border-end {
+    border-right: 0px solid #dee2e6 !important;
+  }
+
+  .zrz-two .nav-item {
+    min-width: 40%;
+    margin-right: 10px;
+  }
+  .abt .nav-link {
+    padding: 0.5rem;
+  }
+  .zrz-two .nav-item .nav-link {
+    font-size: 13px;
+    line-height: 1.25;
+  }
+
+  .zrz-stands .about-detail section {
+    padding: 30px 0px;
+  }
+  .about-detail .card ul {
+    padding-left: 1rem;
+  }
+  .card ul li ol {
+    padding-left: 0.5rem;
+  }
+  .about-detail.mv {
+    margin-top: 20px;
+    padding: 12px 24px;
+  }
+  .about-detail .core-values.cg ul {
+    padding-left: 0.5rem;
+  }
+
+  .inner-pages-content h2 {
+    font-size: 1.5rem !important;
+  }
+  .rfgh h4 {
+    margin-top: 12px;
+    font-size: 1.25rem !important;
+            line-height: 1.25;
+  }
+  .inner-pages-content .hero-image {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .inner-pages-content .hero-image video {
+    height: 360px;
+  }
+  .inner-pages-content .p-5 {
+    padding: 1.5rem !important;
+  }
+  .inner-pages-content ul {
+    padding-left: 0rem !important;
+  }
+  #pills-tabContent {
+    padding: 1rem !important;
+  }
+  .security-content {
+    margin-top: 20px;
+  }
+
+  .inner-pages-content .sec-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .inner-pages-content {
+    overflow-x: hidden;
+  }
+  .inner-pages-content .pt-5 {
+    padding-top: 0rem !important;
+  }
+  .inner-pages-content .sec-desc {
+    margin-bottom: 50px;
+  }
+  .inner-pages-content .hero-image img.w-70 {
+    width: 100%;
+  }
+  .about-detail.core-values.bp {
+    margin-top: 0;
+  }
+  .inner-pages-content .bp .card,
+  .inner-pages-content .nbg .card {
+    padding: 16px;
+  }
+  .zrz-stands.nbg {
+    padding-top: 0;
+  }
+  .zrz-stands.nbg p {
+    color: #c7ccd1;
+    text-align: center;
+  }
+  .resp.container {
+    padding: 0;
+  }
+  .resp .sec-crd h4 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .mrbt {
+    margin-bottom: 32px;
+  }
+  .mb3 {
+    margin-bottom: 20px;
+  }
+  .mrt{
+    margin-top: 20px;
+  }
+  .mrt3{
+    margin-top: 32px;
+  }
+  .phase-card.df {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 22px 16px;
+  }
+  .featured-creator-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #d4af37;
+    font-size: 14px;
+    color: #c7ccd1;
+  }
+  .philosophy-content h2 {
+    background: none;
+    /* color: #d4af37 !important; */
+    margin-top: 40px;
+    margin-bottom: 10px !important;
+  }
+  .pillar {
+    padding: 18px 32px 18px 72px !important;
+  }
+  .pillars-stack {
+    gap: 16px !important;
+  }
+  .statement-card {
+    border-radius: 8px !important;
+    padding: 10px !important;
+    margin-top: 20px !important;
+  }
+
+   .inner-pgs-cont {
+    padding: 1.5rem;
+    width: 104vw !important;
+  }
+  .c-card .c-card__description {
+    /* padding: 1rem !important; */
+  }
+  .c-card {
+    min-width: 90vw;
+  }
+  .c-card .c-card__description .c-card__tagline {
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+  .c-card__description .core-values {
+    margin-top: 16px;
+  }
+  .rfgh .cont{
+    padding: 0 16px !important;
+    background: #0f172a;
+  }
+ .rfgh .col-md-6.p-0 img {
+    min-height: 260px;
+    max-height: 260px;
+    object-fit: cover;
+    display: none;
 }
+.rfgh .rdfg{
+padding: 0rem !important;
+}
+.icp.zrz-two{
+  padding-top: 1rem !important;
+}
+    .sub-page-banner.vp {
+        height: 66vh;
+    }
+    .sub-page-banner.cc {
+        height: 50vh;
+    }
+    .main.vpha{
+      overflow-x: hidden;
+    }
+    .sub-page-banner .page-banner .sub-banner-title {
+        font-size: 24px;
+    }
+    .cct.table tr td{
+      width: 100px !important;
+      white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+    .cct.table tr td.smln{
+      overflow: initial;
+      border-color: transparent;
+              border-left: 1px solid;
+    }
+   .cct.table tr td.smln span#c1 {
+    margin: 16px 0;
+}
+.phase-card.cct{
+  width: 90vw !important;
+}
+.phase-card.cct h4{
+  font-size: 20px;
+  line-height: 1.5;
+}
+.phase-card.cct .gold.core-values{
+      margin-top: 16px;
+}
+.sec-crd.rsadj {
+      padding: 15px;
+}
+.sec-crd.rsadj.core-values ul{
+  padding-left: 0rem;
+}
+.c-card.zrmn .c-card__description .c-card__tagline{
+  font-size: 1rem;
+      margin-bottom: 10px;
+    padding-left: 20px;
+}
+.resps.core-values ul{
+  padding-left: 0;
+}
+.about-detail.mv.rd{
+          margin-top: 0px;
+      padding: 12px 0px;
+}
+.about-detail.mv.rd .core-values{
+          margin-top: 0px !important;
+}
+.about-detail.mv.rd .core-values ul{
+          padding-left: 0px !important;
+}
+.about-detail.mv.rd h3.mrad{
+  margin-bottom: 0 !important;
+}
+    .closing-web3.hm {
+        padding: 60px 0% !important;
+    }
+    .footer-logo img {
+    width: 120px !important;
+  }
+  .header .nav-menu > ul > li:hover ul {
+    transform: translateY(0%);
+  }
   /*------- Single Artwork Page -------*/
   .nav-tab ul li a {
     min-width: 96px;

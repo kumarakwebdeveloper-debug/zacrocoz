@@ -129,7 +129,10 @@
 
 .c-card .c-card__description.hm {
   background-color: #0f172a;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .home-banner-title h1 {
@@ -414,9 +417,11 @@
 
 /* STATEMENT CARD */
 .statement-card {
-  background: linear-gradient(135deg,
-      rgba(212, 175, 55, 0.12),
-      rgba(212, 175, 55, 0.04));
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.12),
+    rgba(212, 175, 55, 0.04)
+  );
   border: 1px solid rgba(212, 175, 55, 0.25);
   border-radius: 20px;
   padding: 40px;
@@ -461,16 +466,17 @@
   right: -10%;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle,
-      rgba(212, 175, 55, 0.1) 0%,
-      transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.1) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   z-index: 1;
   animation: subtleFloat 8s ease-in-out infinite;
 }
 
 @keyframes subtleFloat {
-
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -500,10 +506,10 @@
 
   .pillar {
     padding: 18px 32px 18px 72px;
-        border: 1px solid #d4a12f80;
+    border: 1px solid #d4a12f80;
   }
-  .pillars-stack{
-        gap: 14px;
+  .pillars-stack {
+    gap: 14px;
   }
 }
 
@@ -632,7 +638,6 @@
 }
 
 @keyframes goldShine {
-
   0%,
   100% {
     background-position: 0% 50%;
@@ -688,4 +693,8 @@
 .gold.core-values.c-card__excerpt.home li:hover {
   /* background-color: #ccc;
   color: #0c2147; */
+}
+
+@media (max-width: 576px) {
+ 
 }

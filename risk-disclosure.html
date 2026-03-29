@@ -147,7 +147,7 @@
                     <div class="col-md-8 order_sm-2">
                         <div class="about-detail wow fadeInUp">
                             <div class="heading-part text-center">
-                                <h2 class="mb-2 color-gold">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span>
+                                <h2 class="mrad mb-2 color-gold">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span>
                                 </h2>
                                 <p>Participation in blockchain ecosystems, including the <span
                                         class="ethno">ZacrocoZ</span> platform and ZRZ token,
@@ -171,9 +171,9 @@
             <div class="container-fluid">
                 <div class="row flex-align">
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">Market Volatility Risk</h3>
+                                <h3 class="mrad mb-2 color-gold">Market Volatility Risk</h3>
                                 <p>Cryptocurrencies are inherently volatile. The value of ZRZ may experience
                                     <strong>substantial price
                                         fluctuations</strong> due to market sentiment, liquidity, adoption rates,
@@ -185,9 +185,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">Regulatory & Legal Risk</h3>
+                                <h3 class="mrad mb-2 color-gold">Regulatory & Legal Risk</h3>
                             </div>
                             <div class="gold core-values mt-3">
                                 <p>Digital asset regulations vary by jurisdiction and may <strong>evolve
@@ -200,9 +200,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">Technology & Security Risk</h3>
+                                <h3 class="mrad mb-2 color-gold">Technology & Security Risk</h3>
                                 <p class="mt-1">Engaging with blockchain networks carries technical risks, including but
                                     not limited to:</p>
                             </div>
@@ -220,10 +220,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">Liquidity & Market Access Risk</h3>
-                                </p>
+                                <h3 class="mrad mb-2 color-gold">Liquidity & Market Access Risk</h3>
                                 <p class="mt-1">Although ZRZ implements <strong>phase-based liquidity locking,</strong>
                                     market liquidity depends on the
                                     presence of participants. Early sales, low trading volumes, or market disruptions
@@ -233,9 +232,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">No Guaranteed Returns</h3>
+                                <h3 class="mrad mb-2 color-gold">No Guaranteed Returns</h3>
                                 <p>ZRZ is a <strong>utility token,</strong> not an investment, security, or financial
                                     instrument.</p>
                             </div>
@@ -253,9 +252,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">Independent Responsibility</h3>
+                                <h3 class="mrad mb-2 color-gold">Independent Responsibility</h3>
                                 <p>All decisions regarding ZRZ participation, including trading, staking, or
                                     contribution to the
                                     ecosystem, are the <strong>sole responsibility of the user.</strong> Users are
@@ -271,9 +270,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h3 class="mb-2 color-gold">Key Principles</h3>
+                                <h3 class="mrad mb-2 color-gold">Key Principles</h3>
                                 <p><span class="ethno">ZacrocoZ</span> operates on <strong>decentralized blockchain
                                         principles.</strong></p>
                             </div>
@@ -292,9 +291,9 @@
                         </div>
                     </div>
                     <div class="col-md-9 order_sm-2">
-                        <div class="about-detail mv wow fadeInUp">
+                        <div class="about-detail mv rd wow fadeInUp">
                             <div class="heading-part">
-                                <h4 class="mb-2 color-gold"><strong>Contact & Verification</strong></h4>
+                                <h4 class="mrad mb-2 color-gold"><strong>Contact & Verification</strong></h4>
                             </div>
                             <div class="gold core-values mt-2">
                                 <p>For official guidance, updates, and risk-related inquiries:</p>
@@ -339,8 +338,25 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
             });
-            </script>
+    </script>
     <script src="js/lang_translator.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>

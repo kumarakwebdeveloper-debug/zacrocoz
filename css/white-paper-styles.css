@@ -1590,12 +1590,6 @@ h2::after {
   }
 }
 
-@media (max-width: 600px) {
-  .phase-content {
-    padding: 2.2rem 1.8rem;
-  }
-}
-
 /* Liquidity Phases Styles */
 .liquidity-intro {
   text-align: center;
@@ -2143,10 +2137,10 @@ h2::after {
     padding: 1.8rem 1.2rem;
   }
 
-  .phase-number {
+  /* .phase-number {
     font-size: 1.2rem;
     padding: 0.7rem 1.2rem;
-  }
+  } */
 }
 
 /* Two Column Layout */
@@ -2283,5 +2277,262 @@ h2::after {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .phase-content {
+    padding: 1rem 1.5rem;
+    border: 1px solid #d4a13fbd;
+  }
+  .main h2 {
+    font-size: clamp(2.25rem, 6vw, 3rem);
+    margin-bottom: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .cta-buttons a.btn {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+  }
+  .hero {
+    height: 65vh;
+  }
+  .overview-content h3 {
+    font-size: 1.5rem;
+  }
+  .overview-content p {
+    font-size: 0.9rem;
+  }
+  .overview-content h5 {
+    font-size: 16px;
+  }
+  .copy-btn.mtb {
+    margin: 10px 0;
+  }
+  .domain-link {
+    padding: 0.75rem 1rem;
+  }
+  .stats-grid {
+    margin-bottom: 1rem;
+  }
+  .overview-stats {
+    padding: 1rem 1.25rem;
+  }
+  .card {
+    padding: 1rem 1.5rem 2rem;
+  }
+  .card-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .card h3,
+  .card h4 {
+    color: var(--heading-gold);
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .section {
+    padding: 40px 1.5rem 20px !important;
+  }
+  .grid {
+    gap: 1rem;
+  }
+  .total-supply {
+    padding: 1rem 1.5rem;
+  }
+  .tokenomics-table {
+    background: none;
+    backdrop-filter: blur(0px);
+  }
+  .tokenomics-footer {
+    margin: 0rem auto 0;
+    padding: 1.25rem;
+  }
+  .vesting-title {
+    margin-bottom: 30px;
+  }
+  .vesting-header {
+    margin-bottom: 8px;
+  }
+  .vesting-item {
+    border-left-color: #d4af37;
+  }
+  .timeline-item {
+    margin-bottom: 1.5rem !important;
+    padding: 1.25rem !important;
+  }
+  .phase-number {
+    font-size: 1rem !important;
+    border-radius: 6px !important;
+    padding: 0.25rem 1.5rem !important;
+  }
+  .phase-amount {
+    font-size: 1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  .phase-description {
+    margin-bottom: 0rem !important;
+  }
+  .phase-lock {
+    padding: 0.25rem 1.5rem !important;
+    border-radius: 6px !important;
+  }
+  .transparency-badge {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-size: 14px;
+  }
+  .liquidity-footer {
+    margin-top: 2rem;
+  }
+  .timeline-item {
+    margin-bottom: 1.5rem;
+  }
+  .governance-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .governance-header {
+    margin: 0 auto 2rem;
+  }
+  .gov-feature {
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem;
+    border-left: 3px solid #e2b923;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    align-items: center;
+  }
+  .feature-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .governance-features {
+    margin-bottom: 1rem;
+  }
+  .vesting-item.gold.core-values {
+    margin-top: 0px;
+  }
+  .security-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .security li p {
+    font-size: 14px;
+  }
+  .security {
+    gap: 1.25rem;
+  }
+  .community-intro p {
+    font-size: 1rem;
+  }
+  .community-intro {
+    margin: 0 auto;
+  }
+  .social-table {
+    background: none;
+    backdrop-filter: blur(0px);
+    max-width: 100vw;
+    min-width: 100vw;
+  }
+  .social-table th {
+    padding: 1rem 1rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .platform-info {
+    max-width: 40vw;
+    min-width: 40vw;
+  }
+  .phase-dot {
+    display: none;
+  }
+  .roadmap-phase:hover {
+    transform: translateX(0px);
+  }
+  .roadmap-phase {
+    margin-bottom: 0rem;
+    gap: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 20px;
+  }
+  .roadmap-section::before {
+    background: none;
+  }
+  .phase-year {
+    margin-bottom: 0rem;
+  }
+  .manifesto-intro p {
+    font-size: 1rem;
+  }
+  .manifesto-intro {
+    margin-bottom: 2rem;
+  }
+  .manifesto-container {
+    padding: 0;
+  }
+  .manifesto-item {
+    flex-direction: row;
+    text-align: left;
+    padding: 1rem;
+    gap: 1.25rem;
+    align-items: center;
+  }
+  .item-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+  .item-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .item-content p {
+    font-size: 14px;
+  }
+  .manifesto-list {
+    gap: 1.25rem;
+  }
+
+  .closing-hero {
+    margin: 2rem 0;
+  }
+  .min-txt {
+    font-size: 14px;
+  }
+  .core-pillars {
+    margin-bottom: 3rem;
+    margin-top: 2rem !important;
+  }
+  .core-pillars h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .pillars-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .pillars-grid span {
+    height: 40px;
+    font-size: 14px;
+    padding: 0.75rem;
+    border-radius: 6px;
+    /* text-align: left; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1;
   }
 }

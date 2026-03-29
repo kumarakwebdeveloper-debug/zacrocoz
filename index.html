@@ -140,38 +140,6 @@
         }
 
         /* Dropdown Fix */
-        .has-dropdown {
-            position: relative;
-        }
-
-        .dropdown-content {
-            position: absolute;
-            top: 120%;
-            left: 0;
-            background: #0d0d1a;
-            min-width: 250px;
-            border-radius: 10px;
-            padding: 10px 0;
-            display: none;
-            z-index: 999;
-        }
-
-        .has-dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content li {
-            padding: 8px 20px;
-        }
-
-        .dropdown-content li a {
-            color: #ccc;
-            transition: 0.3s;
-        }
-
-        .dropdown-content li a:hover {
-            color: #f5b942;
-        }
     </style>
     <div id="header"></div>
 
@@ -746,7 +714,7 @@
                 opacity: .15;
             }
         </style>
-        <section class="closing-web3 botline">
+        <section class="closing-web3 hm botline">
             <!-- <canvas id="blockchainCanvas"></canvas> -->
             <div class="container-fluid">
                 <!-- <div class="crypto-coins">
@@ -755,7 +723,7 @@
                     <img src="images/bitcoin.png">
                 </div> -->
 
-                <div class="closing-header">
+                <div class="closing-header hm">
 
                     <h2 class="color-gold">Closing Statement</h2>
 
@@ -925,14 +893,6 @@
     </script>
 
     <script>
-        // function downloadPDF() {
-        //     window.location.href = "download-whitepaper.html";
-        // }
-
-
-
-
-
         const canvas = document.getElementById("blockchainCanvas");
         const ctx = canvas.getContext("2d");
 
@@ -1156,26 +1116,24 @@
 
             let particles = [];
 
-            // MANY SMALL BALLS
             for (let i = 0; i < 160; i++) {
                 particles.push({
                     x: Math.random() * canvas.width,
                     y: Math.random() * canvas.height,
-                    vx: (Math.random() - 0.5) * 3, // FAST
+                    vx: (Math.random() - 0.5) * 3,
                     vy: (Math.random() - 0.5) * 3,
-                    size: Math.random() * 0 + 2 // SMALL BALLS
+                    size: Math.random() * 0 + 2
                 });
             }
 
             function drawBall(p) {
 
-                // SOFT GLOW
                 const g = ctx.createRadialGradient(
                     p.x, p.y, 0,
                     p.x, p.y, p.size * 4
                 );
 
-                g.addColorStop(0, "#d4af37"); // inner glow
+                g.addColorStop(0, "#d4af37");
                 g.addColorStop(1, "transparent");
 
                 ctx.fillStyle = g;
@@ -1183,7 +1141,6 @@
                 ctx.arc(p.x, p.y, p.size * 4, 0, Math.PI * 2);
                 ctx.fill();
 
-                // CORE BALL
                 ctx.beginPath();
                 ctx.fillStyle = "#d4af37";
                 ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
@@ -1195,7 +1152,6 @@
 
                 particles.forEach(p => {
 
-                    /* MOVE FAST */
                     p.x += p.vx;
                     p.y += p.vy;
 
@@ -1296,10 +1252,9 @@
 
 
 
-    <script src="js/lang_translator.js"></script>
 
     <script src="js/lang_translator.js"></script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- <script src="js/lang_translator.js"></script> -->
     </body>

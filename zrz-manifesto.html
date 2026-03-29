@@ -21,24 +21,12 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" /> -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
-    <!-- Preloader Start -->
-    <!-- <div id="preloader" class="preloader">
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-        <div class="spinner-box">
-            <div class="spinner"></div>
-        </div>
-        <img src="images/preloader.png" alt="preloader" class="pre-icon">
-    </div> -->
-    <!-- Preloader End -->
 
-
-
-    <div id="header"></div>
-
-
+    
+    
     <!-- Start Of Main Div -->
     <div class="main">
+        <div id="header"></div>
 
         <!-- Subpage Banner Start -->
         <section class="sub-page-banner relative">
@@ -60,7 +48,7 @@
                         <div class="about-detail wow fadeInLeft">
                             <div class="heading-part">
                                 <h2 class="mb-2 color-gold">The ZRZ Declaration of Intent</span></h2>
-                                <div class="gold core-values nd sec-crd">
+                                <div class="gold core-values nd sec-crd rsadj">
                                     <ul>
                                         <li>In an industry addicted to acceleration, <span class="ethno">ZacrocoZ</span>
                                             is built on intention.</li>
@@ -89,7 +77,7 @@
             <section>
                 <div class="l-cards">
                     <!-- CARD 1 -->
-                    <div class="c-card">
+                    <div class="c-card zrmn">
                         <div class="c-card__description hm botline">
                             <div class="c-card__tagline">
                                 Responsibility Over Reaction
@@ -237,8 +225,8 @@
                     <img src="images/closing-statement-manifesto.jpg" alt="Strategic Highlights">
                 </div>
                 <div class="col-md-6">
-                    <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Closing Statement</h2>
-                    <div class="core-values nd mt-1">
+                    <h2 class="color-gold mb-md-3 text-center wow fadeInRight mrt">Closing Statement</h2>
+                    <div class="core-values resps nd mt-1">
                         <ul>
                             <li>We grow with trust.</li>
                             <li>We build with intention.</li>
@@ -292,46 +280,6 @@
     <script src="js/script.js"></script>
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
-
-    <script>
-        (function () {
-            function c() {
-                var b = a.contentDocument || a.contentWindow.document;
-                if (b) {
-                    var d = b.createElement('script');
-                    d.innerHTML = "window.__CF$cv$params={r:'9d4068db5a859cf4',t:'MTc3MjExOTA0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                    b.getElementsByTagName('head')[0].appendChild(d)
-                }
-            }
-            if (document.body) {
-                var a = document.createElement('iframe');
-                a.height = 1;
-                a.width = 1;
-                a.style.position = 'absolute';
-                a.style.top = 0;
-                a.style.left = 0;
-                a.style.border = 'none';
-                a.style.visibility = 'hidden';
-                document.body.appendChild(a);
-                if ('loading' !== document.readyState) c();
-                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
-                else {
-                    var e = document.onreadystatechange || function () { };
-                    document.onreadystatechange = function (b) {
-                        e(b);
-                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
-                    }
-                }
-            }
-        })();
-    </script>
-    <script defer="" src="../../../../../beacon.min.js/v67327c56f0bb4ef8b305cae61679db8f1769101564043"
-        integrity="sha512-rdcWY47ByXd76cbCFzznIcEaCN71jqkWBBqlwhF1SY7KubdLKZiEGeP7AyieKZlGP9hbY/MhGrwXzJC/HulNyg=="
-        data-cf-beacon='{"version":"2024.11.0","token":"95ce996e22464a04b4191c57cd580e67","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
-
-
-
 
     <script src="js/main.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
@@ -413,16 +361,13 @@
         });
     </script>
 
-    <script src="js/lang_translator.js"></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <script>
+<script>
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
 
-                // ✅ Run AFTER header is injected
                 const currentPage = window.location.pathname.split("/").pop();
 
                 const menuLinks = document.querySelectorAll(".nav-menu a");
@@ -441,6 +386,10 @@
                 });
             });
     </script>
+    <script src="js/lang_translator.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
     </body>
 
 </html>

@@ -325,10 +325,8 @@
 
 .philosophy-content h2 {
   font-size: 1.625rem;
-  background: linear-gradient(120deg, #d4af37 0%, #f7d794 50%, #d4af37 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #d4af37;
+  /* background: linear-gradient(120deg, #d4af37 0%, #f7d794 50%, #d4af37 100%); */
   margin-bottom: 40px;
   line-height: 1.1;
   text-align: center;
@@ -505,4 +503,49 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .governance-modern {
+    padding: 40px 0;
+  }
+  .governance-header {
+    margin-bottom: 40px;
+  }
+  .phase-card {
+    padding: 22px 16px;
+  }
+  .phase-features li {
+    padding: 4px 0;
+    padding-left: 29px;
+  }
+  .phase-summary {
+    padding: 10px;
+  }
+  .phase-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  .inner-pgs-cont {
+    padding: 1.5rem;
+            width: 104vw;
+  }
+  .c-card .c-card__description{
+        padding: 1rem !important;
+  }
+  .c-card {
+    min-width: 90vw;
+  }
+  .c-card .c-card__description .c-card__tagline{
+    font-size: 1rem;
+    margin-bottom: 0px;
+  }
+  .c-card__description .core-values {
+    margin-top: 16px;
+  }
+  .governance-image img{
+        height: 270px;
+  }
 }
