@@ -5,7 +5,6 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <title>ZacrocoZ</title>
-
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
@@ -45,13 +44,11 @@
             width: 80%;
         }
 
-        .sub-page-banner.relative {
+        /* .sub-page-banner.relative {
             background-image: url('images/ecosystem-bg.jpeg') !important;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            /* margin-top: 100px; */
-
         }
 
         .sub-page-banner::before {
@@ -62,13 +59,50 @@
             width: 100%;
             height: 100%;
             background-color: rgb(10 37 64 / 59%);
-        }
+        } */
 
         p {
             font-size: 14px;
             margin-bottom: 8px;
             color: #c7ccd1;
         }
+
+        .sub-page-banner,.videoblk {
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0f172a;
+    }
+
+    #myVideo,#smbanner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .sub-page-banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg,
+                rgba(15, 23, 42, 0.9) 0%,
+                rgba(26, 32, 44, 0.95) 70%,
+                rgba(212, 175, 55, 0.2) 100%);
+        z-index: 2;
+    }
     </style>
 
 
@@ -79,13 +113,15 @@
     <div class="main">
 
         <!-- Subpage Banner Start -->
-        <section class="sub-page-banner relative">
+        <section class="sub-page-banner botline relative">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/ecosystem-banner-video.mp4" type="video/mp4">
+            </video>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
-                            <h1 class="sub-banner-title color-gold">Ecosystem & Utility</h1>
-
+                            <!-- <h1 class="sub-banner-title">Transparency Dashboard</h1> -->
                         </div>
                     </div>
                 </div>
@@ -357,7 +393,8 @@
                                     audit-ready</li>
                             </ul>
                             <div class="">
-                                <p class="color-gold wow fadeInUp delay-5 animated" style="visibility: visible;color: #c7ccd1;">
+                                <p class="color-gold wow fadeInUp delay-5 animated"
+                                    style="visibility: visible;color: #c7ccd1;">
                                     <strong>ZRZ is not just a token — it is the backbone of a human-centric, AI-enhanced
                                         blockchain economy, combining utility, governance, and long-term structural
                                         growth</strong>
@@ -392,7 +429,7 @@
                 for (let i = 0; i < 100; i++) {
                     boxes.push({
                         x: Math.random() * w,
-                        y: -Math.random() * h, 
+                        y: -Math.random() * h,
                         size: 15 + Math.random() * 25,
                         speedY: 1 + Math.random() * 2,
                         swaySpeed: 0.02 + Math.random() * 0.03,

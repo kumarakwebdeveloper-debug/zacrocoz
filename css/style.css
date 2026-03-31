@@ -6078,6 +6078,13 @@ h5 {
     margin-left: 0px;
     margin-top: 12px;
   }
+  .philosophy-grid.hm{
+        padding: 0 0px;
+    gap: 0px;
+  }
+  .pillar.hm{
+      width: 100%;
+  }
   /*------- Connect Wallet Page -------*/
   .activity-filter .filter-btn li a {
     min-width: 150px;

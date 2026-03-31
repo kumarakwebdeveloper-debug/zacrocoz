@@ -337,7 +337,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -376,6 +376,7 @@
   border-radius: 16px;
   transition: all 0.4s ease;
   cursor: pointer;
+  width: 70%;
 }
 
 .pillar:hover {
@@ -696,5 +697,4 @@
 }
 
 @media (max-width: 576px) {
- 
 }
