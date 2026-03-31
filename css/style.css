@@ -5996,12 +5996,12 @@ h5 {
   /*------- Section Heading -------*/
   .heading-part h2 {
     padding-top: 7px;
-            font-size: 1.5rem;
+    font-size: 1.5rem;
   }
   .closing-header {
     margin-bottom: 20px;
     margin-top: 0px;
-}
+  }
   .view-all {
     display: none;
   }
@@ -6107,7 +6107,12 @@ h5 {
     height: 340px !important;
   }
   .wallet-address {
-    font-size: 0.7rem !important;
+    font-size: 0.55rem !important;
+  }
+
+  .faq .faq-box .faq-panel {
+    overflow-x: auto;
+    width: 100%;
   }
   .gold.core-values.c-card__excerpt.home li {
     padding: 0.5rem 0.5rem;
@@ -6123,7 +6128,7 @@ h5 {
     font-size: 2rem;
   }
   .closing-web3 {
-    padding:380px 0%;
+    padding: 380px 0%;
   }
   .closing-header h2 {
     font-size: 40px;
@@ -6139,7 +6144,7 @@ h5 {
   }
   .closing-grid {
     gap: 15px;
-}
+  }
   .icon {
     width: 40px;
     height: 40px;
@@ -6168,7 +6173,9 @@ h5 {
   .abt.border-end {
     border-right: 0px solid #dee2e6 !important;
   }
-
+  .faq-box .core-values ul {
+    padding-left: 0rem;
+  }
   .zrz-two .nav-item {
     min-width: 40%;
     margin-right: 10px;
@@ -6204,7 +6211,7 @@ h5 {
   .rfgh h4 {
     margin-top: 12px;
     font-size: 1.25rem !important;
-            line-height: 1.25;
+    line-height: 1.25;
   }
   .inner-pages-content .hero-image {
     margin-top: 30px;
@@ -6269,10 +6276,10 @@ h5 {
   .mb3 {
     margin-bottom: 20px;
   }
-  .mrt{
+  .mrt {
     margin-top: 20px;
   }
-  .mrt3{
+  .mrt3 {
     margin-top: 32px;
   }
   .phase-card.df {
@@ -6306,12 +6313,13 @@ h5 {
     margin-top: 20px !important;
   }
 
-   .inner-pgs-cont {
+  .inner-pgs-cont {
     padding: 1.5rem;
     width: 104vw !important;
   }
   .c-card .c-card__description {
     /* padding: 1rem !important; */
+    gap: 0.25rem;
   }
   .c-card {
     min-width: 90vw;
@@ -6323,90 +6331,90 @@ h5 {
   .c-card__description .core-values {
     margin-top: 16px;
   }
-  .rfgh .cont{
+  .rfgh .cont {
     padding: 0 16px !important;
     background: #0f172a;
   }
- .rfgh .col-md-6.p-0 img {
+  .rfgh .col-md-6.p-0 img {
     min-height: 260px;
     max-height: 260px;
     object-fit: cover;
     display: none;
-}
-.rfgh .rdfg{
-padding: 0rem !important;
-}
-.icp.zrz-two{
-  padding-top: 1rem !important;
-}
-    .sub-page-banner.vp {
-        height: 66vh;
-    }
-    .sub-page-banner.cc {
-        height: 50vh;
-    }
-    .main.vpha{
-      overflow-x: hidden;
-    }
-    .sub-page-banner .page-banner .sub-banner-title {
-        font-size: 24px;
-    }
-    .cct.table tr td{
-      width: 100px !important;
-      white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 150px;
-    }
-    .cct.table tr td.smln{
-      overflow: initial;
-      border-color: transparent;
-              border-left: 1px solid;
-    }
-   .cct.table tr td.smln span#c1 {
+  }
+  .rfgh .rdfg {
+    padding: 0rem !important;
+  }
+  .icp.zrz-two {
+    padding-top: 1rem !important;
+  }
+  .sub-page-banner.vp {
+    height: 66vh;
+  }
+  .sub-page-banner.cc {
+    height: 50vh;
+  }
+  .main.vpha {
+    overflow-x: hidden;
+  }
+  .sub-page-banner .page-banner .sub-banner-title {
+    font-size: 24px;
+  }
+  .cct.table tr td {
+    width: 100px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  .cct.table tr td.smln {
+    overflow: initial;
+    border-color: transparent;
+    border-left: 1px solid;
+  }
+  .cct.table tr td.smln span#c1 {
     margin: 16px 0;
-}
-.phase-card.cct{
-  width: 90vw !important;
-}
-.phase-card.cct h4{
-  font-size: 20px;
-  line-height: 1.5;
-}
-.phase-card.cct .gold.core-values{
-      margin-top: 16px;
-}
-.sec-crd.rsadj {
-      padding: 15px;
-}
-.sec-crd.rsadj.core-values ul{
-  padding-left: 0rem;
-}
-.c-card.zrmn .c-card__description .c-card__tagline{
-  font-size: 1rem;
-      margin-bottom: 10px;
+  }
+  .phase-card.cct {
+    width: 90vw !important;
+  }
+  .phase-card.cct h4 {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .phase-card.cct .gold.core-values {
+    margin-top: 16px;
+  }
+  .sec-crd.rsadj {
+    padding: 15px;
+  }
+  .sec-crd.rsadj.core-values ul {
+    padding-left: 0rem;
+  }
+  .c-card.zrmn .c-card__description .c-card__tagline {
+    font-size: 1rem;
+    margin-bottom: 10px;
     padding-left: 20px;
-}
-.resps.core-values ul{
-  padding-left: 0;
-}
-.about-detail.mv.rd{
-          margin-top: 0px;
-      padding: 12px 0px;
-}
-.about-detail.mv.rd .core-values{
-          margin-top: 0px !important;
-}
-.about-detail.mv.rd .core-values ul{
-          padding-left: 0px !important;
-}
-.about-detail.mv.rd h3.mrad{
-  margin-bottom: 0 !important;
-}
-    .closing-web3.hm {
-        padding: 60px 0% !important;
-    }
-    .footer-logo img {
+  }
+  .resps.core-values ul {
+    padding-left: 0;
+  }
+  .about-detail.mv.rd {
+    margin-top: 0px;
+    padding: 12px 0px;
+  }
+  .about-detail.mv.rd .core-values {
+    margin-top: 0px !important;
+  }
+  .about-detail.mv.rd .core-values ul {
+    padding-left: 0px !important;
+  }
+  .about-detail.mv.rd h3.mrad {
+    margin-bottom: 0 !important;
+  }
+  .closing-web3.hm {
+    padding: 60px 0% !important;
+  }
+  .footer-logo img {
     width: 120px !important;
   }
   .header .nav-menu > ul > li:hover ul {
