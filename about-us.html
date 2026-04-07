@@ -4,16 +4,11 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
     <title>ZacrocoZ</title>
 
     <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
-
-    <!-- CSS -->
-
-
-
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -79,9 +74,9 @@
             background-color: rgb(10 37 64 / 59%);
         }
     </style>
-
-    <!-- Preloader Start -->
-    <!-- <div id="preloader" class="preloader">
+</head>
+<!-- Preloader Start -->
+<!-- <div id="preloader" class="preloader">
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
         <div class="spinner-box">
@@ -89,120 +84,12 @@
         </div>
         <img src="images/preloader.png" alt="preloader" class="pre-icon">
     </div> -->
-    <!-- Preloader End -->
-    <div id="header"></div>
+<!-- Preloader End -->
 
-    <!-- <header class="header header-home">
-        <div class="container">
-            <div class="row flex-align">
-                <div class="col-xl-3 col-lg-3 col-md-3">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo-main.png" alt="logo">
-                        </a>
-                    </div>
-                </div>
+<body>
 
-                <div class="col-xl-9 col-lg-9 col-md-9">
-                    <div class="menu-toggle">
-                        <span></span>
-                    </div>
-
-                    <div class="menu-search">
-                        <a href="javascript:void(0)" class="search">
-                            <img src="images/search.png" alt="search">
-                        </a>
-                    </div>
-
-                    <div class="main-menu">
-
-                        <div class="nav-menu">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html" class="active">About Us</a></li>
-                                <li><a href="zrz-whitepaper.html">WhitePaper</a></li>
-                                <li><a href="transparency-dashboard.html">Transparency</a></li>
-
-                                <li>
-                                    <a href="javascript:void(0)">Explore <i
-                                            class="fa fa-angle-double-down me-1 color-gold"></i></a>
-                                    <ul class="dropdown-content">
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="security.html">Security</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="ecosystem-utility.html">Ecosystem Utility</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="techonology-architecture.html">Technology & Architecture</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="governance-model.html">Governance Model</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="roadmap-future-growth.html">Roadmap</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="faq.html">FAQ</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="community-connect.html">Community & Connect</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="zrz-manifesto.html">ZRZ Manifesto</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="risk-disclosure.html">Risk Disclosure</a></li>
-                                        <li><i class="fa fa-angle-double-right me-1 color-gold"></i> <a
-                                                href="utility-clarification.html">Utility Clarification</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#" class="mybtn w-100 py-2 px-5 text-center" style="min-width:130px;">Buy
-                                        ZRZ</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="lang-wrapper">
-                            <span class="lang-icon">
-                                <i class="fa fa-globe"></i>
-                            </span>
-
-                            <select id="langSelect" onchange="setLanguage(this.value)">
-                                <option value="en" data-code="EN">English</option>
-                                <option value="zh-CN" data-code="中文">Mandarin (中文)</option>
-                                <option value="ja" data-code="日本語">Japanese (日本語)</option>
-                                <option value="de" data-code="DE">German (Deutsch)</option>
-                                <option value="fr" data-code="FR">French (Français)</option>
-                                <option value="ko" data-code="KO">Korean (한국어)</option>
-                                <option value="ar" data-code="AR">Arabic (العربية)</option>
-                                <option value="iw" data-code="HE">Hebrew (עברית)</option>
-                                <option value="el" data-code="GR">Greek (Ελληνικά)</option>
-                                <option value="es" data-code="ES">Spanish (Español)</option>
-                                <option value="pt" data-code="PT">Portuguese (Português)</option>
-                                <option value="ru" data-code="RU">Russian (Русский)</option>
-                                <option value="tr" data-code="TR">Turkish (Türkçe)</option>
-                                <option value="fa" data-code="FA">Persian (فارسی)</option>
-                                <option value="th" data-code="TH">Thai (ไทย)</option>
-                                <option value="vi" data-code="VI">Vietnamese (Tiếng Việt)</option>
-                                <option value="hi" data-code="HI">Hindi (हिन्दी)</option>
-                                <option value="sw" data-code="SW">Swahili (Kiswahili)</option>
-                                <option value="am" data-code="AM">Amharic (አማርኛ)</option>
-                            </select>
-
-                            <span class="lang-display" id="langDisplay">EN</span>
-
-                            <span class="lang-arrow">
-                                <i class="fa fa-chevron-up"></i>
-                                <i class="fa fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="google_translate_element" style="display:none;"></div>
-
-    </header> -->
-
-
-    <!-- Start Of Main Div -->
     <div class="main">
+        <div id="header"></div>
 
         <!-- Subpage Banner Start -->
         <section class="sub-page-banner relative">
@@ -220,15 +107,11 @@
                 </div>
             </div>
         </section>
-        <!-- Subpage Banner End -->
-
-
-        <!-- About Section Start -->
         <section class="about-us ptb-100 primary-color">
             <div class="container-fluid">
                 <div class="row flex-align">
                     <div class="col-md-6 col-lg-6 col-xl-6 order_sm-2">
-                        <div class="about-detail wow fadeInLeft">
+                        <div class="about-detail tc wow fadeInLeft">
                             <div class="heading-part">
                                 <h2 class="mb-2 color-gold">About <span class="ethno">ZacrocoZ</span></h2>
                                 <span class="sub-title">A Structured Digital Infrastructure</span>
@@ -264,13 +147,12 @@
         </section>
 
         <!-- About Section Start -->
-        <section class="container-fluid primary-color zrz-stands rs ptb-100 relative">1
-
+        <section class="container-fluid primary-color zrz-stands rs ptb-100 relative">
             <div class="row align-items-center fdcl">
                 <div class="col-md-4 hero-image wow fadeInUp">
                     <img src="images/why-we-exists.jpeg" alt="ZacrocoZ exists">
                 </div>
-                <div class="col-md-8 hero-content about-detail core-values bp">
+                <div class="mt-4 mt-md-0 col-md-8 hero-content about-detail tc core-values bp">
                     <h2 class="color-gold mb-md-3 text-center wow fadeInDown">Why <span class="ethno">ZacrocoZ</span>
                         Exists</h2>
                     <p class="wow fadeInDown">Many digital assets are launched with elastic supply models, unclear
@@ -342,7 +224,7 @@
                 </div>
                 <div class="col-md-8">
 
-                    <div class="about-detail core-values tab-content border rounded-3 border-white p-3 text-danger w-100 mt-0"
+                    <div class="about-detail tc core-values tab-content border rounded-3 border-white p-3 text-danger w-100 mt-0"
                         id="pills-tabContent" style="min-height: 330px;display: flex;align-items: center;">
                         <div class="tab-pane fade show active" id="pills-first" role="tabpanel"
                             aria-labelledby="pills-first-tab">
@@ -454,7 +336,7 @@
                 </div>
 
                 <!-- Sections -->
-                <div class="about-detail core-values bp">
+                <div class="about-detail tc core-values bp">
 
                     <section>
                         <div class="card">
@@ -569,7 +451,7 @@
                                 <p><strong>To establish a digital asset ecosystem where trust, structure, and
                                         transparency drive sustainable growth.</strong></p>
                             </div>
-                            <div class="core-values gold cg mt-3">
+                            <div class="core-values tc gold cg mt-3">
                                 <ul>
                                     <li>Deliver <strong>permanent supply integrity</strong></li>
                                     <li>Maintain <strong>strategically phased liquidity</strong></li>
@@ -588,7 +470,7 @@
                                     with community-driven governance, creating a resilient, sustainable, and accountable
                                     blockchain economy.</p>
                             </div>
-                            <div class="core-values gold cg mt-3">
+                            <div class="core-values tc gold cg mt-3">
                                 <ul>
                                     <li>Governance tools aligned with token utility</li>
                                     <li>Long-term structural incentives</li>
@@ -629,8 +511,6 @@
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
     <script src="js/lang-translate.js"></script>
-
-
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -655,8 +535,33 @@
                 });
             });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+
+                const currentPage = window.location.pathname.split("/").pop();
+
+                const menuLinks = document.querySelectorAll(".nav-menu a");
+
+                menuLinks.forEach(link => {
+                    const linkPage = link.getAttribute("href");
+
+                    link.classList.remove("active");
+
+                    if (
+                        linkPage === currentPage ||
+                        (currentPage === "" && linkPage === "index.html")
+                    ) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+    </script> -->
     <script src="js/lang_translator.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </body>
+</body>
 
 </html>

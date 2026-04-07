@@ -218,7 +218,6 @@
             </div>
         </section>
 
-        <!-- Core Principles -->
         <section id="principles" class="section pt-5">
             <h2>Core Principles</h2>
             <div class="grid">
@@ -263,7 +262,6 @@
             </div>
         </section>
 
-        <!-- Infrastructure -->
         <section id="infrastructure" class="section pt-5">
             <h2>Infrastructure & AI-Integrated Economy</h2>
             <div class="two-col">
@@ -316,7 +314,6 @@
             </div>
         </section>
 
-        <!-- Token Utility -->
         <section id="utility" class="section pt-0">
             <h2>Token Utility Framework</h2>
             <p class="text-center mb-3 min-txt mb-3">ZRZ is designed as a
@@ -1243,7 +1240,6 @@
     <!-- Enhanced Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        // Ultra Premium Particles
         particlesJS("particles-js", {
             particles: {
                 number: {
@@ -1379,6 +1375,7 @@
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -1434,7 +1431,7 @@
                 let select = document.querySelector(".goog-te-combo");
 
                 if (select) {
-                    select.value = lang; // use zh-CN for Chinese
+                    select.value = lang;
                     select.dispatchEvent(new Event("change"));
                     clearInterval(interval);
 

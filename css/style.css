@@ -5413,7 +5413,7 @@ h5 {
   }
   .header.sticky-header .main-menu {
     height: calc(100vh - 60px);
-    top: 100px;
+    top: 90px;
   }
   .header.sticky-header .nav-menu > ul > li > a {
     padding: 11px 0px;
@@ -5451,12 +5451,16 @@ h5 {
   }
   /*------- Home Banner -------*/
   .home-banner {
-    padding-top: 175px !important;
+    padding-top: 80px !important;
     padding-bottom: 100px !important;
   }
   /*------- live auction 2 -------*/
   .live-auction-2.ptb-100 {
     padding-bottom: 270px;
+  }
+
+  .featured-creator-box {
+    margin-top: 5%;
   }
   /*------- Create Art -------*/
   .creat-art {
@@ -5542,7 +5546,7 @@ h5 {
   }
   .header .main-menu {
     height: calc(100vh - 58px);
-    top: 12%;
+    top: 11%;
   }
   .header .main-menu .connect-wallet {
     max-width: 800px;
@@ -5559,7 +5563,7 @@ h5 {
   }
   .header.sticky-header .main-menu {
     height: calc(100vh - 58px);
-    top: 58px;
+    /* top: 58px; */
   }
   .header.sticky-header .logo img {
     max-width: 100px !important;
@@ -5594,6 +5598,10 @@ h5 {
   /*------- Heading Part -------*/
   .heading-part-2 .sub-title {
     padding-bottom: 10px;
+  }
+
+  .c-card .c-card__figure img {
+    object-fit: cover;
   }
   /*------- Footer -------*/
   .copyright {
@@ -5984,6 +5992,13 @@ h5 {
 
   .header .nav-menu > ul {
   }
+
+  .about-detail.mv.tc{
+  padding: 12px 0;
+}
+.tc ul,.tc ol{
+  padding-left: 0.75rem !important;
+}
   .search-form-modal .form-group .form-control {
     font-size: 16px;
     padding: 0px 20px 11px 0px;
@@ -6001,6 +6016,10 @@ h5 {
   .closing-header {
     margin-bottom: 20px;
     margin-top: 0px;
+  }
+  .lang-wrapper {
+    margin-left: 20px;
+    margin-top: 15px;
   }
   .view-all {
     display: none;
@@ -6078,12 +6097,12 @@ h5 {
     margin-left: 0px;
     margin-top: 12px;
   }
-  .philosophy-grid.hm{
-        padding: 0 0px;
+  .philosophy-grid.hm {
+    padding: 0 0px;
     gap: 0px;
   }
-  .pillar.hm{
-      width: 100%;
+  .pillar.hm {
+    width: 100%;
   }
   /*------- Connect Wallet Page -------*/
   .activity-filter .filter-btn li a {

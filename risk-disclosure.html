@@ -4,16 +4,10 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>ZacrocoZ</title>
-
-    <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link type="image/x-icon" href="images/logo-icons/PNG/32px flat.png" rel="icon">
 
-    <!-- CSS -->
-
-
-
+    <title>ZacrocoZ</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -103,51 +97,33 @@
             align-items: center;
             justify-content: center;
         }
-         .about-us.rd{
+
+        .about-us.rd {
             height: 50vh;
             padding: 0;
-         }
-        .about-us.rd .container{
+        }
+
+        .about-us.rd .container {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
         }
     </style>
+</head>
 
-    <!-- Preloader Start -->
-    <!-- <div id="preloader" class="preloader">
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-        <div class="spinner-box">
-            <div class="spinner"></div>
-        </div>
-        <img src="images/preloader.png" alt="preloader" class="pre-icon">
-    </div> -->
-    <!-- Preloader End -->
+<body>
 
+    <div id="header"></div>
 
-       <div id="header"></div>
-
-
-    <!-- Start Of Main Div -->
     <div class="main">
-
-        <!-- Subpage Banner Start -->
-        <!-- <section class="hero text-center botline border-bottom border-gold">
-            <h1 class="sub-banner-title mb-0">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span></h1>
-
-        </section> -->
-        <!-- Subpage Banner End -->
-
-
-        <!-- About Section Start -->
         <section class="about-us rd ptb-100 botline primary-color">
             <div class="container">
                 <div class="row flex-align justify-content-center">
                     <div class="col-md-8 order_sm-2">
                         <div class="about-detail wow fadeInUp">
                             <div class="heading-part text-center">
-                                <h2 class="mrad mb-2 color-gold">Risk Disclosure – <span class="ethno">ZacrocoZ (ZRZ)</span>
+                                <h2 class="mrad mb-2 color-gold">Risk Disclosure – <span class="ethno">ZacrocoZ
+                                        (ZRZ)</span>
                                 </h2>
                                 <p>Participation in blockchain ecosystems, including the <span
                                         class="ethno">ZacrocoZ</span> platform and ZRZ token,
@@ -311,11 +287,11 @@
         <div id="footer"></div>
         <script>
             fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            })
-            .catch(error => console.error("Footer load failed:", error));
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => console.error("Footer load failed:", error));
         </script>
         <!-- Footer Section End -->
 
@@ -332,7 +308,7 @@
     <script src="js/script.js"></script>
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
-    
+
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -357,8 +333,9 @@
                 });
             });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/lang_translator.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </body>
+</body>
 
 </html>

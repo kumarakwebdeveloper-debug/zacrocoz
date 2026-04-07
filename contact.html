@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - ZACROCOZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-       <div id="header"></div>
+    <div id="header"></div>
     <div class="container-fluid pt-100">
         <!-- Hero Section -->
         <section class="hero text-center botline border-bottom border-gold">
@@ -52,7 +52,8 @@
                         <h3>General Inquiries</h3>
                         <a href="mailto:info@zacrocoz.com">info@zacrocoz.com</a>
                         <p class="small">For general questions, information requests, or media inquiries regarding the
-                            <span class="ethno">ZacrocoZ</span> ecosystem.</p>
+                            <span class="ethno">ZacrocoZ</span> ecosystem.
+                        </p>
                     </div>
                 </div>
 
@@ -101,16 +102,20 @@
                         </div>
                         <div class="col-md-12">
                             <h4>Security Notice</h4>
-                            <p><span class="ethno">ZacrocoZ</span> will never request private keys, seed phrases, or wallet passwords through email
+                            <p><span class="ethno">ZacrocoZ</span> will never request private keys, seed phrases, or
+                                wallet passwords through email
                                 or any communication channel.</p>
                             <p class="mb-0">Always ensure official communication originates from the
-                                <strong>@zacrocoz.com</strong> domain.</p>
+                                <strong>@zacrocoz.com</strong> domain.
+                            </p>
                         </div>
                         <div class="col-12">
                             <h4>Official Communication</h4>
-                            <p>All official communications related to the <span class="ethno">ZacrocoZ</span> ecosystem are conducted exclusively
+                            <p>All official communications related to the <span class="ethno">ZacrocoZ</span> ecosystem
+                                are conducted exclusively
                                 through verified channels associated with zacrocoz.com. If you encounter suspicious
-                                messages claiming to represent <span class="ethno">ZacrocoZ</span>, please report them immediately.</p>
+                                messages claiming to represent <span class="ethno">ZacrocoZ</span>, please report them
+                                immediately.</p>
                         </div>
                     </div>
                 </div>
@@ -262,15 +267,15 @@
         <div id="footer"></div>
         <script>
             fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            })
-            .catch(error => console.error("Footer load failed:", error));
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                })
+                .catch(error => console.error("Footer load failed:", error));
         </script>
     </div>
     <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -280,7 +285,8 @@
     <script src="js/script.js"></script>
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
-<script>
+
+    <script>
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
@@ -304,6 +310,7 @@
                 });
             });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/lang_translator.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
