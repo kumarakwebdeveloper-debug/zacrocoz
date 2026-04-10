@@ -24,7 +24,7 @@
     }
 
     .sub-page-banner.relative {
-        background-image: url('images/security-banner.jpg') !important;
+        background-image: url('images/Security_Page_Banner.png') !important;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -94,7 +94,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-md-6 hero-image wow fadeInUp delay-1">
-                        <img src="images/smart-contract-security.png" alt="Smart Contract Security">
+                        <img src="images/Security_Smart_Contract_Security.png" alt="Smart Contract Security">
                     </div>
                     <div class="col-md-6">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Smart Contract Security</h2>
@@ -271,7 +271,7 @@
                 </div> -->
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6 hero-image wow fadeInUp delay-1">
-                        <img src="images/security-commitent.jpg" alt="ZacrocoZ Security Commitment">
+                        <img src="images/Security_ZacrocoZ_Security_Commitment.png" alt="ZacrocoZ Security Commitment">
                     </div>
                     <div class="col-md-6 security-content">
 
@@ -324,34 +324,36 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/scalability-cross-chain-2.png" alt="Scalability & Cross-Chain Readiness"
+                        <img src="images/Security_Security_Philosophy.png" alt="Scalability & Cross-Chain Readiness"
                             style="position: relative;z-index: 9;">
                     </div>
                 </div>
             </section>
-
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-6 hero-image wow fadeInUp delay-1">
-                    <img src="images/security-commitent.jpg" alt="ZacrocoZ Security Commitment">
-                </div>
-                <div class="col-md-6 security-content">
-
-                    <h3 class="sec-title color-gold">
-                        Multi-Signature Treasury Security
-                    </h3>
-                    <div class="gold core-values security-card">
-                        <ul class="sec-list">
-                            <li><span class="ethno">ZacrocoZ</span> secures treasury-level operations through a
-                                Multi-Signature wallet architecture.</li>
-                            <li>Critical fund movements require multiple authorized approvals, eliminating single-point
-                                control risks and preventing unauthorized transactions.</li>
-                            <li>This ensures that treasury management remains secure, transparent, and aligned with
-                                governance accountability.</li>
-                        </ul>
+            <section class="container-fluid primary-color pt-5 ptb-100 relative">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 hero-image wow fadeInUp delay-1">
+                        <img src="images/Security_Multi-Signature_Treasury_Security.png"
+                            alt="ZacrocoZ Security Commitment">
                     </div>
+                    <div class="col-md-6 security-content">
 
+                        <h3 class="sec-title color-gold">
+                            Multi-Signature Treasury Security
+                        </h3>
+                        <div class="gold core-values security-card">
+                            <ul class="sec-list">
+                                <li><span class="ethno">ZacrocoZ</span> secures treasury-level operations through a
+                                    Multi-Signature wallet architecture.</li>
+                                <li>Critical fund movements require multiple authorized approvals, eliminating
+                                    single-point
+                                    control risks and preventing unauthorized transactions.</li>
+                                <li>This ensures that treasury management remains secure, transparent, and aligned with
+                                    governance accountability.</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
             </section>
 
 
@@ -372,8 +374,8 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/scalability-cross-chain-2.png" alt="Scalability & Cross-Chain Readiness"
-                            style="position: relative;z-index: 9;">
+                        <img src="images/Security_Operational_Risk_Control.png"
+                            alt="Scalability & Cross-Chain Readiness" style="position: relative;z-index: 9;">
                     </div>
                 </div>
             </section>
@@ -476,7 +478,15 @@
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
 
-    
+    <script>
+           document.addEventListener("DOMContentLoaded", () => {
+            const myVideo = document.getElementById("myVideo");
+            // const smbanner = document.getElementById("smbanner");
+
+            myVideo.playbackRate = 0.5;
+            // smbanner.playbackRate = 0.5;
+        });
+    </script>
     <script>
         fetch('header.html')
             .then(response => response.text())

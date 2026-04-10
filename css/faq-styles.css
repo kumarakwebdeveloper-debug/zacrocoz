@@ -29,10 +29,10 @@
         }
 
         .sub-page-banner.relative {
-            background-image: url('images/FAQ-Trader.jpeg') !important;
+            /* background-image: url('images/FAQ-Trader.jpeg') !important;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: center; */
             /* margin-top: 100px; */
 
         }

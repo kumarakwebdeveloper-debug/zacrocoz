@@ -993,7 +993,15 @@
     <script src="js/script.js"></script>
     <script src="js/lang-translate.js"></script>
     <script src="js/particle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const myVideo = document.getElementById("myVideo");
+            const smbanner = document.getElementById("smbanner");
 
+            myVideo.playbackRate = 0.5;
+            smbanner.playbackRate = 0.5;
+        });
+    </script>
     <script>
         fetch('header.html')
             .then(response => response.text())

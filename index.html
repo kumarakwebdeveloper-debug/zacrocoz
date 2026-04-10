@@ -142,9 +142,19 @@
         </div>
         <!-- Home Banner Section -->
         <div class="hb-video">
-            <video autoplay muted loop id="topVideo">
+            <!-- <video autoplay muted loop id="topVideo">
+                <source src="images/home-page-top-compressed.mp4" type="video/mp4">
+            </video> -->
+            <!-- Top Video -->
+            <video autoplay muted id="topVideo1">
                 <source src="images/home-page-top-compressed.mp4" type="video/mp4">
             </video>
+
+            <video autoplay muted id="topVideo2" style="display:none;">
+                <source src="images/home-page-top-compressed.mp4" type="video/mp4">
+            </video>
+
+
         </div>
         <section class="home-banner">
 
@@ -181,7 +191,15 @@
                         <div class="home-banner-slider">
                             <div class="artwork-box relative">
                                 <div class="art-img">
-                                    <video autoplay muted loop id="myVideo">
+                                    <!-- <video autoplay muted loop id="myVideo">
+                                        <source src="images/home-page-hero-section-1.mp4" type="video/mp4">
+                                    </video> -->
+                                    <!-- My Video -->
+                                    <video autoplay muted id="myVideo1">
+                                        <source src="images/home-page-hero-section-1.mp4" type="video/mp4">
+                                    </video>
+
+                                    <video autoplay muted id="myVideo2" style="display:none;">
                                         <source src="images/home-page-hero-section-1.mp4" type="video/mp4">
                                     </video>
                                 </div>
@@ -241,7 +259,7 @@
 
             <div class="philosophy-grid hm">
                 <div class="philosophy-image wow fadeInUp delay-2">
-                    <img src="images/immutable-transp-supply.jpeg" alt="Immutable, Transparent Supply">
+                    <img src="images/Home_Page_Immutable_Transparent_Supply.png" alt="Immutable, Transparent Supply">
                 </div>
                 <div class="philosophy-content">
                     <h2 class="color-gold wow fadeInDown">Immutable, Transparent Supply</h2>
@@ -310,7 +328,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12  col-md-12 col-lg-4 hero-image wow fadeInUp">
-                    <img src="images/phase-based-liquidity.png" alt="Phase-Based Liquidity Architecture" class="w-100">
+                    <img src="images/Phase-Based_Liquidity_Architecture.png" alt="Phase-Based Liquidity Architecture"
+                        class="w-100">
                 </div>
             </div>
         </section>
@@ -452,7 +471,8 @@
                             </div>
                         </div>
                         <figure class="c-card__figure">
-                            <img src="images/transparency-treasury-1.jpg" alt="Transparent On-Chain Treasury">
+                            <img src="images/Home_Transparent_On_Chain_Treasury.png"
+                                alt="Transparent On-Chain Treasury">
                         </figure>
                     </div>
                     <div class="c-card">
@@ -487,12 +507,12 @@
                             </div>
                         </div>
                         <figure class="c-card__figure">
-                            <img src="images/govern-ready-arch.jpg" alt="Zzor">
+                            <img src="images/Home_Page_(Governance_ready_Architecture).png" alt="Zzor">
                         </figure>
                     </div>
                     <div class="c-card">
                         <figure class="c-card__figure">
-                            <img src="images/ai-integrated.jpeg" alt="Zzor">
+                            <img src="images/AI-Integrated_Growth_Model.png" alt="Zzor">
                         </figure>
                         <div class="c-card__description hm botline">
                             <div class="c-card__tagline">
@@ -530,12 +550,12 @@
                             </div>
                         </div>
                         <figure class="c-card__figure">
-                            <img src="images/built-endurance.jpeg" alt="Zzor">
+                            <img src="images/Built_for_Endurance.png" alt="Zzor">
                         </figure>
                     </div>
                     <div class="c-card">
                         <figure class="c-card__figure">
-                            <img src="images/roadmap-crypto.jpg" alt="Zzor">
+                            <img src="images/home_Roadmap_Snapshot.png" alt="Zzor">
                         </figure>
                         <div class="c-card__description hm botline">
                             <div class="c-card__tagline">
@@ -784,7 +804,7 @@
                     </div>
 
                     <div class="feature-card large">
-                        <img src="images/close-up-statement-home.jpeg">
+                        <img src="images/Home_Closing_Statement.png">
                     </div>
 
                     <div class="feature-card">
@@ -1061,11 +1081,42 @@
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 
     <script>
-        const topvideo = document.getElementById("topVideo");
-        const myvideo = document.getElementById("myVideo");
+        function ultraSmoothLoop(v1, v2, loopTime = 8) {
+            v1.playbackRate = 0.5;
+            v2.playbackRate = 0.5;
 
-        topvideo.playbackRate = 0.75;
-        myvideo.playbackRate = 0.75;
+            let active = v1;
+            let hidden = v2;
+
+            function check() {
+                if (active.currentTime >= loopTime) {
+                    hidden.currentTime = 0;
+                    hidden.play();
+
+                    active.style.display = "none";
+                    hidden.style.display = "block";
+
+                    let temp = active;
+                    active = hidden;
+                    hidden = temp;
+                }
+                requestAnimationFrame(check);
+            }
+
+            requestAnimationFrame(check);
+        }
+
+        ultraSmoothLoop(
+            document.getElementById("topVideo1"),
+            document.getElementById("topVideo2"),
+            8
+        );
+
+        ultraSmoothLoop(
+            document.getElementById("myVideo1"),
+            document.getElementById("myVideo2"),
+            8
+        );
     </script>
     <script>
         fetch('header.html')

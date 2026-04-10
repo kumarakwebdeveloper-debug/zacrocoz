@@ -12,16 +12,7 @@
             background-color: #d4af37;
         }
 
-        .sub-page-banner.relative {
-            background-image: url(https://learn.mudrex.com/wp-content/uploads/2025/04/STO-jpg.webp) !important;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: center;
-            background-color: #0f172a;
-            z-index: 999;
-            /* margin-top: 100px; */
 
-        }
         .zrz-two {
             position: relative;
         }
