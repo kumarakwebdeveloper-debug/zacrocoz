@@ -19,6 +19,43 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" /> -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
 </head>
+<style>
+    #myVideo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .sub-page-banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg,
+                rgba(15, 23, 42, 0.9) 0%,
+                rgba(26, 32, 44, 0.95) 70%,
+                rgba(212, 175, 55, 0.2) 100%);
+        z-index: 2;
+    }
+    .sub-page-banner {
+            position: relative;
+            height: 50vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0f172a;
+        }
+</style>
 
 <body>
 
@@ -26,13 +63,15 @@
         <div id="header"></div>
 
         <!-- Subpage Banner Start -->
-        <section class="sub-page-banner relative">
+        <section class="sub-page-banner botline relative">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/Manifesto_Banner.mp4" type="video/mp4">
+            </video>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
-                            <h1 class="sub-banner-title color-gold">ZRZ Manifesto</h1>
-
+                            <!-- <h1 class="sub-banner-title">Transparency Dashboard</h1> -->
                         </div>
                     </div>
                 </div>
@@ -91,12 +130,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="c-card__figure">
+                        <figure class="c-card__figure topline">
                             <img src="images/Manifesto_Responsibility_Over_Reaction.png" alt="Zzor">
                         </figure>
                     </div>
                     <div class="c-card">
-                        <figure class="c-card__figure">
+                        <figure class="c-card__figure topline">
                             <img src="images/Manifesto_Architecture_With_Accountability.png" alt="Zzor">
                         </figure>
                         <div class="c-card__description hm botline">
@@ -136,12 +175,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="c-card__figure">
-                            <img src="images/collective-strength.jpg" alt="Collective Strength">
+                        <figure class="c-card__figure topline">
+                            <img src="images/manifesto_collective_strength.png" alt="Collective Strength">
                         </figure>
                     </div>
                     <div class="c-card">
-                        <figure class="c-card__figure">
+                        <figure class="c-card__figure topline">
                             <img src="images/Manifesto_Endurance_Over_Excitement.png" alt="Zzor">
                         </figure>
                         <div class="c-card__description hm botline">
@@ -178,12 +217,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="c-card__figure">
+                        <figure class="c-card__figure topline">
                             <img src="images/Manifesto_Governance__Utility_Commitment.png" alt="Zzor">
                         </figure>
                     </div>
                     <div class="c-card">
-                        <figure class="c-card__figure">
+                        <figure class="c-card__figure topline">
                             <img src="images/Manifesto_Principles_at_a_Glance.png" alt="Zzor">
                         </figure>
                         <div class="c-card__description hm botline">
@@ -335,7 +374,13 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const myVideo = document.getElementById("myVideo");
 
+            myVideo.playbackRate = 0.5;
+        });
+    </script>
     <script>
         fetch('header.html')
             .then(response => response.text())
