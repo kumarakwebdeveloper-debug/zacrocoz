@@ -35,12 +35,16 @@
             padding-left: 2rem !important;
         }
 
-        .lstty .gold core-values li {
+        .lstty .gold.core-values li {
             list-style-type: none !important;
 
         }
 
-        .gold core-values li i {
+        .lstty .col-md-6 img {
+            min-height: 400px;
+        }
+
+        .gold.core-values li i {
             padding-right: 6px;
             font-weight: normal;
             font-size: small;
@@ -50,7 +54,7 @@
             background-image: url('images/Technology_Banner.png') !important;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: top;
             /* margin-top: 100px; */
 
         }
@@ -113,6 +117,12 @@
             object-fit: cover;
             display: block;
             border-radius: 12px;
+        }
+
+        @media(max-width:576px) {
+            .lstty .col-md-6 img {
+                min-height: auto;
+            }
         }
     </style>
 </head>
@@ -196,8 +206,9 @@
                             <div class="col-md-6 mrbt p-0 ps-3 sec-crd">
                                 <h4 class="color-gold mb-md-3 text-center wow fadeInDown">Smart Contract Architecture
                                 </h4>
-                                <p>The <span class="ethno">ZacrocoZ</span> contract framework is modular and
-                                    upgrade-aware, allowing controlled evolution without compromising security.</p>
+                                <p>The <span class="ethno">ZacrocoZ</span> ecosystem is designed with a modular,
+                                    expansion-ready architecture, enabling future platform evolution while preserving
+                                    the immutable integrity of the core ZRZ token contract.</p>
                                 <div class="gold core-values mt-3">
                                     <p class="color-gold mb-2"><strong>Core Components:</strong></p>
                                     <ul>
@@ -214,9 +225,9 @@
                                         <li>Security-first permission structures</li>
                                         <li>Audit-ready code standards</li>
                                     </ul>
-                                    <p>Treasury interactions and fund execution are secured through Multi-Signature
+                                    <!-- <p>Treasury interactions and fund execution are secured through Multi-Signature
                                         authorization, ensuring controlled and verifiable operations within the
-                                        ecosystem architecture</p>
+                                        ecosystem architecture</p> -->
                                 </div>
                             </div>
                             <div class="col-md-6 p-0 sec-crd">
@@ -308,7 +319,7 @@
                         <div class="core-values mt-1">
                             <p class="color-gold mb-2"><strong>Security is foundational — not optional.</strong></p>
                             <ul>
-                                <li>Third-party smart contract audits</li>
+                                <li>Independent third-party smart contract audit is planned during phased ecosystem expansion</li>
                                 <li>Public wallet visibility</li>
                                 <li>Locked liquidity verification</li>
                                 <li>Real-time transaction traceability</li>
@@ -354,6 +365,7 @@
 
             <section class="container-fluid primary-color arr-1 pt-5 ptb-100 relative">
                 <h2 class="color-gold mb-md-5 text-center wow fadeInDown animated mb3">System Design Philosophy</h2>
+                <p class="color-gold"><span class="ethno">ZacrocoZ</span> follows four architectural principles:</p>
                 <div class="phases-grid">
                     <!-- PHASE 1 -->
                     <div class="phase-card df wow fadeInUp" data-wow-delay="0.1s">
@@ -393,8 +405,8 @@
             <section class="container-fluid primary-color pt-5 ptb-100 relative">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-6 con-img">
-                        <img src="images/technology__architecture_the_zacrocoz_technology_vision.png" alt="Technology Vision"
-                            style="position: relative;z-index: 9;">
+                        <img src="images/technology__architecture_the_zacrocoz_technology_vision.png"
+                            alt="Technology Vision" style="position: relative;z-index: 9;">
                     </div>
                     <div class="col-md-6">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInDown">The <span

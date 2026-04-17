@@ -1204,7 +1204,7 @@ h2::after {
 
 .phase-content {
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.025),
@@ -1345,7 +1345,7 @@ h2::after {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  padding: 2.5rem;
+  padding: 1rem;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.025),
@@ -1358,9 +1358,9 @@ h2::after {
 }
 
 .manifesto-item:hover {
-  border-color: var(--heading-gold);
+  /* border-color: var(--heading-gold); */
   transform: translateY(-5px);
-  box-shadow: 0 20px 50px var(--glow-gold);
+  /* box-shadow: 0 20px 50px var(--glow-gold); */
 }
 
 .item-icon {
@@ -1379,9 +1379,9 @@ h2::after {
 
 .item-content h3 {
   color: var(--heading-gold);
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .item-content p {
@@ -2091,6 +2091,7 @@ h2::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 1rem;
   background: transparent;
   backdrop-filter: blur(20px);
