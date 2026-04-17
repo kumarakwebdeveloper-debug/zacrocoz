@@ -924,6 +924,10 @@ main {
     padding: 16px;
   }
 
+  .liquidity-infra.lsc {
+        width: 100%;
+    }
+
   .stat-main {
     font-size: 20px;
   }
