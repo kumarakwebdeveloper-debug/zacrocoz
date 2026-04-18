@@ -5993,12 +5993,13 @@ h5 {
   .header .nav-menu > ul {
   }
 
-  .about-detail.mv.tc{
-  padding: 12px 0;
-}
-.tc ul,.tc ol{
-  padding-left: 0.75rem !important;
-}
+  .about-detail.mv.tc {
+    padding: 12px 0;
+  }
+  .tc ul,
+  .tc ol {
+    padding-left: 0.75rem !important;
+  }
   .search-form-modal .form-group .form-control {
     font-size: 16px;
     padding: 0px 20px 11px 0px;
@@ -6183,6 +6184,9 @@ h5 {
   }
   .sub-page-banner {
     height: 40vh;
+    height: 39vh !important;
+    background-size: contain !important;
+    background-position: center 93% !important;
   }
   .zrz-stands.rs {
     padding: 20px 16px !important;
