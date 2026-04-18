@@ -134,7 +134,7 @@
 }
 
 .sub-page-banner.relative {
-  background-image: url("../images/manifesto-bg.jpg") !important;
+  /* background-image: url("../images/manifesto-bg.jpg") !important; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
