@@ -247,7 +247,7 @@
                         <p>No hidden mechanics. No inflation. No proxy upgrades.</p>
                     </div>
 
-                    <div class="core-values wow fadeInLeft animated text-center">
+                    <div class="core-values wow fadeInLeft animated">
                         <p>Every <strong>mechanism is deliberate. Every allocation is accountable. Every phase has
                                 purpose.</strong></p>
                     </div>
@@ -365,7 +365,7 @@
             <section>
                 <div class="l-cards hm">
                     <div class="c-card">
-                        <div class="c-card__description hm botline">
+                        <div class="c-card__description fstcrd hm botline">
                             <div class="c-card__tagline">
                                 Transparent On-Chain Treasury
                             </div>
@@ -379,27 +379,38 @@
                                     <li>Staking & Rewards Wallet</li>
                                     <li class="wallet-item">
                                         <span class="wallet-label">Multi-Signature Treasury Wallet:</span>
-                                        <span id="w1" class="wallet-address" data-bs-toggle="tooltip"
-                                            data-bs-placement="top" title="Click to copy"
-                                            onclick="copyWalletSpan(event, this, 'w1')">
-                                            0x752eE5486021007e821C5D9a776fb619BDC615ae
-                                        </span>
-                                        <button class="copy-btn" data-bs-toggle="tooltip" data-bs-placement="top"
-                                            title="Copy address" onclick="copyWallet(event, this, 'w1')">
-                                            📋
-                                        </button>
-                                        <a href="https://bscscan.com/address/0x752eE5486021007e821C5D9a776fb619BDC615ae"
-                                            target="_blank" class="bscscan-link" title="View on BscScan">
-                                            🔗
-                                        </a>
+                                        <div class="flc1">
+                                            <span id="w1" class="wallet-address" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" title="Click to copy"
+                                                onclick="copyWalletSpan(event, this, 'w1')">
+                                                0x752eE5486021007e821C5D9a776fb619BDC615ae
+                                            </span>
+                                            <button class="copy-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                title="Copy address" onclick="copyWallet(event, this, 'w1')">
+                                                📋
+                                            </button>
+                                            <a href="https://bscscan.com/address/0x752eE5486021007e821C5D9a776fb619BDC615ae"
+                                                target="_blank" class="bscscan-link" title="View on BscScan">
+                                                🔗
+                                            </a>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
 
                             <style>
-                                .wallet-item {
+                                .c-card .c-card__description.fstcrd{
+                                    /* padding: 10px; */
+                                }
+                                .flc1{
                                     display: flex;
                                     align-items: center;
+                                    justify-content: space-around;
+                                }
+                                .wallet-item {
+                                    display: flex;
+                                    /* align-items: center; */
+                                    flex-direction: column;
                                     gap: 1rem;
                                     padding: 1.2rem;
                                     background: rgba(255, 255, 255, 0.025);
@@ -435,7 +446,7 @@
                                 }
 
                                 .wallet-address {
-                                    flex: 1;
+                                    /* flex: 1; */
                                     font-family: monospace;
                                     font-size: 0.88rem;
                                     background: rgba(0, 0, 0, 0.5);
@@ -490,7 +501,7 @@
                                 }
 
                                 .c-card__figure.hm1 img {
-                                    object-fit: contain !important;
+                                    /* object-fit: contain !important; */
                                 }
                             </style>
                             <div class="core-values mt-0">
@@ -833,46 +844,48 @@
                         </div>
                         <h3>On-chain Treasury Transparency</h3>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.8">
-                                <rect x="4" y="10" width="16" height="10" rx="2" />
-                                <path d="M8 10V6h8v4" />
-                                <line x1="9" y1="14" x2="15" y2="14" />
-                            </svg>
+                    <div class="d-flex flex-column">
+                        <div class="feature-card">
+                            <div class="icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8">
+                                    <rect x="4" y="10" width="16" height="10" rx="2" />
+                                    <path d="M8 10V6h8v4" />
+                                    <line x1="9" y1="14" x2="15" y2="14" />
+                                </svg>
+                            </div>
+                            <h3>Governance-ready Infrastructure</h3>
                         </div>
-                        <h3>Governance-ready Infrastructure</h3>
+                        <div class="feature-card mt-md-4">
+                            <div class="icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.8">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <circle cx="5" cy="5" r="2" />
+                                    <circle cx="19" cy="5" r="2" />
+                                    <circle cx="5" cy="19" r="2" />
+                                    <circle cx="19" cy="19" r="2" />
+                                    <line x1="7" y1="7" x2="10" y2="10" />
+                                    <line x1="17" y1="7" x2="14" y2="10" />
+                                    <line x1="7" y1="17" x2="10" y2="14" />
+                                    <line x1="17" y1="17" x2="14" y2="14" />
+                                </svg>
+                            </div>
+                            <h3>AI Integrated Ecosystem</h3>
+                        </div>
                     </div>
 
                     <div class="feature-card large">
                         <img src="images/Home_Closing_Statement.png">
                     </div>
 
-                    <div class="feature-card">
-                        <div class="icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white"
-                                stroke-width="1.8">
-                                <circle cx="12" cy="12" r="3" />
-                                <circle cx="5" cy="5" r="2" />
-                                <circle cx="19" cy="5" r="2" />
-                                <circle cx="5" cy="19" r="2" />
-                                <circle cx="19" cy="19" r="2" />
-                                <line x1="7" y1="7" x2="10" y2="10" />
-                                <line x1="17" y1="7" x2="14" y2="10" />
-                                <line x1="7" y1="17" x2="10" y2="14" />
-                                <line x1="17" y1="17" x2="14" y2="14" />
-                            </svg>
-                        </div>
-                        <h3>AI Integrated Ecosystem</h3>
-                    </div>
+                    
 
                 </div>
 
                 <div class="closing-bottom">
-                    <p class="color-gold mb-2">Built for transparency. Structured for endurance. Designed for long-term ecosystem integrity</p>
-                    <h6><strong>Deliberate Design. Defined Decentralization.</strong></h6>
+                    <p class="mb-2">Built for transparency. Structured for endurance. Designed for long-term ecosystem integrity</p>
+                    <h6 class="color-gold"><strong>Deliberate Design. Defined Decentralization.</strong></h6>
 
                     <button class="mybtn mt-3" onclick="downloadPDF()">
                         <i class="fa fa-file-pdf"></i> Download Whitepaper
