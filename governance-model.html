@@ -39,17 +39,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgb(10 37 64 / 60%);
+            background-color: rgba(0, 0, 0, 0.2);
         }
-        .phase-features li{
-                padding: 5px 0;
-                padding-left: 36px;
+
+        .phase-features li {
+            padding: 5px 0;
+            padding-left: 36px;
         }
+
         .sub-page-banner .container {
-        z-index: 99999;
-        top: 90%;
-        transform: translateY(-90%);
-    }
+            z-index: 99999;
+            top: 90%;
+            transform: translateY(-90%);
+        }
     </style>
 </head>
 
@@ -371,7 +373,8 @@
                                         <li>Ecosystem access utilities</li>
                                         <li>Developer infrastructure modules</li>
                                     </ul>
-                                    <p class="wow fadeInUp delay-4">Any future ecosystem revenue is intended to support structured treasury management and ecosystem sustainability.</p>
+                                    <p class="wow fadeInUp delay-4">Any future ecosystem revenue is intended to support
+                                        structured treasury management and ecosystem sustainability.</p>
                                     <p><strong>ZRZ does not grant equity, profit, or dividends. Governance participation
                                             is operational, not financial.</strong></p>
                                 </div>
@@ -430,7 +433,7 @@
                                     alt="Long-Term Governance Vision">
                             </figure>
                         </div>
-                        
+
                     </div>
                 </section>
             </div>
@@ -477,6 +480,8 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>

@@ -197,7 +197,7 @@
                         <p><strong>Verification & Access (Investor Trust Layer)</strong></p>
                         <a href="https://bscscan.com/address/0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A" class="link-chip mt-2" target="_blank">View Contract · BscScan</a>
                         <a href="#" class="link-chip">View Liquidity Pool · PancakeSwap</a>
-                        <a href="#" class="link-chip">Add ZRZ to MetaMask</a>
+                        <a href="https://metamask.app.link/dapp/bscscan.com/token/0x4cFa773Df72A3cCB89cb643Ad4c2A9b9F1692F5A" class="link-chip" target="_blank">Add ZRZ to MetaMask</a>
                         <a href="https://bscscan.com/address/0x752eE5486021007e821C5D9a776fb619BDC615ae" class="link-chip" target="_blank">Verify Multi-Signature Wallet (Treasury)</a>
                         <p>All metrics and data are publicly verifiable in real-time on-chain.</p>
                     </div>
@@ -928,6 +928,8 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>

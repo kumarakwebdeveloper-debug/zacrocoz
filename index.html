@@ -138,6 +138,10 @@
         }
 
         /* Dropdown Fix */
+
+        body {
+            background-color: #0f172a;
+        }
     </style>
 </head>
 
@@ -399,14 +403,16 @@
                             </div>
 
                             <style>
-                                .c-card .c-card__description.fstcrd{
+                                .c-card .c-card__description.fstcrd {
                                     /* padding: 10px; */
                                 }
-                                .flc1{
+
+                                .flc1 {
                                     display: flex;
                                     align-items: center;
                                     justify-content: space-around;
                                 }
+
                                 .wallet-item {
                                     display: flex;
                                     /* align-items: center; */
@@ -531,7 +537,8 @@
                                     <li>Ecosystem incentives & staking alignmen</li>
                                     <li>Contributor support mechanisms</li>
                                 </ul>
-                                <p class="text-center mt-2">ZRZ is for participation, not speculation. It does not represent equity, ownership, or profit entitlement.</p>
+                                <p class="text-center mt-2">ZRZ is for participation, not speculation. It does not
+                                    represent equity, ownership, or profit entitlement.</p>
                             </div>
                         </div>
                     </div>
@@ -541,14 +548,15 @@
                                 Governance-Ready Architecture
                             </div>
                             <p class="text-center"><strong>Decentralization with accountability:</strong></p>
-                            
+
                             <div class="gold core-values c-card__excerpt home mt-0">
                                 <ul>
                                     <li>Structured proposal systems</li>
                                     <li>Treasury oversight</li>
                                     <li>Phased DAO transition</li>
                                 </ul>
-                                 <p class="text-center mt-2">Control is distributed to multiply accountability, not to escape it.</p>
+                                <p class="text-center mt-2">Control is distributed to multiply accountability, not to
+                                    escape it.</p>
                             </div>
                         </div>
                         <figure class="c-card__figure">
@@ -879,12 +887,13 @@
                         <img src="images/Home_Closing_Statement.png">
                     </div>
 
-                    
+
 
                 </div>
 
                 <div class="closing-bottom">
-                    <p class="mb-2">Built for transparency. Structured for endurance. Designed for long-term ecosystem integrity</p>
+                    <p class="mb-2">Built for transparency. Structured for endurance. Designed for long-term ecosystem
+                        integrity</p>
                     <h6 class="color-gold"><strong>Deliberate Design. Defined Decentralization.</strong></h6>
 
                     <button class="mybtn mt-3" onclick="downloadPDF()">
@@ -893,7 +902,7 @@
 
                     <script>
                         function downloadPDF() {
-                            const filePath = "./whitepaper/White-Paper.pdf";
+                            const filePath = "./whitepaper/white-paper-final.pdf";
 
                             fetch(filePath)
                                 .then(response => {
@@ -906,7 +915,7 @@
                                     const url = window.URL.createObjectURL(blob);
                                     const link = document.createElement("a");
                                     link.href = url;
-                                    link.download = "White-Paper.pdf";
+                                    link.download = "white-paper-final.pdf";
                                     document.body.appendChild(link);
                                     link.click();
                                     link.remove();
@@ -932,6 +941,8 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("footer").innerHTML = data;
+
+                    document.getElementById("year").textContent = new Date().getFullYear();
                 })
                 .catch(error => console.error("Footer load failed:", error));
         </script>

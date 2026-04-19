@@ -87,7 +87,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.7) 0%, rgba(26, 32, 44, 0.7) 70%);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.3) 0%, rgba(26, 32, 44, 0.3) 70%);
             /* background-color: rgba(0,0,0,0.2) !important; */
             z-index: 9999;
         }
@@ -102,8 +102,8 @@
 
         .sub-page-banner .container {
             z-index: 99999;
-            top: 20%;
-            transform: translateY(-20%);
+            top: 40%;
+            transform: translateY(-40%);
         }
 
         .heading-part .sub-title.bn::after {
@@ -408,7 +408,7 @@
                         <div class="card rotating-card">
                             <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Long-Term Ecosystem Vision</h2>
                             <p class="color-gold"><span class="ethno">ZacrocoZ</span> is structured for
-                                <strong>sustainable expansion beyond token issuance:</strong>
+                                <strong>sustainable expansion beyond token issuance</strong>
                             </p>
                             <ul>
                                 <li>Governance infrastructure</li>
@@ -435,7 +435,7 @@
                                 <li>No supply manipulation</li>
                             </ul>
                             <div class="core-values mt-3">
-                                <h6 class="color-gold">Durable momentum comes from:</h6>
+                                <h6 class="color-gold">Durable momentum comes from</h6>
                                 <ul>
                                     <li>Structured liquidity</li>
                                     <li>Transparent treasury management</li>
@@ -454,7 +454,7 @@
                         <div class="card rotating-card">
                             <h2 class="color-gold mb-md-2 text-center wow fadeInDown">Positioning Statement</h2>
                             <p class="color-gold"><span class="ethno">ZacrocoZ</span> is a <strong>long-term digital
-                                    asset ecosystem:</strong></p>
+                                    asset ecosystem</strong></p>
 
                             <ul>
                                 <li>Fixed supply</li>
@@ -537,6 +537,8 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
                 })
                 .catch(error => console.error("Footer load failed:", error));
         </script>

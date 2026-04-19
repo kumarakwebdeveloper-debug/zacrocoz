@@ -77,15 +77,15 @@
 
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Built on Protection. <br class="d-none d-md-block">Engineered for
+                        <h2 class="color-gold mb-md-3 text-center">Built on Protection. <br class="d-none d-md-block">Engineered for
                             Trust.<br class="d-none d-md-block"> Designed for Longevity.</h2>
                         <div class="core-values mt-1">
-                            <p class="wow fadeInUp delay-1">Security within the <span class="ethno">ZacrocoZ</span>
+                            <p class="">Security within the <span class="ethno">ZacrocoZ</span>
                                 ecosystem is not an
                                 afterthought — it is a core architectural pillar. Every contract, wallet, liquidity
                                 deployment, and governance mechanism is structured to minimize risk, maximize
                                 transparency, and protect participants.</p>
-                            <p class="wow fadeInUp delay-2 mt-1">ZRZ is engineered to operate in a secure,
+                            <p class="mt-1">ZRZ is engineered to operate in a secure,
                                 verifiable,
                                 and resilient blockchain environment.</p>
                         </div>
@@ -101,10 +101,10 @@
             <section class="container-fluid zrz-stands apart ptb-100 relative p-5">
                 <div class="row align-items-center">
 
-                    <div class="col-md-7 hero-image wow fadeInUp delay-1">
+                    <div class="col-md-6 hero-image wow fadeInUp delay-1">
                         <img src="images/Security_Smart_Contract_Security.png" alt="Smart Contract Security">
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Smart Contract Security</h2>
                         <p class="wow fadeInUp delay-1">ZRZ smart contracts are developed under strict security
                             standards.</p>
@@ -478,6 +478,8 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>

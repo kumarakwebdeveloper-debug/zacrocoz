@@ -232,6 +232,8 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
                 })
                 .catch(error => console.error("Footer load failed:", error));
         </script>

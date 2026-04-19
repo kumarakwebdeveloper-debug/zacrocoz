@@ -162,16 +162,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgb(10 37 64 / 90%);
+            background-color: rgba(0, 0, 0, 0.5);
         }
-        .w-80{
+
+        .w-80 {
             width: 80%;
         }
+
         .sub-page-banner .container {
-        z-index: 99999;
-        top: 90%;
-        transform: translateY(-90%);
-    }
+            z-index: 99999;
+            top: 90%;
+            transform: translateY(-90%);
+        }
+        .blwtxt{
+            border: 1px solid #d4af37;
+            padding: 20px 0;
+            border-radius: 4px;
+        }
+        .sub-page-banner .page-banner .sub-banner-title{
+            font-size: 42px;
+        }
     </style>
 
 
@@ -189,13 +199,7 @@
                         <div class="page-banner text-center">
                             <h1 class="sub-banner-title color-gold">Community & Engagement — <span
                                     class="ethno">ZacrocoZ</span> Ecosystem</h1>
-                            <p class="my-2"><span class="ethno">ZacrocoZ</span> is built on structured participation,
-                                transparent
-                                systems, and long-term ecosystem
-                                alignment.</p>
-                            <p>This is not a passive network — it is an actively governed, contribution-driven
-                                environment
-                                designed for sustainable growth.</p>
+
                             <!-- <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li>Community & Connect – ZacrocoZ</li>
@@ -459,16 +463,28 @@
                                 not promises.</p>
                         </div>
                     </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 text-center blwtxt">
+                            <p><span class="ethno">ZacrocoZ</span> is built on principles of transparency,
+                                structured
+                                liquidity, and long-term economic
+                                design. <br>The answers below provide clear insight into the project’s architecture,
+                                governance framework,
+                                and sustainable growth model.</p>
+                        </div>
+                    </div>
 
                 </div>
             </section>
+
 
             <section class="container-fluid primary-color pb-5 relative">
                 <!-- <canvas class="community-bg"></canvas> -->
                 <div class="row align-items-center">
 
                     <div class="col-md-6 hero-image wow fadeInUp delay-1">
-                        <img src="images/Community_Closing_Statement.png" alt="Community closing Statement" class="w-80">
+                        <img src="images/Community_Closing_Statement.png" alt="Community closing Statement"
+                            class="w-80">
                     </div>
                     <div class="col-md-6">
                         <h2 class="color-gold mb-md-3 text-center wow fadeInRight">Closing Statement</h2>
@@ -509,6 +525,8 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>

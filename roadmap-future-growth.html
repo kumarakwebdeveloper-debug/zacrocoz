@@ -32,7 +32,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(10 37 64 / 59%);
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     .sub-page-banner .container {
@@ -364,6 +364,8 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>

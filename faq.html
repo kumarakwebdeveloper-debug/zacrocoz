@@ -32,13 +32,20 @@
         background-size: cover;
         background-position: center;
     }
-.heading-part .sub-title.bn {
-    padding-left: 4px;
-}
-.heading-part .sub-title.bn::after {
-    background-color: transparent !important;
-}
-    
+
+    .heading-part .sub-title.bn {
+        padding-left: 4px;
+    }
+
+    .heading-part .sub-title.bn::after {
+        background-color: transparent !important;
+    }
+
+    .sub-page-banner .container {
+        z-index: 99999;
+        top: 90%;
+        transform: translateY(-90%);
+    }
 </style>
 
 <body>
@@ -52,15 +59,11 @@
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp animated">
                         <div class="page-banner text-center">
-                            <h1 class="sub-banner-title color-gold">Faq</h1>
-                            <p class="color-gold my-2">Institutional-Grade Clarity for Participants and Ecosystem Participants
+                            <h1 class="sub-banner-title color-gold">FAQ</h1>
+                            <p class="color-gold my-2">Institutional-Grade Clarity for Participants and Ecosystem
+                                Participants
                             </p>
-                            <p><span class="ethno">ZacrocoZ</span> is built on principles of transparency,
-                                structured
-                                liquidity, and long-term economic
-                                design. <br>The answers below provide clear insight into the project’s architecture,
-                                governance framework,
-                                and sustainable growth model.</p>
+
                         </div>
                     </div>
                 </div>
@@ -78,8 +81,14 @@
             </div> -->
             <div class="row align-items-center justify-content-center flex-md-column">
                 <div class="col-md-7 text-center">
-                    <h2 class="color-gold mb-md-3 wow fadeInDown">FAQ – ZacrocoZ (ZRZ)</h2>
+                    <h2 class="color-gold mb-md-3">FAQ – <span class="ethno">ZacrocoZ</span> (ZRZ)</h2>
                     <p style="font-style: italic;">Clear, Structured, and Designed for Participant Confidence</p>
+                    <p class="mt-2"><span class="ethno">ZacrocoZ</span> is built on principles of transparency,
+                        structured
+                        liquidity, and long-term economic
+                        design. <br>The answers below provide clear insight into the project’s architecture,
+                        governance framework,
+                        and sustainable growth model.</p>
                 </div>
                 <div class="col-md-5 mt-4">
                     <img src="images/FAQ_ZacrocoZ.png" alt="FAQ" style="position: relative;z-index: 9;">
@@ -276,10 +285,13 @@
                                                             <li>Gradual liquidity expansion reduces volatility</li>
                                                             <li>Each phase is independently locked</li>
                                                             <li>No sudden liquidity withdrawals are possible</li>
-                                                            <li>Each phase may be deployed through multiple LP additions while maintaining total allocation and independent 3-year locks per deployment</li>
+                                                            <li>Each phase may be deployed through multiple LP additions
+                                                                while maintaining total allocation and independent
+                                                                3-year locks per deployment</li>
                                                             <li>All LP positions are verifiable on-chain</li>
                                                         </ul>
-                                                        <p>This model is designed to support long-term market stability and participant confidence.</p>
+                                                        <p>This model is designed to support long-term market stability
+                                                            and participant confidence.</p>
                                                     </div>
                                                 </div>
 
@@ -343,7 +355,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="faq-box">
-                                                    <div class="faq-title">How does <span class="ethno">ZacrocoZ</span> approach fund security?</div>
+                                                    <div class="faq-title">How does <span class="ethno">ZacrocoZ</span>
+                                                        approach fund security?</div>
                                                     <div class="gold faq-panel core-values">
                                                         <p>Security is a core architectural principle of <span
                                                                 class="ethno">ZacrocoZ</span></p>
@@ -358,7 +371,8 @@
                                                             approvals, eliminating single-point
                                                             control risks and ensuring secure fund management.</p>
                                                         <p><strong>Audit</strong></p>
-                                                        <p>An independent third-party smart contract audit is planned during phased ecosystem expansion</p>
+                                                        <p>An independent third-party smart contract audit is planned
+                                                            during phased ecosystem expansion</p>
                                                     </div>
                                                 </div>
                                                 <div class="faq-box">
@@ -423,7 +437,8 @@
                                                         </ul>
                                                         <!-- <p>This structure prevents sudden market shocks and ensures
                                                             controlled token movement.</p> -->
-                                                            <p>This structure is designed to reduce sudden market shocks and support controlled token movement.</p>
+                                                        <p>This structure is designed to reduce sudden market shocks and
+                                                            support controlled token movement.</p>
                                                     </div>
                                                 </div>
                                                 <div class="faq-box">
@@ -463,10 +478,12 @@
                                                     <div class="gold faq-panel core-values">
                                                         <p>All <span class="ethno">ZacrocoZ</span> wallets,
                                                             transactions,
-                                                            and ecosystem operations are publicly verifiable on-chain. <br class="d-none d-md-block">
+                                                            and ecosystem operations are publicly verifiable on-chain.
+                                                            <br class="d-none d-md-block">
                                                             For additional clarity, users can explore the Transparency
                                                             Dashboard, review the Whitepaper, or
-                                                            connect through official community channels.</p>
+                                                            connect through official community channels.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -488,11 +505,14 @@
     <!-- End Of Main Div -->
 
     <div id="footer"></div>
+
     <script>
         fetch("footer.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>

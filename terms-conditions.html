@@ -77,6 +77,9 @@
         .order_sm-2 {
             margin-top: 20px;
         }
+        .heading-part .sub-title.bn::after {
+            background-color: transparent !important;
+        }
     </style>
 </head>
 
@@ -94,8 +97,9 @@
                             <div class="heading-part text-center">
                                 <h2 class="mb-2 color-gold">Terms & Conditions – <span class="ethno">ZacrocoZ
                                         (ZRZ)</span></h2>
-                                <span class="sub-title">Effective Date: </span>
-                                <p>Welcome to <span class="ethno">ZacrocoZ(ZRZ)</span> By accessing or using <a
+                                <span class="sub-title bn">Effective Date: April 19 2026</span>
+                                <span class="sub-title bn mt-2">Last Updated : April 19 2026 </span>
+                                <p class="mt-2">Welcome to <span class="ethno">ZacrocoZ(ZRZ)</span> By accessing or using <a
                                         href="https://zacrocoz.com/">www.zacrocoz.com</a> (the “Website”), you
                                     agree to be bound by these <strong>Terms & Conditions.</strong> If you do not agree,
                                     please refrain from using this Website.</p>
@@ -254,6 +258,8 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
                 })
                 .catch(error => console.error("Footer load failed:", error));
         </script>

@@ -44,7 +44,7 @@
                 rgba(15, 23, 42, 0.9) 0%,
                 rgba(26, 32, 44, 0.95) 70%,
                 rgba(212, 175, 55, 0.2) 100%); */
-        background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(26, 32, 44, 0.75) 70%);
+        background: linear-gradient(135deg, rgba(15, 23, 42, 0.5) 0%, rgba(26, 32, 44, 0.5) 70%);
         z-index: 2;
     }
 
@@ -274,7 +274,7 @@
                     <img src="images/Manifesto_Closing_Statement.png" alt="Closing Statement" class="w-80">
                 </div>
                 <div class="col-md-6">
-                    <h2 class="color-gold mb-md-3 text-center wow fadeInRight mrt">Closing Statement</h2>
+                    <h2 class="color-gold mb-md-3 wow fadeUp mrt">Closing Statement</h2>
                     <div class="core-values resps nd mt-1">
                         <ul>
                             <li>We grow with trust.</li>
@@ -287,8 +287,8 @@
                         </ul>
                     </div>
                     <div class="core-values mt-3">
-                        <p class="wow fadeInUp delay-2"><strong>This is ZRZ.</strong></p>
-                        <p class="wow fadeInUp delay-3"><strong>Deliberate Design. Defined Decentralization.</strong>
+                        <p class="wow fadeInUp delay-1"><strong>This is ZRZ.</strong></p>
+                        <p class="wow fadeInUp delay-2 color-gold"><strong>Deliberate Design. Defined Decentralization.</strong>
                         </p>
                     </div>
                 </div>
@@ -303,6 +303,8 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById("footer").innerHTML = data;
+
+                document.getElementById("year").textContent = new Date().getFullYear();
             })
             .catch(error => console.error("Footer load failed:", error));
     </script>
